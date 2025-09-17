@@ -1,25 +1,15 @@
 # ************************************************************
-# Sequel Ace SQL dump
-# 版本号： 20050
-#
-# https://sequel-ace.com/
-# https://github.com/Sequel-Ace/Sequel-Ace
-#
-# 主机: 127.0.0.1 (MySQL 5.6.39)
+# 优化后的MySQL 8.0专用SQL
+# 主机: 127.0.0.1 (MySQL 8.0)
 # 数据库: big_market
-# 生成时间: 2023-12-09 05:48:32 +0000
+# 字符集: utf8mb4
+# 排序规则: utf8mb4_unicode_ci
 # ************************************************************
 
+CREATE DATABASE IF NOT EXISTS `big_market`
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
 
-# /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-# /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-# /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-# SET NAMES utf8mb4;
-# /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-# /*!40101 SET @OLD_SQL_MODE='NO_AUTO_VALUE_ON_ZERO', SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-# /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
-CREATE database if NOT EXISTS `big_market` default character set utf8mb4 collate utf8mb4_0900_ai_ci;
 use `big_market`;
 
 # 转储表 award
@@ -167,10 +157,3 @@ VALUES
 UNLOCK TABLES;
 
 
-
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

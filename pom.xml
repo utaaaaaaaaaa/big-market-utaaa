@@ -19,6 +19,13 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring-boot-starter-web.version>2.7.18</spring-boot-starter-web.version>
+    <spring-boot-starter-test.version>2.7.18</spring-boot-starter-test.version>
+    <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
+    <mysql.version>8.0.33</mysql.version>
+    <fastjson.version>2.0.42</fastjson.version>
+    <commons-lang3.version>3.14.0</commons-lang3.version>
+    <guava.version>33.0.0-jre</guava.version>
   </properties>
 
   <dependencies>
@@ -28,5 +35,33 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.36</version>
+    </dependency>
+
+    <!-- MyBatis-Plus -->
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+      <version>${mybatis-plus.version}</version>
+    </dependency>
+
+    <!-- MySQL -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>${mysql.version}</version>
+    </dependency>
+
+    <!-- 强制使用 Logback（Spring Boot 默认） -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.11</version> <!-- 与 Spring Boot 2.x 兼容 -->
+    </dependency>
+
   </dependencies>
 </project>
