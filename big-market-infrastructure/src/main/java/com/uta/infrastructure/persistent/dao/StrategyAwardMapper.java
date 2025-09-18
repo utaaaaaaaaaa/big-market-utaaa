@@ -1,8 +1,11 @@
-package com.uta.infrastructure.persistent.mapper;
+package com.uta.infrastructure.persistent.dao;
 
-import com.uta.infrastructure.persistent.pojo.StrategyAward;
+import com.uta.domain.strategy.model.entity.StrategyAwardEntity;
+import com.uta.infrastructure.persistent.po.StrategyAward;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
 
 /**
 * @author 24333
@@ -12,6 +15,8 @@ import org.apache.ibatis.annotations.Mapper;
 */
 @Mapper
 public interface StrategyAwardMapper extends BaseMapper<StrategyAward> {
+
+    List<StrategyAwardEntity> queryStrategyAwardListByStrategyId(Long strategyId);
 
 }
 

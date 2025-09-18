@@ -1,6 +1,6 @@
 package com.uta.infrastructure.persistent.service;
 
-import com.uta.infrastructure.persistent.pojo.StrategyAward;
+import com.uta.infrastructure.persistent.po.StrategyAward;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

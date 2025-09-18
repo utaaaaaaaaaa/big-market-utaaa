@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.uta.infrastructure.persistent.mapper.StrategyMapper">
+<mapper namespace="com.uta.infrastructure.persistent.dao.StrategyMapper">
 
-    <resultMap id="BaseResultMap" type="com.uta.infrastructure.persistent.pojo.Strategy">
+    <resultMap id="BaseResultMap" type="com.uta.infrastructure.persistent.po.Strategy">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="strategyId" column="strategy_id" jdbcType="BIGINT"/>
             <result property="strategyDesc" column="strategy_desc" jdbcType="VARCHAR"/>

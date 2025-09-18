@@ -1,4 +1,4 @@
-package com.uta.infrastructure.persistent.pojo;
+package com.uta.infrastructure.persistent.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

@@ -1,9 +1,9 @@
 package com.uta.infrastructure.persistent.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.uta.infrastructure.persistent.pojo.Strategy;
+import com.uta.infrastructure.persistent.po.Strategy;
 import com.uta.infrastructure.persistent.service.StrategyService;
-import com.uta.infrastructure.persistent.mapper.StrategyMapper;
+import com.uta.infrastructure.persistent.dao.StrategyMapper;
 import org.springframework.stereotype.Service;
 
 /**

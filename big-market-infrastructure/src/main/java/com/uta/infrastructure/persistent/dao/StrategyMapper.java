@@ -1,6 +1,6 @@
-package com.uta.infrastructure.persistent.mapper;
+package com.uta.infrastructure.persistent.dao;
 
-import com.uta.infrastructure.persistent.pojo.Strategy;
+import com.uta.infrastructure.persistent.po.Strategy;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
