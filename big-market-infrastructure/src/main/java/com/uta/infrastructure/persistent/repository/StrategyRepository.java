@@ -92,7 +92,11 @@ public class StrategyRepository implements IStrategyRepository {
 
     @Override
     public StrategyRuleEntity getStrategyRuleEntityByStrategyId(Long strategyId) {
-        StrategyRuleEntity strategyRuleEntity = strategyRuleMapper.queryStrategyRuleEntityByStrategyId(strategyId);
-        return strategyRuleEntity;
+        return strategyRuleMapper.queryStrategyRuleEntityByStrategyId(strategyId);
+    }
+
+    @Override
+    public String getStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel) {
+        return strategyRuleMapper.queryStrategyRuleValue(strategyId,awardId,ruleModel);
     }
 }

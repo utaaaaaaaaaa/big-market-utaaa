@@ -4,6 +4,7 @@ import com.uta.domain.strategy.model.entity.StrategyRuleEntity;
 import com.uta.infrastructure.persistent.po.StrategyRule;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 /**
@@ -20,6 +21,12 @@ public interface StrategyRuleMapper extends BaseMapper<StrategyRule> {
             "        rule_desc from strategy_rule " +
             " where strategy_id = #{strategyId} and rule_model = 'rule_weight'")
     StrategyRuleEntity queryStrategyRuleEntityByStrategyId(Long strategyId);
+
+    String queryStrategyRuleValue(
+            @Param("strategyId") Long strategyId,
+            @Param("awardId") Integer awardId,
+            @Param("ruleModel") String ruleModel
+    );
 }
 
 

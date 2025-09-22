@@ -1,6 +1,7 @@
 package com.uta.config;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.parser.Feature;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
@@ -68,7 +69,10 @@ public class RedisClientConfig {
             try (ByteBufInputStream is = new ByteBufInputStream(buf)) {
                 return JSON.parseObject(
                         is,
-                        Object.class
+                        Object.class,
+                        Feature.SupportAutoType, // 启用自动类型识别
+                        Feature.IgnoreNotMatch,
+                        Feature.OrderedField
                 );
             } catch (IOException e) {
                 throw new RuntimeException("FastJSON 反序列化失败", e);

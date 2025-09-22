@@ -21,4 +21,14 @@
         rule_type,rule_model,rule_value,
         rule_desc,create_time,update_time
     </sql>
+
+    <select id="queryStrategyRuleValue" resultType="java.lang.String">
+        SELECT rule_value FROM strategy_rule
+        WHERE strategy_id = #{strategyId}
+        AND rule_model = #{ruleModel}
+        <if test="awardId != null">
+            AND award_id = #{awardId}
+        </if>
+    </select>
+
 </mapper>

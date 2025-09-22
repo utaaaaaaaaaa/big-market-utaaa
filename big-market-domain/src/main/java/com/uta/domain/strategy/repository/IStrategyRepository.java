@@ -12,7 +12,6 @@ import java.util.Map;
  * @description 策略仓储接口
  * @author utaa
  */
-@Component
 public interface IStrategyRepository {
 
     List<StrategyAwardEntity> getStrategyAwardList(Long strategyId);
@@ -30,5 +29,7 @@ public interface IStrategyRepository {
     StrategyEntity getStrategyEntityByStrategyId(Long strategyId);
 
     StrategyRuleEntity getStrategyRuleEntityByStrategyId(Long strategyId);
+
+    String getStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
 }
 

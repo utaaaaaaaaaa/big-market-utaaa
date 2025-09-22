@@ -1,10 +1,17 @@
 package com.uta.domain;
 
+import com.uta.domain.strategy.model.entity.RaffleAwardEntity;
+import com.uta.domain.strategy.model.entity.RaffleFactorEntity;
+import com.uta.domain.strategy.service.IRaffleStrategy;
 import com.uta.domain.strategy.service.armory.StrategyArmoryDispatch;
+import com.uta.domain.strategy.service.rule.impl.RuleWeightLogicFilter;
 import lombok.extern.slf4j.Slf4j;
+import net.minidev.json.JSONUtil;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.util.ReflectionTestUtils;
 
 @Slf4j
 @SpringBootTest

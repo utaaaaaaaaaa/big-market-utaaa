@@ -26,7 +26,7 @@ public class StrategyEntity {
         if (StringUtils.isBlank(ruleModels)) {
             return null;
         }
-        return ruleModels.split(Constants.SPACE);
+        return ruleModels.split(Constants.SPLIT);
     }
 
     public String getRuleWeight(){
