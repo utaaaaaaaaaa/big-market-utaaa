@@ -10,6 +10,7 @@ import com.uta.domain.strategy.service.armory.IStrategyDispatch;
 import com.uta.domain.strategy.service.rule.ILogicFilter;
 import com.uta.domain.strategy.service.rule.factory.DefaultLogicFactory;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.juli.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
@@ -33,6 +34,12 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
 
     @Override
     protected RuleActionEntity<RuleActionEntity.RaffleBeforeEntity> doCheckBeforeRaffle(RaffleFactorEntity build, String... logics) {
+        if (logics == null || logics.length == 0){
+            return RuleActionEntity.<RuleActionEntity.RaffleBeforeEntity>builder()
+                    .code(RuleLogicCheckTypeVO.ALLOW.getCode())
+                    .info(RuleLogicCheckTypeVO.ALLOW.getInfo())
+                    .build();
+        }
 
         Map<String, ILogicFilter<RuleActionEntity.RaffleBeforeEntity>> map = factory.openLogicFilter();
 
@@ -70,7 +77,38 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
                     .build();
             ruleActionEntity = logicFilter.filter(ruleMatterEntity);
             // 非放行结果则顺序过滤
-            log.info("抽奖前规则过滤 userId: {} ruleModel: {} code: {} info: {}", build.getUserId(), ruleModel, ruleActionEntity.getCode(), ruleActionEntity.getInfo());
+            log.info("抽奖前规则过滤 userId: {} ruleModel: {} code: {} info: {}", build.getUserId(), ruleActionEntity.getRuleModel(), ruleActionEntity.getCode(), ruleActionEntity.getInfo());
+            if (!RuleLogicCheckTypeVO.ALLOW.getCode().equals(ruleActionEntity.getCode())){
+                return ruleActionEntity;
+            }
+        }
+
+        return ruleActionEntity;
+    }
+
+    @Override
+    protected RuleActionEntity<RuleActionEntity.RaffleMidEntity> doCheckMidRaffle(RaffleFactorEntity build, String... logics) {
+        if (logics == null || logics.length == 0){
+            return RuleActionEntity.<RuleActionEntity.RaffleMidEntity>builder()
+                    .code(RuleLogicCheckTypeVO.ALLOW.getCode())
+                    .info(RuleLogicCheckTypeVO.ALLOW.getInfo())
+                    .build();
+        }
+
+        Map<String, ILogicFilter<RuleActionEntity.RaffleMidEntity>> map = factory.openLogicFilter();
+
+        RuleActionEntity<RuleActionEntity.RaffleMidEntity> ruleActionEntity = null;
+        for (String ruleModel : logics) {
+            ILogicFilter<RuleActionEntity.RaffleMidEntity> logicFilter = map.get(ruleModel);
+            RuleMatterEntity ruleMatterEntity = RuleMatterEntity.builder()
+                    .strategyId(build.getStrategyId())
+                    .userId(build.getUserId())
+                    .awardId(build.getAwardId())
+                    .ruleModel(ruleModel)
+                    .build();
+            ruleActionEntity = logicFilter.filter(ruleMatterEntity);
+            // 非放行结果则顺序过滤
+            log.info("抽奖中规则过滤 userId: {} ruleModel: {} code: {} info: {}", build.getUserId(), ruleActionEntity.getRuleModel(), ruleActionEntity.getCode(), ruleActionEntity.getInfo());
             if (!RuleLogicCheckTypeVO.ALLOW.getCode().equals(ruleActionEntity.getCode())){
                 return ruleActionEntity;
             }

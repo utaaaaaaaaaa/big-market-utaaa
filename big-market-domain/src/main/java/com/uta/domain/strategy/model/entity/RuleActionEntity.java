@@ -41,4 +41,24 @@ public class RuleActionEntity<T extends RuleActionEntity.RuffleEntity> {
         private Integer awardId;
     }
 
+    @EqualsAndHashCode(callSuper = true) //让父类字段也参与equals和hashcode的比较
+    @Data
+    @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
+    static public class RaffleMidEntity extends RuffleEntity{
+        /**
+         * 策略id
+         */
+        private Long strategyId;
+        /**
+         * 权重值key：抽奖前选择不同权重抽奖（不同积分范围对应不同奖品范围）
+         */
+        private String ruleWeightValue;
+        /**
+         * 奖品id
+         */
+        private Integer awardId;
+    }
+
 }

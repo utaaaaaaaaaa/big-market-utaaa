@@ -48,4 +48,17 @@ public class RaffleStrategyTest {
         log.info("请求结果：awardId={}", raffleAwardEntity.getAwardId());
     }
 
+    @Test
+    public void testPerformRaffleMidRuleLock() {
+        RaffleFactorEntity factor = RaffleFactorEntity.builder()
+                .strategyId(100003L)
+                .userId("utaaa")
+                .build();
+
+        RaffleAwardEntity raffleAwardEntity = raffleStrategy.performRaffle(factor);
+
+        log.info("请求参数：{}", factor.toString());
+        log.info("请求结果：awardId={}", raffleAwardEntity.toString());
+    }
+
 }

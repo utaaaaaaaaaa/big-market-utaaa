@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @Component
-@LogicStrategy(logicModel = DefaultLogicFactory.LogicModel.RULE_WIGHT)
+@LogicStrategy(logicModel = DefaultLogicFactory.LogicModel.RULE_WEIGHT)
 public class RuleWeightLogicFilter implements ILogicFilter<RuleActionEntity.RaffleBeforeEntity> {
 
     @Resource
@@ -58,7 +58,7 @@ public class RuleWeightLogicFilter implements ILogicFilter<RuleActionEntity.Raff
 //                .reduce((first, second) -> second) // 取最后一个元素(或者使用这种方法取得满足要求的最大的key);
         if (firstKey != null) {
             return RuleActionEntity.<RuleActionEntity.RaffleBeforeEntity>builder()
-                    .ruleModel(DefaultLogicFactory.LogicModel.RULE_WIGHT.getCode())
+                    .ruleModel(DefaultLogicFactory.LogicModel.RULE_WEIGHT.getCode())
                     .data(RuleActionEntity.RaffleBeforeEntity.builder()
                             .ruleWeightValue(map.get(firstKey))
                             .strategyId(ruleMatter.getStrategyId())

@@ -1,750 +1,392 @@
-25-09-22.20:44:15.733 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 116180 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.20:44:15.735 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.20:44:16.530 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.20:44:16.534 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.20:44:16.580 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-25-09-22.20:44:17.338 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.20:44:17.527 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.20:44:17.706 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:44:17.723 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:44:18.340 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultRaffleStrategy' defined in file [D:\_Code\java\big-market-utaaa\big-market-domain\target\classes\com\uta\domain\strategy\service\raffle\DefaultRaffleStrategy.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.uta.domain.strategy.repository.IStrategyRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("IStrategyRepository")}
-25-09-22.20:44:18.395 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-25-09-22.20:44:18.472 [main            ] ERROR SpringApplication      - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultRaffleStrategy' defined in file [D:\_Code\java\big-market-utaaa\big-market-domain\target\classes\com\uta\domain\strategy\service\raffle\DefaultRaffleStrategy.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.uta.domain.strategy.repository.IStrategyRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("IStrategyRepository")}
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.uta.domain.strategy.repository.IStrategyRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("IStrategyRepository")}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
-	... 89 common frames omitted
-25-09-22.20:44:18.477 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@20c0a64d] to prepare test instance [com.uta.domain.RaffleStrategyTest@11f3400c]
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultRaffleStrategy' defined in file [D:\_Code\java\big-market-utaaa\big-market-domain\target\classes\com\uta\domain\strategy\service\raffle\DefaultRaffleStrategy.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.uta.domain.strategy.repository.IStrategyRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("IStrategyRepository")}
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
-	... 71 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.uta.domain.strategy.repository.IStrategyRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("IStrategyRepository")}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
-	... 89 common frames omitted
-25-09-22.20:46:49.098 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 118164 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.20:46:49.098 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.20:46:49.855 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.20:46:49.857 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.20:46:49.892 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-25-09-22.20:46:50.561 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.20:46:50.733 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.20:46:50.915 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:46:50.937 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:46:51.588 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultRaffleStrategy' defined in file [D:\_Code\java\big-market-utaaa\big-market-domain\target\classes\com\uta\domain\strategy\service\raffle\DefaultRaffleStrategy.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.uta.domain.strategy.repository.IStrategyRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("IStrategyRepository")}
-25-09-22.20:46:51.638 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-25-09-22.20:46:51.693 [main            ] ERROR SpringApplication      - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultRaffleStrategy' defined in file [D:\_Code\java\big-market-utaaa\big-market-domain\target\classes\com\uta\domain\strategy\service\raffle\DefaultRaffleStrategy.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.uta.domain.strategy.repository.IStrategyRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("IStrategyRepository")}
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.uta.domain.strategy.repository.IStrategyRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("IStrategyRepository")}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
-	... 89 common frames omitted
-25-09-22.20:46:51.698 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@20c0a64d] to prepare test instance [com.uta.domain.RaffleStrategyTest@628b503a]
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultRaffleStrategy' defined in file [D:\_Code\java\big-market-utaaa\big-market-domain\target\classes\com\uta\domain\strategy\service\raffle\DefaultRaffleStrategy.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.uta.domain.strategy.repository.IStrategyRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("IStrategyRepository")}
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:929)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
-	... 71 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.uta.domain.strategy.repository.IStrategyRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier("IStrategyRepository")}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
-	... 89 common frames omitted
-25-09-22.20:50:25.089 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 99932 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.20:50:25.089 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.20:50:25.816 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.20:50:25.817 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.20:50:25.854 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
-25-09-22.20:50:26.518 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.20:50:26.698 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.20:50:26.872 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:50:26.889 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:50:29.605 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.20:50:29.676 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.947 seconds (JVM running for 5.874)
-25-09-22.20:50:55.658 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 88304 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.20:50:55.659 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.20:50:56.520 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.20:50:56.524 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.20:50:56.568 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-25-09-22.20:50:57.270 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.20:50:57.464 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.20:50:57.644 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:50:57.662 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:51:00.400 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.20:51:00.485 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.217 seconds (JVM running for 6.165)
-25-09-22.20:52:16.647 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 121088 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.20:52:16.647 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.20:52:17.416 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.20:52:17.419 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.20:52:17.471 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
-25-09-22.20:52:18.217 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.20:52:18.413 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.20:52:18.580 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:52:18.599 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:52:21.565 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.20:52:21.658 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.389 seconds (JVM running for 6.324)
-25-09-22.20:52:22.251 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.20:52:22.473 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.20:52:22.640 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:utaaa strategyId:100001 ruleModel:rule_blacklist
-25-09-22.20:52:22.675 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.20:52:22.685 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.20:55:11.343 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 116588 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.20:55:11.344 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.20:55:12.101 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.20:55:12.104 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.20:55:12.151 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
-25-09-22.20:55:12.840 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.20:55:13.017 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.20:55:13.246 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:55:13.267 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.20:55:16.126 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.20:55:16.204 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.218 seconds (JVM running for 6.075)
-25-09-22.20:55:16.680 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.20:55:16.848 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.20:55:16.997 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:utaaa strategyId:100001 ruleModel:rule_blacklist
-25-09-22.20:55:17.050 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.20:55:17.075 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.21:11:45.672 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 104296 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.21:11:45.673 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.21:11:46.470 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.21:11:46.473 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.21:11:46.510 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-25-09-22.21:11:47.300 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.21:11:47.493 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.21:11:47.678 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:11:47.701 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:11:51.299 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.21:11:51.411 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.139 seconds (JVM running for 7.118)
-25-09-22.21:11:51.946 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.21:11:52.195 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.21:12:49.947 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s648ms852µs600ns).
-25-09-22.21:13:01.050 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:utaaa strategyId:100001 ruleModel:rule_blacklist
-25-09-22.21:15:46.451 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m56s503ms933µs700ns).
-25-09-22.21:15:46.471 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.21:15:46.478 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.21:27:40.940 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 118608 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.21:27:40.941 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.21:27:41.796 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.21:27:41.799 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.21:27:41.836 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-25-09-22.21:27:42.622 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.21:27:42.817 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.21:27:42.995 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:27:43.016 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:27:46.450 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.21:27:46.537 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.999 seconds (JVM running for 6.984)
-25-09-22.21:27:47.147 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.21:27:47.333 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.21:27:51.348 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:utaaa strategyId:100001 ruleModel:rule_blacklist
-25-09-22.21:27:51.396 [main            ] INFO  RuleWeightLogicFilter  - 【规则过滤】-权重 userId:utaaa strategyId:100001 ruleModel:rule_weight
-25-09-22.21:27:51.418 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.21:27:51.430 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.21:28:33.900 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 106144 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.21:28:33.901 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.21:28:34.760 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.21:28:34.763 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.21:28:34.808 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-25-09-22.21:28:35.768 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.21:28:35.968 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.21:28:36.159 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:28:36.183 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:28:39.712 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.21:28:39.840 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.345 seconds (JVM running for 7.355)
-25-09-22.21:28:40.483 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.21:28:40.642 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.21:28:50.559 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:utaaa strategyId:100001 ruleModel:rule_blacklist
-25-09-22.21:28:50.579 [main            ] INFO  RuleWeightLogicFilter  - 【规则过滤】-权重 userId:utaaa strategyId:100001 ruleModel:rule_weight
-25-09-22.21:28:50.583 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: utaaa ruleModel: rule_weight code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-22.21:28:50.606 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.21:28:50.614 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.21:30:05.875 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 118720 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.21:30:05.876 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-25-09-22.21:30:06.610 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.21:30:06.612 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.21:30:06.652 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-25-09-22.21:30:07.333 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.21:30:07.505 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.21:30:07.686 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:30:07.706 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:30:10.616 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.21:30:10.709 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.19 seconds (JVM running for 6.075)
-25-09-22.21:30:13.223 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 113160 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.21:30:13.224 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-25-09-22.21:30:13.967 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.21:30:13.968 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.21:30:14.000 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-25-09-22.21:30:14.672 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.21:30:14.848 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.21:30:15.026 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:30:15.044 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:30:17.920 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.21:30:18.012 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.137 seconds (JVM running for 6.093)
-25-09-22.21:30:18.501 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.21:30:18.686 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.21:30:19.558 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.21:30:19.579 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.21:30:31.119 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 94272 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.21:30:31.120 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-25-09-22.21:30:31.892 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.21:30:31.895 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.21:30:31.928 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-25-09-22.21:30:32.657 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.21:30:32.841 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.21:30:33.018 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:30:33.040 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:30:35.724 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.21:30:35.829 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.057 seconds (JVM running for 5.942)
-25-09-22.21:30:36.344 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.21:30:36.521 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.21:30:37.338 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】101
-25-09-22.21:30:37.345 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】103
-25-09-22.21:30:37.349 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】103
-25-09-22.21:30:37.353 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】103
-25-09-22.21:30:37.398 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.21:30:37.415 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.21:30:48.509 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 102812 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.21:30:48.510 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-25-09-22.21:30:49.275 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.21:30:49.277 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.21:30:49.319 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
-25-09-22.21:30:50.011 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.21:30:50.200 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.21:30:50.373 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:30:50.395 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:30:53.295 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.21:30:53.369 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.225 seconds (JVM running for 6.156)
-25-09-22.21:31:02.372 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 120764 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.21:31:02.372 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.21:31:03.096 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.21:31:03.099 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.21:31:03.136 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-25-09-22.21:31:03.795 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.21:31:03.992 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.21:31:04.199 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:31:04.222 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:31:07.061 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.21:31:07.157 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.148 seconds (JVM running for 6.046)
-25-09-22.21:52:18.626 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 107464 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.21:52:18.627 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.21:52:19.447 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.21:52:19.449 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.21:52:19.492 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
-25-09-22.21:52:20.180 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.21:52:20.353 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.21:52:20.551 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:52:20.579 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:52:23.367 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.21:52:23.447 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.201 seconds (JVM running for 6.073)
-25-09-22.21:52:24.047 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:utaaa strategyId:100001 ruleModel:rule_blacklist
-25-09-22.21:52:24.073 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.21:52:24.267 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.21:52:24.318 [main            ] INFO  RuleWeightLogicFilter  - 【规则过滤】-权重 userId:utaaa strategyId:100001 ruleModel:rule_weight
-25-09-22.21:52:24.323 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: utaaa ruleModel: rule_weight code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-22.21:52:24.339 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100001)
-25-09-22.21:52:24.339 [main            ] INFO  RaffleStrategyTest     - 请求结果：RaffleAwardEntity(strategyId=null, awardId=101, awardKey=null, awardConfig=null, awardDesc=null)
-25-09-22.21:52:24.353 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.21:52:24.362 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.21:57:25.631 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 46740 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.21:57:25.633 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.21:57:26.497 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.21:57:26.501 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.21:57:26.559 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
-25-09-22.21:57:27.479 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.21:57:27.695 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.21:57:27.894 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:57:27.921 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.21:57:31.708 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.21:57:31.825 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.612 seconds (JVM running for 7.632)
-25-09-22.21:57:41.017 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:utaaa strategyId:100001 ruleModel:rule_blacklist
-25-09-22.21:57:41.160 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.21:57:41.916 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.21:58:07.954 [main            ] INFO  RuleWeightLogicFilter  - 【规则过滤】-权重 userId:utaaa strategyId:100001 ruleModel:rule_weight
-25-09-22.21:58:11.854 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: utaaa ruleModel: rule_weight code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-22.21:58:34.354 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s325ms816µs500ns).
-25-09-22.22:00:21.618 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m47s262ms859µs500ns).
-25-09-22.22:01:32.042 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s425ms191µs600ns).
-25-09-22.22:01:32.084 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100001)
-25-09-22.22:01:32.084 [main            ] INFO  RaffleStrategyTest     - 请求结果：RaffleAwardEntity(strategyId=null, awardId=103, awardKey=null, awardConfig=null, awardDesc=null)
-25-09-22.22:01:32.097 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.22:01:32.106 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.22:01:43.344 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 120304 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.22:01:43.345 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.22:01:44.205 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.22:01:44.209 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.22:01:44.252 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
-25-09-22.22:01:45.001 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.22:01:45.202 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.22:01:45.395 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.22:01:45.413 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.22:01:48.774 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.22:01:48.927 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.993 seconds (JVM running for 7.024)
-25-09-22.22:01:50.524 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:utaaa strategyId:100001 ruleModel:rule_blacklist
-25-09-22.22:01:50.553 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.22:01:50.720 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.22:01:50.776 [main            ] INFO  RuleWeightLogicFilter  - 【规则过滤】-权重 userId:utaaa strategyId:100001 ruleModel:rule_weight
-25-09-22.22:01:50.779 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: utaaa ruleModel: rule_weight code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-22.22:01:50.795 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100001)
-25-09-22.22:01:50.795 [main            ] INFO  RaffleStrategyTest     - 请求结果：RaffleAwardEntity(strategyId=null, awardId=103, awardKey=null, awardConfig=null, awardDesc=null)
-25-09-22.22:01:50.809 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.22:01:50.816 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.22:03:31.565 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 104444 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.22:03:31.566 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.22:03:32.325 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.22:03:32.327 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.22:03:32.358 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-25-09-22.22:03:33.061 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.22:03:33.258 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.22:03:33.438 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.22:03:33.454 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.22:03:36.832 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.22:03:36.932 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.798 seconds (JVM running for 6.758)
-25-09-22.22:04:12.393 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:utaaa strategyId:100001 ruleModel:rule_blacklist
-25-09-22.22:04:12.538 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.22:04:13.281 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.22:04:19.996 [main            ] INFO  RuleWeightLogicFilter  - 【规则过滤】-权重 userId:utaaa strategyId:100001 ruleModel:rule_weight
-25-09-22.22:04:20.283 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId: utaaa ruleModel: rule_weight code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-22.22:04:36.492 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100001)
-25-09-22.22:04:36.492 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=103
-25-09-22.22:04:36.506 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.22:04:36.516 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.22:09:27.374 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 71864 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.22:09:27.375 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.22:09:28.109 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.22:09:28.112 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.22:09:28.150 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-25-09-22.22:09:28.865 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.22:09:29.045 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.22:09:29.218 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.22:09:29.238 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.22:09:32.030 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.22:09:32.111 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.109 seconds (JVM running for 6.029)
-25-09-22.22:09:32.714 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:user001 strategyId:100001 ruleModel:rule_blacklist
-25-09-22.22:09:32.744 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.22:09:32.931 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.22:09:32.984 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=user001, strategyId=100001)
-25-09-22.22:09:32.984 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=null
-25-09-22.22:09:32.997 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.22:09:33.004 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.22:10:33.709 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 90508 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.22:10:33.710 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.22:10:34.588 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.22:10:34.591 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.22:10:34.627 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-25-09-22.22:10:35.366 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.22:10:35.560 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.22:10:35.745 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.22:10:35.762 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.22:10:39.171 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.22:10:39.295 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.999 seconds (JVM running for 7.009)
-25-09-22.22:12:48.051 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:user001 strategyId:100001 ruleModel:rule_blacklist
-25-09-22.22:12:48.195 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.22:12:48.984 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.22:13:54.088 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s995ms185µs100ns).
-25-09-22.22:13:54.094 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=user001, strategyId=100001)
-25-09-22.22:13:54.096 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=null
-25-09-22.22:13:54.095 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x89a81a45, L:/127.0.0.1:60519 - R:127.0.0.1/127.0.0.1:16379]
-org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:16379]
-	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:253)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
-	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+25-09-23.11:46:39.828 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 113904 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.11:46:39.830 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+25-09-23.11:46:40.824 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.11:46:40.828 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.11:46:40.876 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+25-09-23.11:46:41.672 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.11:46:41.861 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.11:46:42.043 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:46:42.061 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:46:44.784 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.11:46:44.864 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.513 seconds (JVM running for 6.657)
+25-09-23.11:46:45.347 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.11:46:45.505 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.11:46:45.733 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.11:46:45.748 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.11:48:12.651 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 104500 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.11:48:12.653 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+25-09-23.11:48:13.444 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.11:48:13.446 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.11:48:13.479 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-09-23.11:48:14.258 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.11:48:14.407 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.11:48:14.549 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:48:14.568 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:48:17.202 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.11:48:17.287 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.99 seconds (JVM running for 5.848)
+25-09-23.11:48:17.764 [redisson-netty-1-2] ERROR CommandDecoder         - Unable to decode data. channel: [id: 0xfa0dbbbf, L:/127.0.0.1:64092 - R:127.0.0.1/127.0.0.1:16379], reply: ReplayingDecoderByteBuf(ridx=497, widx=497), command: (GET), promise: java.util.concurrent.CompletableFuture@5ff95526[Not completed, 1 dependents], params: [big_market_strategy_award_key_100003]
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (START_OBJECT), expected VALUE_STRING: need JSON String that contains type id (for subtype of java.lang.Object)
+ at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.wrongTokenException(DeserializationContext.java:1939)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportWrongTokenException(DeserializationContext.java:1673)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._locateTypeId(AsArrayTypeDeserializer.java:164)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:96)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromArray(AsArrayTypeDeserializer.java:53)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer.deserializeTypedFromAny(AsPropertyTypeDeserializer.java:211)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla.deserializeWithType(UntypedObjectDeserializer.java:781)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666)
+	at org.redisson.codec.JsonJacksonCodec$2.decode(JsonJacksonCodec.java:99)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:436)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:216)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-25-09-22.22:13:54.129 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.22:13:54.150 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-22.22:14:01.214 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 79824 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-22.22:14:01.215 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-22.22:14:02.114 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-22.22:14:02.117 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-22.22:14:02.169 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
-25-09-22.22:14:02.994 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-22.22:14:03.191 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-22.22:14:03.449 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.22:14:03.472 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-22.22:14:07.536 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-22.22:14:07.653 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.846 seconds (JVM running for 7.863)
-25-09-22.22:14:10.198 [main            ] INFO  RuleBlackListLogicFilter - 【规则过滤】-黑名单 userId:user001 strategyId:100001 ruleModel:rule_blacklist
-25-09-22.22:14:10.231 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-22.22:14:10.547 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-22.22:14:10.596 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=user001, strategyId=100001)
-25-09-22.22:14:10.596 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=100
-25-09-22.22:14:10.614 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-22.22:14:10.623 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.11:48:17.772 [redisson-netty-1-2] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0xfa0dbbbf, L:/127.0.0.1:64092 - R:127.0.0.1/127.0.0.1:16379]
+io.netty.handler.codec.DecoderException: com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (START_OBJECT), expected VALUE_STRING: need JSON String that contains type id (for subtype of java.lang.Object)
+ at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:421)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (START_OBJECT), expected VALUE_STRING: need JSON String that contains type id (for subtype of java.lang.Object)
+ at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.wrongTokenException(DeserializationContext.java:1939)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportWrongTokenException(DeserializationContext.java:1673)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._locateTypeId(AsArrayTypeDeserializer.java:164)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:96)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromArray(AsArrayTypeDeserializer.java:53)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer.deserializeTypedFromAny(AsPropertyTypeDeserializer.java:211)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla.deserializeWithType(UntypedObjectDeserializer.java:781)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666)
+	at org.redisson.codec.JsonJacksonCodec$2.decode(JsonJacksonCodec.java:99)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:436)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:216)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	... 17 common frames omitted
+25-09-23.11:48:43.376 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 100676 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.11:48:43.377 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+25-09-23.11:48:44.094 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.11:48:44.098 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.11:48:44.132 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-09-23.11:48:44.820 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.11:48:45.012 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.11:48:45.193 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:48:45.211 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:48:48.074 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.11:48:48.159 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.141 seconds (JVM running for 6.001)
+25-09-23.11:48:48.762 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.11:48:48.958 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.11:48:49.038 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.11:48:49.048 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.11:51:05.011 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 113256 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.11:51:05.012 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
+25-09-23.11:51:05.816 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.11:51:05.819 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.11:51:05.845 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+25-09-23.11:51:06.530 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.11:51:06.729 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.11:51:06.923 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:51:06.939 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:51:09.735 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.11:51:09.818 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.198 seconds (JVM running for 6.143)
+25-09-23.11:51:10.426 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.11:51:10.630 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.11:51:10.697 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】107
+25-09-23.11:51:10.700 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】109
+25-09-23.11:51:10.702 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】107
+25-09-23.11:51:10.705 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】107
+25-09-23.11:51:10.718 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.11:51:10.726 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.11:53:18.978 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 120216 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.11:53:18.979 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.11:53:19.863 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.11:53:19.865 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.11:53:19.897 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-09-23.11:53:20.731 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.11:53:20.912 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.11:53:21.143 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:53:21.162 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:53:23.999 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.11:53:24.084 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.49 seconds (JVM running for 6.365)
+25-09-23.11:55:24.102 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 116548 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.11:55:24.104 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.11:55:24.873 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.11:55:24.875 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.11:55:24.909 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-09-23.11:55:25.622 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.11:55:25.807 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.11:55:25.979 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:55:25.996 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:55:29.008 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.11:55:29.097 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.381 seconds (JVM running for 6.436)
+25-09-23.11:55:43.229 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 35908 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.11:55:43.231 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.11:55:43.995 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.11:55:43.997 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.11:55:44.032 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-09-23.11:55:44.733 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.11:55:44.915 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.11:55:45.101 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:55:45.119 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.11:55:48.052 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.11:55:48.136 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.254 seconds (JVM running for 6.13)
+25-09-23.11:55:48.718 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.11:55:48.923 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.11:55:48.987 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.11:55:48.996 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.12:01:07.660 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 109924 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.12:01:07.661 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.12:01:08.428 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.12:01:08.429 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.12:01:08.460 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-09-23.12:01:09.207 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.12:01:09.404 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.12:01:09.582 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:01:09.601 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:01:12.633 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.12:01:12.712 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.417 seconds (JVM running for 6.327)
+25-09-23.12:01:13.341 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.12:01:13.544 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.12:01:13.617 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.12:01:13.627 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.12:01:43.204 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 110600 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.12:01:43.205 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.12:01:43.989 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.12:01:43.994 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.12:01:44.033 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-09-23.12:01:44.734 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.12:01:44.915 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.12:01:45.087 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:01:45.103 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:01:47.934 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.12:01:48.012 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.196 seconds (JVM running for 6.182)
+25-09-23.12:01:48.656 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.12:01:48.800 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.12:01:48.840 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
+25-09-23.12:01:48.880 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
+25-09-23.12:01:48.880 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
+25-09-23.12:01:48.880 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=107
+25-09-23.12:01:48.894 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.12:01:48.902 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.12:03:22.829 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 119380 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.12:03:22.830 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.12:03:23.601 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.12:03:23.605 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.12:03:23.648 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+25-09-23.12:03:24.369 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.12:03:24.550 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.12:03:24.753 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:03:24.774 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:03:28.010 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.12:03:28.093 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.641 seconds (JVM running for 6.505)
+25-09-23.12:03:28.734 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.12:03:28.905 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.12:03:28.939 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
+25-09-23.12:03:28.959 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
+25-09-23.12:03:28.959 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
+25-09-23.12:03:28.960 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=107
+25-09-23.12:03:28.974 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.12:03:28.982 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.12:04:06.348 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 109592 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.12:04:06.349 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.12:04:07.143 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.12:04:07.146 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.12:04:07.196 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+25-09-23.12:04:07.906 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.12:04:08.082 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.12:04:08.283 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:04:08.302 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:04:11.187 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.12:04:11.277 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.33 seconds (JVM running for 6.29)
+25-09-23.12:04:11.962 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.12:04:12.113 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.12:04:12.147 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
+25-09-23.12:04:12.161 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
+25-09-23.12:04:12.162 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
+25-09-23.12:04:12.162 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=107, awardKey=null, awardConfig=null, awardDesc=null)
+25-09-23.12:04:12.176 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.12:04:12.184 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.12:04:23.481 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 115664 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.12:04:23.482 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.12:04:24.380 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.12:04:24.386 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.12:04:24.433 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+25-09-23.12:04:25.179 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.12:04:25.415 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.12:04:25.622 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:04:25.647 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:04:29.052 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.12:04:29.168 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.137 seconds (JVM running for 7.159)
+25-09-23.12:04:29.852 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.12:04:30.018 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.12:04:51.308 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s289ms744µs900ns).
+25-09-23.12:05:26.526 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
+25-09-23.12:05:26.612 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
+25-09-23.12:06:54.238 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m32s550ms703µs600ns).
+25-09-23.12:06:54.244 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
+25-09-23.12:06:54.245 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=107, awardKey=null, awardConfig=null, awardDesc=null)
+25-09-23.12:06:54.261 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.12:06:54.273 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.12:06:58.658 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 119376 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.12:06:58.659 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.12:06:59.645 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.12:06:59.650 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.12:06:59.704 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+25-09-23.12:07:01.079 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.12:07:01.499 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.12:07:01.972 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:07:01.995 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:07:06.460 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.12:07:06.564 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 8.391 seconds (JVM running for 9.559)
+25-09-23.12:07:08.062 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.12:07:08.394 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.12:08:21.546 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s987ms543µs300ns).
+25-09-23.12:09:52.699 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m31s152ms747µs400ns).
+25-09-23.12:09:52.703 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
+25-09-23.12:11:30.980 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m38s281ms700µs800ns).
+25-09-23.12:11:30.987 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
+25-09-23.12:13:24.486 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m53s505ms483µs900ns).
+25-09-23.12:14:05.283 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
+25-09-23.12:14:05.283 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=107, awardKey=null, awardConfig=null, awardDesc=null)
+25-09-23.12:14:05.371 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.12:14:05.413 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.12:14:16.301 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 105556 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.12:14:16.302 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.12:14:17.182 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.12:14:17.187 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.12:14:17.239 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+25-09-23.12:14:18.484 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.12:14:18.802 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.12:14:19.158 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:14:19.175 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:14:23.108 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.12:14:23.206 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.336 seconds (JVM running for 8.437)
+25-09-23.12:14:24.301 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.12:14:24.599 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.12:14:29.033 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
+25-09-23.12:14:29.075 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
+25-09-23.12:14:29.077 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
+25-09-23.12:14:29.077 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=107, awardKey=null, awardConfig=null, awardDesc=null)
+25-09-23.12:14:29.125 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.12:14:29.141 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.12:15:32.978 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 100892 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.12:15:32.979 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.12:15:33.786 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.12:15:33.787 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.12:15:33.821 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-09-23.12:15:34.536 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.12:15:34.714 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.12:15:34.903 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:15:34.920 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.12:15:37.686 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.12:15:37.774 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.17 seconds (JVM running for 6.035)
+25-09-23.12:15:38.384 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.12:15:38.574 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.12:15:38.614 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
+25-09-23.12:15:38.631 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
+25-09-23.12:15:38.631 [main            ] INFO  AbstractRaffleStrategy - 【临时日志】中奖规则拦截，通过抽奖后规则rule_lock_award走兜底奖励
+25-09-23.12:15:38.632 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
+25-09-23.12:15:38.632 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=null, awardKey=null, awardConfig=null, awardDesc=中奖规则拦截，通过抽奖后规则rule_lock_award走兜底奖励)
+25-09-23.12:15:38.646 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.12:15:38.658 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.13:29:13.421 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 117932 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.13:29:13.422 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.13:29:14.249 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.13:29:14.251 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.13:29:14.288 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-09-23.13:29:14.954 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.13:29:15.130 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.13:29:15.308 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.13:29:15.330 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.13:29:18.174 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.13:29:18.243 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.173 seconds (JVM running for 6.066)
+25-09-23.13:29:18.844 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.13:29:19.034 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.13:29:19.096 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
+25-09-23.13:29:19.116 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
+25-09-23.13:29:19.117 [main            ] INFO  AbstractRaffleStrategy - 【临时日志】中奖规则拦截，通过抽奖后规则rule_lock_award走兜底奖励
+25-09-23.13:29:19.118 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
+25-09-23.13:29:19.118 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=null, awardKey=null, awardConfig=null, awardDesc=中奖规则拦截，通过抽奖后规则rule_lock_award走兜底奖励)
+25-09-23.13:29:19.131 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.13:29:19.138 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.13:34:30.233 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 112940 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.13:34:30.235 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.13:34:31.006 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.13:34:31.009 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.13:34:31.038 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-09-23.13:34:31.708 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.13:34:31.884 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.13:34:32.082 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.13:34:32.097 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.13:34:35.094 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.13:34:35.178 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.269 seconds (JVM running for 6.144)
+25-09-23.13:34:35.833 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.13:34:36.043 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.13:34:36.100 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
+25-09-23.13:34:36.119 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: null code: 0000 info: 放行，执行后续流程，不受规则引擎影响
+25-09-23.13:34:36.120 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
+25-09-23.13:34:36.120 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=107, awardKey=null, awardConfig=null, awardDesc=null)
+25-09-23.13:34:36.134 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.13:34:36.140 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.13:35:04.275 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 115560 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.13:35:04.276 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-23.13:35:05.067 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.13:35:05.070 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.13:35:05.113 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-09-23.13:35:05.853 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.13:35:06.047 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.13:35:06.233 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.13:35:06.252 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.13:35:09.164 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.13:35:09.272 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.363 seconds (JVM running for 6.231)
+25-09-23.13:35:09.867 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.13:35:10.022 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.13:35:10.057 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
+25-09-23.13:35:10.080 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: null code: 0000 info: 放行，执行后续流程，不受规则引擎影响
+25-09-23.13:35:10.080 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
+25-09-23.13:35:10.081 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=108, awardKey=null, awardConfig=null, awardDesc=null)
+25-09-23.13:35:10.094 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.13:35:10.099 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

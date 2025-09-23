@@ -3,6 +3,7 @@ package com.uta.domain.strategy.repository;
 import com.uta.domain.strategy.model.entity.StrategyAwardEntity;
 import com.uta.domain.strategy.model.entity.StrategyEntity;
 import com.uta.domain.strategy.model.entity.StrategyRuleEntity;
+import com.uta.domain.strategy.model.vo.AwardRuleModelVO;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -31,5 +32,8 @@ public interface IStrategyRepository {
     StrategyRuleEntity getStrategyRuleEntityByStrategyId(Long strategyId);
 
     String getStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
+
+    AwardRuleModelVO getAwardRuleModels(Long strategyId, Integer randomAwardId);
 }
+
 

@@ -24,13 +24,16 @@ public class StrategyEntity {
 
     public String[] getRuleModel() {
         if (StringUtils.isBlank(ruleModels)) {
-            return null;
+            return new String[0];
         }
         return ruleModels.split(Constants.SPLIT);
     }
 
     public String getRuleWeight(){
         String[] rules = this.getRuleModel();
+        if (rules == null || rules.length == 0) { // 双重检查
+            return null;
+        }
         for (String rule : rules) {
             if (rule.contains("rule_weight")) {
                 return "rule_weight";

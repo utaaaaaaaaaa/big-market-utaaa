@@ -3,6 +3,7 @@ package com.uta.infrastructure.persistent.repository;
 import com.uta.domain.strategy.model.entity.StrategyAwardEntity;
 import com.uta.domain.strategy.model.entity.StrategyEntity;
 import com.uta.domain.strategy.model.entity.StrategyRuleEntity;
+import com.uta.domain.strategy.model.vo.AwardRuleModelVO;
 import com.uta.domain.strategy.repository.IStrategyRepository;
 import com.uta.infrastructure.persistent.dao.StrategyAwardMapper;
 import com.uta.infrastructure.persistent.dao.StrategyMapper;
@@ -98,5 +99,10 @@ public class StrategyRepository implements IStrategyRepository {
     @Override
     public String getStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel) {
         return strategyRuleMapper.queryStrategyRuleValue(strategyId,awardId,ruleModel);
+    }
+
+    @Override
+    public AwardRuleModelVO getAwardRuleModels(Long strategyId, Integer randomAwardId) {
+        return strategyAwardMapper.queryAwardRuleModel(strategyId,randomAwardId);
     }
 }
