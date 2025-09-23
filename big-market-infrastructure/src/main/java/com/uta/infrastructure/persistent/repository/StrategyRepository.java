@@ -102,6 +102,11 @@ public class StrategyRepository implements IStrategyRepository {
     }
 
     @Override
+    public String getStrategyRuleValue(Long strategyId, String ruleModel) {
+        return this.getStrategyRuleValue(strategyId,null, ruleModel);
+    }
+
+    @Override
     public AwardRuleModelVO getAwardRuleModels(Long strategyId, Integer randomAwardId) {
         return strategyAwardMapper.queryAwardRuleModel(strategyId,randomAwardId);
     }

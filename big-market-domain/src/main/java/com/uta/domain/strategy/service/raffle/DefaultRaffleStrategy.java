@@ -7,11 +7,10 @@ import com.uta.domain.strategy.model.entity.RuleMatterEntity;
 import com.uta.domain.strategy.model.vo.RuleLogicCheckTypeVO;
 import com.uta.domain.strategy.repository.IStrategyRepository;
 import com.uta.domain.strategy.service.armory.IStrategyDispatch;
-import com.uta.domain.strategy.service.rule.ILogicFilter;
-import com.uta.domain.strategy.service.rule.factory.DefaultLogicFactory;
+import com.uta.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
+import com.uta.domain.strategy.service.rule.filter.ILogicFilter;
+import com.uta.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.juli.logging.LogFactory;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -28,8 +27,8 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
     @Resource
     private DefaultLogicFactory factory;
 
-    public DefaultRaffleStrategy(IStrategyDispatch strategyDispatch, IStrategyRepository repository) {
-        super(strategyDispatch, repository);
+    public DefaultRaffleStrategy(IStrategyRepository repository, IStrategyDispatch strategyDispatch, DefaultChainFactory factory) {
+        super(repository, strategyDispatch, factory);
     }
 
     @Override

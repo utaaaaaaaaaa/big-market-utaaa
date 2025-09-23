@@ -1,4 +1,4 @@
-package com.uta.domain.strategy.service.rule;
+package com.uta.domain.strategy.service.rule.filter;
 
 import com.uta.domain.strategy.model.entity.RuleActionEntity;
 import com.uta.domain.strategy.model.entity.RuleMatterEntity;

@@ -390,3 +390,106 @@ Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpect
 25-09-23.13:35:10.081 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=108, awardKey=null, awardConfig=null, awardDesc=null)
 25-09-23.13:35:10.094 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 25-09-23.13:35:10.099 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.16:33:53.803 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.12 on u_uta with PID 114268 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.16:33:53.803 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+25-09-23.16:33:54.553 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.16:33:54.555 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.16:33:54.590 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+25-09-23.16:33:55.272 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.16:33:55.449 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.16:33:55.643 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.16:33:55.667 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.16:33:58.276 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.16:33:58.362 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.884 seconds (JVM running for 5.823)
+25-09-23.16:33:59.672 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.16:33:59.939 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.16:34:00.010 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.16:34:00.018 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.16:34:40.128 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.12 on u_uta with PID 118496 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.16:34:40.129 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+25-09-23.16:34:41.086 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.16:34:41.089 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.16:34:41.125 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-09-23.16:34:41.852 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.16:34:42.045 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.16:34:42.215 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.16:34:42.232 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.16:34:45.071 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.16:34:45.215 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.464 seconds (JVM running for 6.405)
+25-09-23.16:34:46.589 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.16:34:46.794 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.16:34:46.877 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:34:46.973 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:34:46.982 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:34:46.993 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=user001, strategyId=100003, ruleModel=default, awardId=107
+25-09-23.16:34:46.993 [main            ] INFO  LogicChainTest         - 测试结果：107
+25-09-23.16:34:47.070 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.16:34:47.108 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.16:35:56.383 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.12 on u_uta with PID 64060 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.16:35:56.384 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+25-09-23.16:35:57.127 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.16:35:57.130 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.16:35:57.159 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+25-09-23.16:35:57.821 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.16:35:58.004 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.16:35:58.171 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.16:35:58.191 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.16:36:01.217 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.16:36:01.302 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.266 seconds (JVM running for 6.286)
+25-09-23.16:36:02.526 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.16:36:02.764 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.16:36:02.829 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:36:02.839 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:36:02.845 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:36:02.852 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】开始 userId=user001, strategyId=100001, ruleModel=rule_weight
+25-09-23.16:36:02.950 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】放行 userId=user001, strategyId=100001, ruleModel=rule_weight
+25-09-23.16:36:02.950 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】开始 userId=user001, strategyId=100001, ruleModel=rule_blacklist
+25-09-23.16:36:02.953 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】接管 userId=user001, strategyId=100001, ruleModel=rule_blacklist, awardId=100
+25-09-23.16:36:02.953 [main            ] INFO  LogicChainTest         - 测试结果：100
+25-09-23.16:36:02.991 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.16:36:03.014 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.16:37:17.771 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.12 on u_uta with PID 115088 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.16:37:17.772 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+25-09-23.16:37:18.529 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.16:37:18.531 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.16:37:18.564 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-09-23.16:37:19.270 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.16:37:19.473 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.16:37:19.641 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.16:37:19.662 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.16:37:22.630 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.16:37:22.704 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.287 seconds (JVM running for 6.203)
+25-09-23.16:37:23.860 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.16:37:24.040 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.16:37:24.102 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:37:24.110 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:37:24.116 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:37:24.124 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】开始 userId=utaaa, strategyId=100001, ruleModel=rule_weight
+25-09-23.16:37:24.189 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】放行 userId=utaaa, strategyId=100001, ruleModel=rule_weight
+25-09-23.16:37:24.189 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】开始 userId=utaaa, strategyId=100001, ruleModel=rule_blacklist
+25-09-23.16:37:24.191 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】放行 userId=utaaa, strategyId=100001, ruleModel=rule_blacklist
+25-09-23.16:37:24.195 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100001, ruleModel=default, awardId=101
+25-09-23.16:37:24.195 [main            ] INFO  LogicChainTest         - 测试结果：101
+25-09-23.16:37:24.221 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.16:37:24.233 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-23.16:38:41.764 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.12 on u_uta with PID 104068 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-23.16:38:41.765 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+25-09-23.16:38:42.472 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-23.16:38:42.474 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-23.16:38:42.516 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+25-09-23.16:38:43.161 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-23.16:38:43.344 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-23.16:38:43.517 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.16:38:43.534 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-23.16:38:46.364 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-23.16:38:46.452 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.016 seconds (JVM running for 6.004)
+25-09-23.16:38:47.735 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-23.16:38:47.936 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-23.16:38:48.001 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:38:48.009 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:38:48.015 [main            ] INFO  LogicChainTest         - 测试结果：true
+25-09-23.16:38:48.025 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】开始 userId=utaaa, strategyId=100001, ruleModel=rule_weight
+25-09-23.16:38:48.129 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】接管 userId=utaaa, strategyId=100001, ruleModel=rule_weight, awardId=102
+25-09-23.16:38:48.130 [main            ] INFO  LogicChainTest         - 测试结果：102
+25-09-23.16:38:48.154 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-23.16:38:48.172 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

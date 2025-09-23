@@ -33,6 +33,8 @@ public interface IStrategyRepository {
 
     String getStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
 
+    String getStrategyRuleValue(Long strategyId, String ruleModel);
+
     AwardRuleModelVO getAwardRuleModels(Long strategyId, Integer randomAwardId);
 }
 

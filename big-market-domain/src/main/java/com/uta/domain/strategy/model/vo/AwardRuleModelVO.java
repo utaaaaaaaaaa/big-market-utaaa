@@ -1,6 +1,6 @@
 package com.uta.domain.strategy.model.vo;
 
-import com.uta.domain.strategy.service.rule.factory.DefaultLogicFactory;
+import com.uta.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import com.uta.types.common.Constants;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
