@@ -4,12 +4,17 @@ import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.uta.domain.strategy.model.entity.RaffleFactorEntity;
 import com.uta.domain.strategy.model.entity.RuleActionEntity;
 import com.uta.domain.strategy.model.entity.RuleMatterEntity;
+import com.uta.domain.strategy.model.vo.AwardRuleModelVO;
 import com.uta.domain.strategy.model.vo.RuleLogicCheckTypeVO;
+import com.uta.domain.strategy.model.vo.RuleTreeVO;
 import com.uta.domain.strategy.repository.IStrategyRepository;
 import com.uta.domain.strategy.service.armory.IStrategyDispatch;
+import com.uta.domain.strategy.service.rule.chain.ILogicChain;
 import com.uta.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import com.uta.domain.strategy.service.rule.filter.ILogicFilter;
 import com.uta.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
+import com.uta.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
+import com.uta.domain.strategy.service.rule.tree.factory.engine.IDecisionTreeEngine;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -27,8 +32,29 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
     @Resource
     private DefaultLogicFactory factory;
 
-    public DefaultRaffleStrategy(IStrategyRepository repository, IStrategyDispatch strategyDispatch, DefaultChainFactory factory) {
-        super(repository, strategyDispatch, factory);
+    public DefaultRaffleStrategy(IStrategyRepository repository, IStrategyDispatch strategyDispatch, DefaultChainFactory factory, DefaultChainFactory chainFactory, DefaultTreeFactory treeFactory) {
+        super(repository, strategyDispatch, factory, chainFactory, treeFactory);
+    }
+
+    @Override
+    public DefaultChainFactory.StrategyAwardVO raffleLogicChain(String userId, Long strategyId) {
+        ILogicChain logicChain = chainFactory.openLogicChain(strategyId);
+        return logicChain.logic(userId,strategyId);
+    }
+
+    @Override
+    public DefaultTreeFactory.StrategyAwardVO raffleLogicTree(String userId, Long strategyId, Integer awardId) {
+        AwardRuleModelVO awardRuleModels = repository.getAwardRuleModels(strategyId, awardId);
+        if (null == awardRuleModels) {
+            return DefaultTreeFactory.StrategyAwardVO.builder().awardId(awardId).build();
+        }
+        RuleTreeVO ruleTreeVO = repository.getRuleTreeVOByTreeId(awardRuleModels.getRuleModels());
+        if (null == ruleTreeVO) {
+            throw new RuntimeException("存在抽奖策略配置的规则模型 Key，未在库表 rule_tree、rule_tree_node、rule_tree_line 配置对应的规则树信息 " + awardRuleModels.getRuleModels());
+        }
+        IDecisionTreeEngine treeEngine = treeFactory.openDecisionTree(ruleTreeVO);
+        return treeEngine.process(userId, strategyId, awardId);
+
     }
 
     @Override

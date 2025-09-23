@@ -34,8 +34,8 @@ public class LogicChainTest {
     @Test
     public void test_LogicChain_rule_blacklist() {
         ILogicChain logicChain = defaultChainFactory.openLogicChain(100001L);
-        Integer awardId = logicChain.logic("user001", 100001L);
-        log.info("测试结果：{}", awardId);
+        DefaultChainFactory.StrategyAwardVO logic = logicChain.logic("user001", 100001L);
+        log.info("测试结果：{}", logic.toString());
     }
 
     @Test
@@ -44,15 +44,15 @@ public class LogicChainTest {
         ReflectionTestUtils.setField(ruleWeightLogicChain, "userScore", 6900L);
 
         ILogicChain logicChain = defaultChainFactory.openLogicChain(100001L);
-        Integer awardId = logicChain.logic("utaaa", 100001L);
-        log.info("测试结果：{}", awardId);
+        DefaultChainFactory.StrategyAwardVO logic = logicChain.logic("utaaa", 100001L);
+        log.info("测试结果：{}", logic.toString());
     }
 
     @Test
     public void test_LogicChain_rule_default() {
         ILogicChain logicChain = defaultChainFactory.openLogicChain(100001L);
-        Integer awardId = logicChain.logic("utaaa", 100001L);
-        log.info("测试结果：{}", awardId);
+        DefaultChainFactory.StrategyAwardVO logic = logicChain.logic("utaaa", 100001L);
+        log.info("测试结果：{}", logic.toString());
     }
 
 

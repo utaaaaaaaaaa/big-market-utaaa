@@ -1,510 +1,281 @@
-25-09-23.11:46:39.828 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 113904 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.11:46:39.830 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-25-09-23.11:46:40.824 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.11:46:40.828 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.11:46:40.876 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
-25-09-23.11:46:41.672 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.11:46:41.861 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.11:46:42.043 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:46:42.061 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:46:44.784 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.11:46:44.864 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.513 seconds (JVM running for 6.657)
-25-09-23.11:46:45.347 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.11:46:45.505 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.11:46:45.733 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.11:46:45.748 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.11:48:12.651 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 104500 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.11:48:12.653 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-25-09-23.11:48:13.444 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.11:48:13.446 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.11:48:13.479 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-25-09-23.11:48:14.258 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.11:48:14.407 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.11:48:14.549 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:48:14.568 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:48:17.202 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.11:48:17.287 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 4.99 seconds (JVM running for 5.848)
-25-09-23.11:48:17.764 [redisson-netty-1-2] ERROR CommandDecoder         - Unable to decode data. channel: [id: 0xfa0dbbbf, L:/127.0.0.1:64092 - R:127.0.0.1/127.0.0.1:16379], reply: ReplayingDecoderByteBuf(ridx=497, widx=497), command: (GET), promise: java.util.concurrent.CompletableFuture@5ff95526[Not completed, 1 dependents], params: [big_market_strategy_award_key_100003]
-com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (START_OBJECT), expected VALUE_STRING: need JSON String that contains type id (for subtype of java.lang.Object)
- at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-	at com.fasterxml.jackson.databind.DeserializationContext.wrongTokenException(DeserializationContext.java:1939)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportWrongTokenException(DeserializationContext.java:1673)
-	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._locateTypeId(AsArrayTypeDeserializer.java:164)
-	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:96)
-	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromArray(AsArrayTypeDeserializer.java:53)
-	at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer.deserializeTypedFromAny(AsPropertyTypeDeserializer.java:211)
-	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla.deserializeWithType(UntypedObjectDeserializer.java:781)
-	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666)
-	at org.redisson.codec.JsonJacksonCodec$2.decode(JsonJacksonCodec.java:99)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:436)
-	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:216)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
-	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-25-09-23.11:48:17.772 [redisson-netty-1-2] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0xfa0dbbbf, L:/127.0.0.1:64092 - R:127.0.0.1/127.0.0.1:16379]
-io.netty.handler.codec.DecoderException: com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (START_OBJECT), expected VALUE_STRING: need JSON String that contains type id (for subtype of java.lang.Object)
- at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
-	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:421)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Unexpected token (START_OBJECT), expected VALUE_STRING: need JSON String that contains type id (for subtype of java.lang.Object)
- at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 2]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-	at com.fasterxml.jackson.databind.DeserializationContext.wrongTokenException(DeserializationContext.java:1939)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportWrongTokenException(DeserializationContext.java:1673)
-	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._locateTypeId(AsArrayTypeDeserializer.java:164)
-	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:96)
-	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromArray(AsArrayTypeDeserializer.java:53)
-	at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer.deserializeTypedFromAny(AsPropertyTypeDeserializer.java:211)
-	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla.deserializeWithType(UntypedObjectDeserializer.java:781)
-	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3666)
-	at org.redisson.codec.JsonJacksonCodec$2.decode(JsonJacksonCodec.java:99)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:436)
-	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:216)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
-	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
-	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
-	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
-	... 17 common frames omitted
-25-09-23.11:48:43.376 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 100676 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.11:48:43.377 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-25-09-23.11:48:44.094 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.11:48:44.098 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.11:48:44.132 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-25-09-23.11:48:44.820 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.11:48:45.012 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.11:48:45.193 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:48:45.211 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:48:48.074 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.11:48:48.159 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.141 seconds (JVM running for 6.001)
-25-09-23.11:48:48.762 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.11:48:48.958 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.11:48:49.038 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.11:48:49.048 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.11:51:05.011 [main            ] INFO  StrategyArmoryTest     - Starting StrategyArmoryTest using Java 17.0.12 on u_uta with PID 113256 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.11:51:05.012 [main            ] INFO  StrategyArmoryTest     - The following 1 profile is active: "dev"
-25-09-23.11:51:05.816 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.11:51:05.819 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.11:51:05.845 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-25-09-23.11:51:06.530 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.11:51:06.729 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.11:51:06.923 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:51:06.939 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:51:09.735 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.11:51:09.818 [main            ] INFO  StrategyArmoryTest     - Started StrategyArmoryTest in 5.198 seconds (JVM running for 6.143)
-25-09-23.11:51:10.426 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.11:51:10.630 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.11:51:10.697 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】107
-25-09-23.11:51:10.700 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】109
-25-09-23.11:51:10.702 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】107
-25-09-23.11:51:10.705 [main            ] INFO  StrategyArmoryTest     - 【抽奖结果】107
-25-09-23.11:51:10.718 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.11:51:10.726 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.11:53:18.978 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 120216 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.11:53:18.979 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.11:53:19.863 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.11:53:19.865 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.11:53:19.897 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-25-09-23.11:53:20.731 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.11:53:20.912 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.11:53:21.143 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:53:21.162 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:53:23.999 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.11:53:24.084 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.49 seconds (JVM running for 6.365)
-25-09-23.11:55:24.102 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 116548 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.11:55:24.104 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.11:55:24.873 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.11:55:24.875 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.11:55:24.909 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-25-09-23.11:55:25.622 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.11:55:25.807 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.11:55:25.979 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:55:25.996 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:55:29.008 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.11:55:29.097 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.381 seconds (JVM running for 6.436)
-25-09-23.11:55:43.229 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 35908 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.11:55:43.231 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.11:55:43.995 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.11:55:43.997 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.11:55:44.032 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-25-09-23.11:55:44.733 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.11:55:44.915 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.11:55:45.101 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:55:45.119 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.11:55:48.052 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.11:55:48.136 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.254 seconds (JVM running for 6.13)
-25-09-23.11:55:48.718 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.11:55:48.923 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.11:55:48.987 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.11:55:48.996 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.12:01:07.660 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 109924 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.12:01:07.661 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.12:01:08.428 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.12:01:08.429 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.12:01:08.460 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-25-09-23.12:01:09.207 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.12:01:09.404 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.12:01:09.582 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:01:09.601 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:01:12.633 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.12:01:12.712 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.417 seconds (JVM running for 6.327)
-25-09-23.12:01:13.341 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.12:01:13.544 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.12:01:13.617 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.12:01:13.627 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.12:01:43.204 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 110600 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.12:01:43.205 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.12:01:43.989 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.12:01:43.994 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.12:01:44.033 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-25-09-23.12:01:44.734 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.12:01:44.915 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.12:01:45.087 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:01:45.103 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:01:47.934 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.12:01:48.012 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.196 seconds (JVM running for 6.182)
-25-09-23.12:01:48.656 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.12:01:48.800 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.12:01:48.840 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
-25-09-23.12:01:48.880 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-23.12:01:48.880 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
-25-09-23.12:01:48.880 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=107
-25-09-23.12:01:48.894 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.12:01:48.902 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.12:03:22.829 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 119380 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.12:03:22.830 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.12:03:23.601 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.12:03:23.605 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.12:03:23.648 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
-25-09-23.12:03:24.369 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.12:03:24.550 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.12:03:24.753 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:03:24.774 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:03:28.010 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.12:03:28.093 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.641 seconds (JVM running for 6.505)
-25-09-23.12:03:28.734 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.12:03:28.905 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.12:03:28.939 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
-25-09-23.12:03:28.959 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-23.12:03:28.959 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
-25-09-23.12:03:28.960 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=107
-25-09-23.12:03:28.974 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.12:03:28.982 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.12:04:06.348 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 109592 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.12:04:06.349 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.12:04:07.143 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.12:04:07.146 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.12:04:07.196 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
-25-09-23.12:04:07.906 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.12:04:08.082 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.12:04:08.283 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:04:08.302 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:04:11.187 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.12:04:11.277 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.33 seconds (JVM running for 6.29)
-25-09-23.12:04:11.962 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.12:04:12.113 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.12:04:12.147 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
-25-09-23.12:04:12.161 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-23.12:04:12.162 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
-25-09-23.12:04:12.162 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=107, awardKey=null, awardConfig=null, awardDesc=null)
-25-09-23.12:04:12.176 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.12:04:12.184 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.12:04:23.481 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 115664 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.12:04:23.482 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.12:04:24.380 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.12:04:24.386 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.12:04:24.433 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-25-09-23.12:04:25.179 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.12:04:25.415 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.12:04:25.622 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:04:25.647 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:04:29.052 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.12:04:29.168 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.137 seconds (JVM running for 7.159)
-25-09-23.12:04:29.852 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.12:04:30.018 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.12:04:51.308 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s289ms744µs900ns).
-25-09-23.12:05:26.526 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
-25-09-23.12:05:26.612 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-23.12:06:54.238 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m32s550ms703µs600ns).
-25-09-23.12:06:54.244 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
-25-09-23.12:06:54.245 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=107, awardKey=null, awardConfig=null, awardDesc=null)
-25-09-23.12:06:54.261 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.12:06:54.273 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.12:06:58.658 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 119376 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.12:06:58.659 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.12:06:59.645 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.12:06:59.650 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.12:06:59.704 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
-25-09-23.12:07:01.079 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.12:07:01.499 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.12:07:01.972 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:07:01.995 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:07:06.460 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.12:07:06.564 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 8.391 seconds (JVM running for 9.559)
-25-09-23.12:07:08.062 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.12:07:08.394 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.12:08:21.546 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s987ms543µs300ns).
-25-09-23.12:09:52.699 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m31s152ms747µs400ns).
-25-09-23.12:09:52.703 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
-25-09-23.12:11:30.980 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m38s281ms700µs800ns).
-25-09-23.12:11:30.987 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-23.12:13:24.486 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m53s505ms483µs900ns).
-25-09-23.12:14:05.283 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
-25-09-23.12:14:05.283 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=107, awardKey=null, awardConfig=null, awardDesc=null)
-25-09-23.12:14:05.371 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.12:14:05.413 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.12:14:16.301 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 105556 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.12:14:16.302 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.12:14:17.182 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.12:14:17.187 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.12:14:17.239 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
-25-09-23.12:14:18.484 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.12:14:18.802 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.12:14:19.158 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:14:19.175 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:14:23.108 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.12:14:23.206 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.336 seconds (JVM running for 8.437)
-25-09-23.12:14:24.301 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.12:14:24.599 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.12:14:29.033 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
-25-09-23.12:14:29.075 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-23.12:14:29.077 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
-25-09-23.12:14:29.077 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=107, awardKey=null, awardConfig=null, awardDesc=null)
-25-09-23.12:14:29.125 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.12:14:29.141 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.12:15:32.978 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 100892 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.12:15:32.979 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.12:15:33.786 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.12:15:33.787 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.12:15:33.821 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-25-09-23.12:15:34.536 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.12:15:34.714 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.12:15:34.903 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:15:34.920 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.12:15:37.686 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.12:15:37.774 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.17 seconds (JVM running for 6.035)
-25-09-23.12:15:38.384 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.12:15:38.574 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.12:15:38.614 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
-25-09-23.12:15:38.631 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-23.12:15:38.631 [main            ] INFO  AbstractRaffleStrategy - 【临时日志】中奖规则拦截，通过抽奖后规则rule_lock_award走兜底奖励
-25-09-23.12:15:38.632 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
-25-09-23.12:15:38.632 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=null, awardKey=null, awardConfig=null, awardDesc=中奖规则拦截，通过抽奖后规则rule_lock_award走兜底奖励)
-25-09-23.12:15:38.646 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.12:15:38.658 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.13:29:13.421 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 117932 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.13:29:13.422 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.13:29:14.249 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.13:29:14.251 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.13:29:14.288 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-25-09-23.13:29:14.954 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.13:29:15.130 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.13:29:15.308 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.13:29:15.330 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.13:29:18.174 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.13:29:18.243 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.173 seconds (JVM running for 6.066)
-25-09-23.13:29:18.844 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.13:29:19.034 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.13:29:19.096 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
-25-09-23.13:29:19.116 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: rule_lock code: 0001 info: 接管，后续的流程，受规则引擎影响
-25-09-23.13:29:19.117 [main            ] INFO  AbstractRaffleStrategy - 【临时日志】中奖规则拦截，通过抽奖后规则rule_lock_award走兜底奖励
-25-09-23.13:29:19.118 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
-25-09-23.13:29:19.118 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=null, awardKey=null, awardConfig=null, awardDesc=中奖规则拦截，通过抽奖后规则rule_lock_award走兜底奖励)
-25-09-23.13:29:19.131 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.13:29:19.138 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.13:34:30.233 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 112940 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.13:34:30.235 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.13:34:31.006 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.13:34:31.009 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.13:34:31.038 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-25-09-23.13:34:31.708 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.13:34:31.884 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.13:34:32.082 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.13:34:32.097 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.13:34:35.094 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.13:34:35.178 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.269 seconds (JVM running for 6.144)
-25-09-23.13:34:35.833 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.13:34:36.043 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.13:34:36.100 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
-25-09-23.13:34:36.119 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: null code: 0000 info: 放行，执行后续流程，不受规则引擎影响
-25-09-23.13:34:36.120 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
-25-09-23.13:34:36.120 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=107, awardKey=null, awardConfig=null, awardDesc=null)
-25-09-23.13:34:36.134 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.13:34:36.140 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.13:35:04.275 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 115560 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.13:35:04.276 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-09-23.13:35:05.067 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.13:35:05.070 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.13:35:05.113 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-25-09-23.13:35:05.853 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.13:35:06.047 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.13:35:06.233 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.13:35:06.252 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.13:35:09.164 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.13:35:09.272 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.363 seconds (JVM running for 6.231)
-25-09-23.13:35:09.867 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.13:35:10.022 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.13:35:10.057 [main            ] INFO  RuleLockLogicFilter    - 【规则过滤】-次数锁 userId:utaaa strategyId:100003 ruleModel:rule_lock
-25-09-23.13:35:10.080 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: utaaa ruleModel: null code: 0000 info: 放行，执行后续流程，不受规则引擎影响
-25-09-23.13:35:10.080 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100003, awardId=null)
-25-09-23.13:35:10.081 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=RaffleAwardEntity(strategyId=null, awardId=108, awardKey=null, awardConfig=null, awardDesc=null)
-25-09-23.13:35:10.094 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.13:35:10.099 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.16:33:53.803 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.12 on u_uta with PID 114268 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.16:33:53.803 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-25-09-23.16:33:54.553 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.16:33:54.555 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.16:33:54.590 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-25-09-23.16:33:55.272 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.16:33:55.449 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.16:33:55.643 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.16:33:55.667 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.16:33:58.276 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.16:33:58.362 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.884 seconds (JVM running for 5.823)
-25-09-23.16:33:59.672 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.16:33:59.939 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.16:34:00.010 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.16:34:00.018 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.16:34:40.128 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.12 on u_uta with PID 118496 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.16:34:40.129 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-25-09-23.16:34:41.086 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.16:34:41.089 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.16:34:41.125 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-25-09-23.16:34:41.852 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.16:34:42.045 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.16:34:42.215 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.16:34:42.232 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.16:34:45.071 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.16:34:45.215 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.464 seconds (JVM running for 6.405)
-25-09-23.16:34:46.589 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.16:34:46.794 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.16:34:46.877 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:34:46.973 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:34:46.982 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:34:46.993 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=user001, strategyId=100003, ruleModel=default, awardId=107
-25-09-23.16:34:46.993 [main            ] INFO  LogicChainTest         - 测试结果：107
-25-09-23.16:34:47.070 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.16:34:47.108 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.16:35:56.383 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.12 on u_uta with PID 64060 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.16:35:56.384 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-25-09-23.16:35:57.127 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.16:35:57.130 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.16:35:57.159 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-25-09-23.16:35:57.821 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.16:35:58.004 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.16:35:58.171 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.16:35:58.191 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.16:36:01.217 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.16:36:01.302 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.266 seconds (JVM running for 6.286)
-25-09-23.16:36:02.526 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.16:36:02.764 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.16:36:02.829 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:36:02.839 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:36:02.845 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:36:02.852 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】开始 userId=user001, strategyId=100001, ruleModel=rule_weight
-25-09-23.16:36:02.950 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】放行 userId=user001, strategyId=100001, ruleModel=rule_weight
-25-09-23.16:36:02.950 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】开始 userId=user001, strategyId=100001, ruleModel=rule_blacklist
-25-09-23.16:36:02.953 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】接管 userId=user001, strategyId=100001, ruleModel=rule_blacklist, awardId=100
-25-09-23.16:36:02.953 [main            ] INFO  LogicChainTest         - 测试结果：100
-25-09-23.16:36:02.991 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.16:36:03.014 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.16:37:17.771 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.12 on u_uta with PID 115088 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.16:37:17.772 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-25-09-23.16:37:18.529 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.16:37:18.531 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.16:37:18.564 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-25-09-23.16:37:19.270 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.16:37:19.473 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.16:37:19.641 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.16:37:19.662 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.16:37:22.630 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.16:37:22.704 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.287 seconds (JVM running for 6.203)
-25-09-23.16:37:23.860 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.16:37:24.040 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.16:37:24.102 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:37:24.110 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:37:24.116 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:37:24.124 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】开始 userId=utaaa, strategyId=100001, ruleModel=rule_weight
-25-09-23.16:37:24.189 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】放行 userId=utaaa, strategyId=100001, ruleModel=rule_weight
-25-09-23.16:37:24.189 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】开始 userId=utaaa, strategyId=100001, ruleModel=rule_blacklist
-25-09-23.16:37:24.191 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】放行 userId=utaaa, strategyId=100001, ruleModel=rule_blacklist
-25-09-23.16:37:24.195 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100001, ruleModel=default, awardId=101
-25-09-23.16:37:24.195 [main            ] INFO  LogicChainTest         - 测试结果：101
-25-09-23.16:37:24.221 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.16:37:24.233 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.16:38:41.764 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 17.0.12 on u_uta with PID 104068 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.16:38:41.765 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
-25-09-23.16:38:42.472 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.16:38:42.474 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.16:38:42.516 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
-25-09-23.16:38:43.161 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.16:38:43.344 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.16:38:43.517 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.16:38:43.534 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.16:38:46.364 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.16:38:46.452 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 5.016 seconds (JVM running for 6.004)
-25-09-23.16:38:47.735 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-09-23.16:38:47.936 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-09-23.16:38:48.001 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:38:48.009 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:38:48.015 [main            ] INFO  LogicChainTest         - 测试结果：true
-25-09-23.16:38:48.025 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】开始 userId=utaaa, strategyId=100001, ruleModel=rule_weight
-25-09-23.16:38:48.129 [main            ] INFO  RuleWeightLogicChain   - 【抽奖责任链】-【权重】接管 userId=utaaa, strategyId=100001, ruleModel=rule_weight, awardId=102
-25-09-23.16:38:48.130 [main            ] INFO  LogicChainTest         - 测试结果：102
-25-09-23.16:38:48.154 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-09-23.16:38:48.172 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-09-23.20:21:17.622 [main            ] INFO  LogicTreeTest          - Starting LogicTreeTest using Java 17.0.12 on u_uta with PID 74232 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-23.20:21:17.626 [main            ] INFO  LogicTreeTest          - The following 1 profile is active: "dev"
-25-09-23.20:21:20.760 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-23.20:21:20.769 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-23.20:21:20.905 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 0 Redis repository interfaces.
-25-09-23.20:21:23.719 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-23.20:21:24.442 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-23.20:21:25.194 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.20:21:25.270 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-23.20:21:35.957 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-23.20:21:36.282 [main            ] INFO  LogicTreeTest          - Started LogicTreeTest in 20.005 seconds (JVM running for 23.956)
-25-09-23.20:21:38.032 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_lock code:0000
-25-09-23.20:21:38.035 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_stock code:0001
-25-09-23.20:21:38.039 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_luck_award code:0001
-25-09-23.20:21:38.477 [main            ] INFO  LogicTreeTest          - 测试结果：{"awardId":101,"awardRuleValue":"1,100"}
+25-09-24.00:00:10.966 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 16396 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.00:00:10.967 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.00:00:12.051 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.00:00:12.053 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.00:00:12.096 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+25-09-24.00:00:13.144 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.00:00:13.335 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.00:00:13.560 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.00:00:13.587 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.00:00:18.407 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.00:00:18.510 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 8.013 seconds (JVM running for 9.31)
+25-09-24.00:01:04.986 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 106384 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.00:01:04.987 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.00:01:06.127 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.00:01:06.130 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.00:01:06.180 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+25-09-24.00:01:07.206 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.00:01:07.394 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.00:01:07.574 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.00:01:07.598 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.00:01:12.389 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.00:01:12.480 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 8.012 seconds (JVM running for 9.367)
+25-09-24.00:01:13.122 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.00:01:13.338 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.00:01:13.501 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.00:01:16.704 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.00:01:16.719 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.00:02:36.256 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 104568 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.00:02:36.257 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.00:02:37.334 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.00:02:37.338 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.00:02:37.386 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+25-09-24.00:02:38.429 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.00:02:38.644 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.00:02:38.824 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.00:02:38.845 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.00:02:43.532 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.00:02:43.623 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.843 seconds (JVM running for 8.982)
+25-09-24.00:02:44.473 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:00:58.722 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 117224 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:00:58.723 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:00:59.546 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:00:59.548 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:00:59.585 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+25-09-24.02:01:00.447 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:01:00.657 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:01:00.801 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:01:00.820 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:01:04.375 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:01:04.472 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.146 seconds (JVM running for 7.136)
+25-09-24.02:01:05.037 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:02:47.203 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 120000 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:02:47.204 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:02:48.141 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:02:48.143 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:02:48.177 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+25-09-24.02:02:49.041 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:02:49.239 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:02:49.387 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:02:49.403 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:02:52.967 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:02:53.055 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.252 seconds (JVM running for 7.311)
+25-09-24.02:02:53.688 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.02:02:53.865 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.02:02:53.923 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:02:57.044 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.02:02:57.051 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.02:03:39.940 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 103856 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:03:39.942 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:03:40.709 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:03:40.716 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:03:40.754 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+25-09-24.02:03:41.596 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:03:41.746 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:03:41.891 [redisson-netty-1-6] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:03:41.905 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:03:45.309 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:03:45.379 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.837 seconds (JVM running for 6.833)
+25-09-24.02:03:45.954 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:09:46.643 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 116356 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:09:46.644 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:09:47.574 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:09:47.577 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:09:47.617 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+25-09-24.02:09:48.538 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:09:48.706 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:09:48.837 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:09:48.855 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:09:52.328 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:09:52.387 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.199 seconds (JVM running for 7.22)
+25-09-24.02:09:52.938 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:10:49.102 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 120072 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:10:49.103 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:10:50.032 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:10:50.034 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:10:50.072 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+25-09-24.02:10:50.873 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:10:51.033 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:10:51.182 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:10:51.200 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:10:54.672 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:10:54.736 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.073 seconds (JVM running for 7.218)
+25-09-24.02:10:55.345 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:12:25.564 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 87460 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:12:25.566 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:12:26.463 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:12:26.465 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:12:26.504 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+25-09-24.02:12:27.390 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:12:27.549 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:12:27.690 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:12:27.709 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:12:30.992 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:12:31.063 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.891 seconds (JVM running for 6.853)
+25-09-24.02:12:31.665 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:12:41.375 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.02:12:43.187 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.02:12:52.389 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.02:12:53.133 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.02:12:53.329 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.02:13:06.917 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.02:13:06.927 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.02:13:45.834 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 121660 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:13:45.835 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:13:46.815 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:13:46.818 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:13:46.861 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+25-09-24.02:13:47.792 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:13:47.982 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:13:48.138 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:13:48.156 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:13:51.742 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:13:51.819 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.431 seconds (JVM running for 7.398)
+25-09-24.02:13:52.457 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:13:59.643 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.02:13:59.645 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.02:14:04.619 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.02:14:05.324 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.02:15:53.929 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.02:21:16.388 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m32s233ms356µs).
+25-09-24.02:21:16.412 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.02:21:16.441 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.02:21:24.280 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 119656 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:21:24.281 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:21:25.090 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:21:25.092 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:21:25.130 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+25-09-24.02:21:26.006 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:21:26.168 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:21:26.321 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:21:26.339 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:21:29.725 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:21:29.818 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.95 seconds (JVM running for 6.908)
+25-09-24.02:21:30.432 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:21:30.442 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.02:21:30.443 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.02:21:33.593 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.02:21:34.314 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.02:21:44.824 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.02:22:25.222 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s802ms247µs400ns).
+25-09-24.02:22:29.628 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.02:22:29.636 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.02:22:56.210 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 115268 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:22:56.211 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:22:57.037 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:22:57.039 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:22:57.082 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+25-09-24.02:22:57.909 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:22:58.087 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:22:58.235 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:22:58.254 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:23:01.701 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:23:01.784 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.986 seconds (JVM running for 6.993)
+25-09-24.02:23:02.412 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:23:02.418 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.02:23:02.419 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.02:23:07.263 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.02:23:07.412 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.02:23:43.803 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.02:23:43.822 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.02:23:43.833 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.02:23:50.169 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 117764 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:23:50.170 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:23:51.001 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:23:51.004 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:23:51.040 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+25-09-24.02:23:51.871 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:23:52.031 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:23:52.163 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:23:52.179 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:23:55.737 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:23:55.819 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.072 seconds (JVM running for 6.982)
+25-09-24.02:23:56.467 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:23:56.473 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=101
+25-09-24.02:23:56.473 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 101 rule_default
+25-09-24.02:23:56.487 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.02:23:56.687 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.02:24:06.816 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.02:24:06.836 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.02:24:06.842 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.02:24:58.660 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 118048 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:24:58.661 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:24:59.450 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:24:59.453 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:24:59.496 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+25-09-24.02:25:00.274 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:25:00.424 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:25:00.579 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:25:00.597 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:25:03.881 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:25:03.971 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.702 seconds (JVM running for 6.639)
+25-09-24.02:25:04.582 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:25:04.588 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.02:25:04.588 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.02:25:04.602 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.02:25:04.758 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.02:25:05.783 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.02:25:32.786 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.02:25:32.791 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.02:25:39.971 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 85668 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:25:39.972 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:25:40.900 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:25:40.902 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:25:40.937 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+25-09-24.02:25:41.773 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:25:41.930 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:25:42.082 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:25:42.100 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:25:45.372 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:25:45.438 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.846 seconds (JVM running for 6.879)
+25-09-24.02:25:45.972 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:25:45.977 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.02:25:45.978 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.02:25:45.992 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.02:25:46.144 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.02:25:46.192 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.02:28:08.110 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m51s965ms853µs).
+25-09-24.02:28:08.134 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.02:28:08.164 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.02:28:15.221 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 116436 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:28:15.222 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:28:16.074 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:28:16.084 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:28:16.121 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+25-09-24.02:28:16.922 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:28:17.088 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:28:17.236 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:28:17.252 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:28:20.926 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:28:21.009 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.169 seconds (JVM running for 7.111)
+25-09-24.02:28:21.552 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:28:21.561 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.02:28:21.562 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.02:28:21.579 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.02:28:21.737 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.02:28:59.680 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.02:28:59.690 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.02:32:40.968 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 121524 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.02:32:40.969 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.02:32:41.794 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.02:32:41.797 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.02:32:41.834 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+25-09-24.02:32:42.713 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.02:32:42.900 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.02:32:43.053 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:32:43.071 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.02:32:46.413 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.02:32:46.478 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.925 seconds (JVM running for 6.922)
+25-09-24.02:32:46.992 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.02:32:46.998 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.02:32:46.999 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.02:32:47.013 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.02:32:47.193 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.02:32:50.402 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.02:32:57.704 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-24.02:32:59.144 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+25-09-24.02:32:59.144 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 utaaa 100006 101 1,100
+25-09-24.02:32:59.147 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100006, awardId=null)
+25-09-24.02:32:59.147 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=101
+25-09-24.02:32:59.158 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.02:32:59.169 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

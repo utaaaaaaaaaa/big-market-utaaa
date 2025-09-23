@@ -3,7 +3,9 @@ package com.uta.domain;
 import com.uta.domain.strategy.model.entity.RaffleAwardEntity;
 import com.uta.domain.strategy.model.entity.RaffleFactorEntity;
 import com.uta.domain.strategy.service.IRaffleStrategy;
+import com.uta.domain.strategy.service.armory.IStrategyArmory;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,15 +17,20 @@ public class RaffleStrategyTest {
     @Autowired
     private IRaffleStrategy raffleStrategy;
 
+    @Autowired
+    private IStrategyArmory strategyArmory;
+
 //    @BeforeEach
 //    public void init() {
-//        ReflectionTestUtils.setField(RuleWeightLogicFilter.class,"userScore",4500L);
+//        log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100001L));
+//        log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100002L));
 //    }
 
     @Test
     public void testPerformRaffle() {
+        log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100006L));
         RaffleFactorEntity factor = RaffleFactorEntity.builder()
-                .strategyId(100001L)
+                .strategyId(100006L)
                 .userId("utaaa")
                 .build();
 

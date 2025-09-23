@@ -4,6 +4,7 @@ import com.uta.domain.strategy.model.entity.StrategyAwardEntity;
 import com.uta.domain.strategy.model.entity.StrategyEntity;
 import com.uta.domain.strategy.model.entity.StrategyRuleEntity;
 import com.uta.domain.strategy.model.vo.AwardRuleModelVO;
+import com.uta.domain.strategy.model.vo.RuleTreeVO;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -36,6 +37,9 @@ public interface IStrategyRepository {
     String getStrategyRuleValue(Long strategyId, String ruleModel);
 
     AwardRuleModelVO getAwardRuleModels(Long strategyId, Integer randomAwardId);
+
+    RuleTreeVO getRuleTreeVOByTreeId(String treeId);
+
 }
 
 

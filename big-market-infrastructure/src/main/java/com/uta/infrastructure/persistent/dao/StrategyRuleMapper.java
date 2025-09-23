@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Select;
 * @author 24333
 * @description 针对表【strategy_rule】的数据库操作Mapper
 * @createDate 2025-09-17 20:40:14
-* @Entity persistent.pojo.StrategyRule
+* @Entity com.uta.infrastructure.persistent.po.StrategyRule
 */
 @Mapper
 public interface StrategyRuleMapper extends BaseMapper<StrategyRule> {

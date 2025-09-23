@@ -15,7 +15,7 @@ public class StrategyArmoryTest {
 
     @Test
     public void testStrategyArmory() {
-        Long id = 100003L;
+        Long id = 100006L;
         strategyArmory.assembleLotteryStrategy(id);
         log.info("【抽奖结果】{}", strategyArmory.getRandomAwardId(id));
         log.info("【抽奖结果】{}", strategyArmory.getRandomAwardId(id));

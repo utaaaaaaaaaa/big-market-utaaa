@@ -2,6 +2,7 @@ package com.uta.domain.strategy.service.rule.chain.impl;
 
 import com.uta.domain.strategy.repository.IStrategyRepository;
 import com.uta.domain.strategy.service.rule.chain.AbstractLogicChain;
+import com.uta.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import com.uta.types.common.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -19,7 +20,7 @@ public class BlackListLogicChain extends AbstractLogicChain {
     private IStrategyRepository repository;
 
     @Override
-    public Integer logic(String userId, Long strategyId) {
+    public DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId) {
         log.info("【抽奖责任链】-【黑名单】开始 userId={}, strategyId={}, ruleModel={}", userId, strategyId, ruleModel());
         String ruleValue = repository.getStrategyRuleValue(strategyId, ruleModel());
         String[] splitRuleValue = ruleValue.split(Constants.COLON);
@@ -31,7 +32,10 @@ public class BlackListLogicChain extends AbstractLogicChain {
         for (String userBlackId : userBlackIds) {
             if (userId.equals(userBlackId)) {
                 log.info("【抽奖责任链】-【黑名单】接管 userId={}, strategyId={}, ruleModel={}, awardId={}", userId, strategyId, ruleModel(), awardId);
-                return awardId;
+                return DefaultChainFactory.StrategyAwardVO.builder()
+                        .awardId(awardId)
+                        .logicModel(DefaultChainFactory.LogicModel.RULE_BLACKLIST.getCode())
+                        .build();
             }
         }
 

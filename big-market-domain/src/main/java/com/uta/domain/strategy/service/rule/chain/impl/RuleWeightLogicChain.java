@@ -5,6 +5,7 @@ import com.uta.domain.strategy.model.vo.RuleLogicCheckTypeVO;
 import com.uta.domain.strategy.repository.IStrategyRepository;
 import com.uta.domain.strategy.service.armory.IStrategyDispatch;
 import com.uta.domain.strategy.service.rule.chain.AbstractLogicChain;
+import com.uta.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import com.uta.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import com.uta.types.common.Constants;
 import lombok.extern.slf4j.Slf4j;
@@ -31,7 +32,7 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
     private Long userScore = 5500L;
 
     @Override
-    public Integer logic(String userId, Long strategyId) {
+    public DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId) {
         log.info("【抽奖责任链】-【权重】开始 userId={}, strategyId={}, ruleModel={}", userId, strategyId, ruleModel());
 
         String ruleValue = repository.getStrategyRuleValue(strategyId, ruleModel());
@@ -54,7 +55,10 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
         if (firstKey != null) {
             Integer awardId = strategyDispatch.getRandomAwardId(strategyId, map.get(firstKey));
             log.info("【抽奖责任链】-【权重】接管 userId={}, strategyId={}, ruleModel={}, awardId={}", userId, strategyId, ruleModel(), awardId);
-            return awardId;
+            return DefaultChainFactory.StrategyAwardVO.builder()
+                    .awardId(awardId)
+                    .logicModel(DefaultChainFactory.LogicModel.RULE_WEIGHT.getCode())
+                    .build();
         }
 
         log.info("【抽奖责任链】-【权重】放行 userId={}, strategyId={}, ruleModel={}", userId, strategyId, ruleModel());

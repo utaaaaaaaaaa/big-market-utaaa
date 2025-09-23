@@ -1,5 +1,7 @@
 package com.uta.domain.strategy.service.rule.chain;
 
+import com.uta.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
+
 /**
  * 责任链接口
  */
@@ -11,6 +13,6 @@ public interface ILogicChain extends ILogicChainArmory {
      * @param strategyId 策略id
      * @return 奖品id
      */
-    Integer logic(String userId, Long strategyId);
+    DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId);
 
 }

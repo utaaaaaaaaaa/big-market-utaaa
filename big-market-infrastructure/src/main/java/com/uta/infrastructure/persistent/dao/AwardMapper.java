@@ -11,7 +11,7 @@ import java.util.List;
 * @author 24333
 * @description 针对表【award】的数据库操作Mapper
 * @createDate 2025-09-17 20:40:14
-* @Entity persistent.pojo.Award
+* @Entity com.uta.infrastructure.persistent.po.Award
 */
 @Mapper
 public interface AwardMapper extends BaseMapper<Award> {
