@@ -23,6 +23,11 @@
             <artifactId>big-market-domain</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.uta</groupId>
+            <artifactId>big-market-types</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 
     </dependencies>
 </project>

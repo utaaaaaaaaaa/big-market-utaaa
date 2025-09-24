@@ -7,6 +7,7 @@ import com.uta.domain.strategy.model.entity.RuleMatterEntity;
 import com.uta.domain.strategy.model.vo.AwardRuleModelVO;
 import com.uta.domain.strategy.model.vo.RuleLogicCheckTypeVO;
 import com.uta.domain.strategy.model.vo.RuleTreeVO;
+import com.uta.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 import com.uta.domain.strategy.repository.IStrategyRepository;
 import com.uta.domain.strategy.service.armory.IStrategyDispatch;
 import com.uta.domain.strategy.service.rule.chain.ILogicChain;
@@ -102,7 +103,7 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
                     .build();
             ruleActionEntity = logicFilter.filter(ruleMatterEntity);
             // 非放行结果则顺序过滤
-            log.info("抽奖前规则过滤 userId: {} ruleModel: {} code: {} info: {}", build.getUserId(), ruleActionEntity.getRuleModel(), ruleActionEntity.getCode(), ruleActionEntity.getInfo());
+            log.info("抽奖前【规则过滤】 userId: {} ruleModel: {} code: {} info: {}", build.getUserId(), ruleActionEntity.getRuleModel(), ruleActionEntity.getCode(), ruleActionEntity.getInfo());
             if (!RuleLogicCheckTypeVO.ALLOW.getCode().equals(ruleActionEntity.getCode())){
                 return ruleActionEntity;
             }
@@ -133,7 +134,7 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
                     .build();
             ruleActionEntity = logicFilter.filter(ruleMatterEntity);
             // 非放行结果则顺序过滤
-            log.info("抽奖中规则过滤 userId: {} ruleModel: {} code: {} info: {}", build.getUserId(), ruleActionEntity.getRuleModel(), ruleActionEntity.getCode(), ruleActionEntity.getInfo());
+            log.info("抽奖中【规则过滤】 userId: {} ruleModel: {} code: {} info: {}", build.getUserId(), ruleActionEntity.getRuleModel(), ruleActionEntity.getCode(), ruleActionEntity.getInfo());
             if (!RuleLogicCheckTypeVO.ALLOW.getCode().equals(ruleActionEntity.getCode())){
                 return ruleActionEntity;
             }
@@ -141,4 +142,16 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
 
         return ruleActionEntity;
     }
+
+    @Override
+    public StrategyAwardStockKeyVO takeQueueValue() throws InterruptedException {
+        return repository.takeQueueValue();
+    }
+
+    @Override
+    public void updateStrategyAwardStock(Long strategyId, Integer awardId) {
+        repository.updateStrategyAwardStock(strategyId, awardId);
+    }
+
+
 }

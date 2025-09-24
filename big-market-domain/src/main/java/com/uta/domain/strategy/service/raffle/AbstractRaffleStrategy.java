@@ -7,6 +7,7 @@ import com.uta.domain.strategy.model.entity.RuleActionEntity;
 import com.uta.domain.strategy.model.vo.AwardRuleModelVO;
 import com.uta.domain.strategy.model.vo.RuleLogicCheckTypeVO;
 import com.uta.domain.strategy.repository.IStrategyRepository;
+import com.uta.domain.strategy.service.IRaffleStock;
 import com.uta.domain.strategy.service.IRaffleStrategy;
 import com.uta.domain.strategy.service.armory.IStrategyDispatch;
 import com.uta.domain.strategy.service.rule.chain.ILogicChain;
@@ -21,7 +22,7 @@ import lombok.extern.slf4j.Slf4j;
  * 抽奖类实现接口，从而实现对接口方法的流程规范定义（也就是对接口方法定义一个通用模板）
  */
 @Slf4j
-public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
+public abstract class AbstractRaffleStrategy implements IRaffleStrategy, IRaffleStock {
 
     protected IStrategyRepository repository;
 

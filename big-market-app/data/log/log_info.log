@@ -279,3 +279,250 @@
 25-09-24.02:32:59.147 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=101
 25-09-24.02:32:59.158 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 25-09-24.02:32:59.169 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.11:25:28.045 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 120084 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.11:25:28.045 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.11:25:28.851 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.11:25:28.852 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.11:25:28.893 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+25-09-24.11:25:29.651 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.11:25:29.797 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.11:25:29.942 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:25:29.959 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:25:33.012 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.11:25:33.089 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.375 seconds (JVM running for 6.328)
+25-09-24.11:25:33.674 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.11:25:33.680 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.11:25:33.681 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.11:25:33.694 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.11:25:33.893 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.11:25:33.960 [main            ] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:utaaa, strategyId:100006, awardId:102
+25-09-24.11:25:33.961 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.11:25:33.961 [main            ] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:utaaa strategyId:100006 awardId:102
+25-09-24.11:25:33.965 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+25-09-24.11:25:33.982 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.11:25:33.992 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.11:34:50.981 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 112516 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.11:34:50.982 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.11:34:51.717 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.11:34:51.718 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.11:34:51.756 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+25-09-24.11:34:52.489 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.11:34:52.633 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.11:34:52.765 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:34:52.789 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:34:55.678 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.11:34:55.776 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.138 seconds (JVM running for 6.118)
+25-09-24.11:34:56.235 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.11:34:56.407 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.11:34:56.504 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.11:34:56.523 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.11:34:56.524 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.11:34:56.556 [main            ] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:utaaa, strategyId:100006, awardId:102
+25-09-24.11:34:56.557 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.11:34:56.558 [main            ] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:utaaa strategyId:100006 awardId:102
+25-09-24.11:34:56.561 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+25-09-24.11:34:56.561 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 utaaa 100006 102 null
+25-09-24.11:34:56.561 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100006, awardId=null)
+25-09-24.11:34:56.562 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=102
+25-09-24.11:34:56.565 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.11:34:56.565 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.11:34:56.574 [main            ] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:utaaa, strategyId:100006, awardId:102
+25-09-24.11:34:56.574 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.11:34:56.574 [main            ] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:utaaa strategyId:100006 awardId:102
+25-09-24.11:34:56.576 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+25-09-24.11:34:56.576 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 utaaa 100006 102 null
+25-09-24.11:34:56.576 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100006, awardId=null)
+25-09-24.11:34:56.576 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=102
+25-09-24.11:34:56.580 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.11:34:56.580 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.11:34:56.585 [main            ] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:utaaa, strategyId:100006, awardId:102
+25-09-24.11:34:56.585 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.11:34:56.585 [main            ] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:utaaa strategyId:100006 awardId:102
+25-09-24.11:34:56.587 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+25-09-24.11:34:56.588 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 utaaa 100006 102 null
+25-09-24.11:34:56.588 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100006, awardId=null)
+25-09-24.11:34:56.588 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=102
+25-09-24.11:35:00.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:35:05.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:35:10.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:35:15.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:35:20.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:35:25.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:35:26.022 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.11:35:26.029 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.11:37:38.856 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 118688 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.11:37:38.858 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.11:37:39.689 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.11:37:39.695 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.11:37:39.734 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+25-09-24.11:37:40.578 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.11:37:40.737 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.11:37:40.884 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:37:40.903 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:37:44.378 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.11:37:44.441 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.976 seconds (JVM running for 6.963)
+25-09-24.11:37:51.466 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:37:52.007 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.11:37:52.014 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.11:37:52.015 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.11:37:52.031 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.11:37:52.203 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.11:37:52.256 [main            ] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:utaaa, strategyId:100006, awardId:102
+25-09-24.11:37:52.258 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.11:37:52.258 [main            ] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:utaaa strategyId:100006 awardId:102
+25-09-24.11:37:56.957 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:39:13.930 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:39:13.931 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s973ms427µs500ns).
+25-09-24.11:39:13.938 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+25-09-24.11:39:13.938 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 utaaa 100006 102 null
+25-09-24.11:39:13.938 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100006, awardId=null)
+25-09-24.11:39:13.938 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=102
+25-09-24.11:39:13.943 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=101
+25-09-24.11:39:13.944 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 101 rule_default
+25-09-24.11:39:13.974 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.11:39:13.974 [main            ] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:utaaa, strategyId:100006, awardId:101
+25-09-24.11:39:13.974 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.11:39:13.974 [main            ] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:utaaa strategyId:100006 awardId:101
+25-09-24.11:39:13.977 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+25-09-24.11:39:13.977 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 utaaa 100006 101 null
+25-09-24.11:39:13.977 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100006, awardId=null)
+25-09-24.11:39:13.977 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=101
+25-09-24.11:39:13.981 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.11:39:13.981 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.11:39:13.982 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.11:39:17.527 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 121636 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.11:39:17.529 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.11:39:18.414 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.11:39:18.417 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.11:39:18.457 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+25-09-24.11:39:19.362 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.11:39:19.523 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.11:39:19.705 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:39:19.727 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:39:23.737 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.11:39:23.859 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.756 seconds (JVM running for 7.78)
+25-09-24.11:40:17.288 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:40:54.987 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:41:08.744 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.11:41:08.750 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.11:41:08.751 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.11:43:24.020 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 121288 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.11:43:24.021 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.11:43:24.914 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.11:43:24.917 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.11:43:24.961 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+25-09-24.11:43:25.807 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.11:43:25.971 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.11:43:26.151 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:43:26.170 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:43:29.926 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.11:43:29.999 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.403 seconds (JVM running for 7.438)
+25-09-24.11:43:30.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:43:35.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:43:40.589 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:43:45.592 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:43:45.609 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.11:43:45.614 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.11:43:45.614 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.11:43:45.630 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.11:43:45.825 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.11:43:45.889 [main            ] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:utaaa, strategyId:100006, awardId:102
+25-09-24.11:43:45.890 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.11:43:45.891 [main            ] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:utaaa strategyId:100006 awardId:102
+25-09-24.11:43:45.923 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-24.11:43:45.924 [main            ] INFO  RuleLuckAwardLogicTreeNode - 【规则过滤】-兜底奖品 userId:utaaa strategyId:100006 awardId:102 ruleValue:101:1,100
+25-09-24.11:43:45.924 [main            ] INFO  RuleLuckAwardLogicTreeNode - 【规则过滤】-兜底奖品 userId:utaaa strategyId:100006 awardId:101 awardRuleValue:1,100
+25-09-24.11:43:45.924 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+25-09-24.11:43:45.924 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 utaaa 100006 101 1,100
+25-09-24.11:43:45.924 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100006, awardId=null)
+25-09-24.11:43:45.924 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=101
+25-09-24.11:43:45.936 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.11:43:45.936 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.11:43:45.940 [main            ] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:utaaa, strategyId:100006, awardId:102
+25-09-24.11:43:45.940 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.11:43:45.940 [main            ] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:utaaa strategyId:100006 awardId:102
+25-09-24.11:43:45.944 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-24.11:43:45.944 [main            ] INFO  RuleLuckAwardLogicTreeNode - 【规则过滤】-兜底奖品 userId:utaaa strategyId:100006 awardId:102 ruleValue:101:1,100
+25-09-24.11:43:45.944 [main            ] INFO  RuleLuckAwardLogicTreeNode - 【规则过滤】-兜底奖品 userId:utaaa strategyId:100006 awardId:101 awardRuleValue:1,100
+25-09-24.11:43:45.944 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+25-09-24.11:43:45.944 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 utaaa 100006 101 1,100
+25-09-24.11:43:45.944 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100006, awardId=null)
+25-09-24.11:43:45.944 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=101
+25-09-24.11:43:45.948 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.11:43:45.948 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.11:43:45.951 [main            ] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:utaaa, strategyId:100006, awardId:102
+25-09-24.11:43:45.951 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.11:43:45.951 [main            ] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:utaaa strategyId:100006 awardId:102
+25-09-24.11:43:45.955 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-24.11:43:45.955 [main            ] INFO  RuleLuckAwardLogicTreeNode - 【规则过滤】-兜底奖品 userId:utaaa strategyId:100006 awardId:102 ruleValue:101:1,100
+25-09-24.11:43:45.955 [main            ] INFO  RuleLuckAwardLogicTreeNode - 【规则过滤】-兜底奖品 userId:utaaa strategyId:100006 awardId:101 awardRuleValue:1,100
+25-09-24.11:43:45.955 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_luck_award code:0001
+25-09-24.11:43:45.955 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 utaaa 100006 101 1,100
+25-09-24.11:43:45.955 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100006, awardId=null)
+25-09-24.11:43:45.955 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=101
+25-09-24.11:43:50.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:43:50.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-24.11:43:55.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:43:55.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-24.11:44:00.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:44:00.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-24.11:44:05.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:44:10.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:44:15.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:44:20.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:44:25.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:44:30.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:44:35.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:44:40.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:44:45.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:44:50.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:44:55.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:00.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:05.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:10.018 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:15.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:20.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:25.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:30.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:35.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:40.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:45.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:50.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:45:55.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:46:00.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:46:05.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:46:05.889 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.11:46:05.896 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-24.11:53:37.679 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 17.0.12 on u_uta with PID 122752 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-24.11:53:37.681 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-09-24.11:53:38.481 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-24.11:53:38.484 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-24.11:53:38.528 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+25-09-24.11:53:39.298 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-24.11:53:39.446 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-24.11:53:39.587 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:53:39.606 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-24.11:53:42.672 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-24.11:53:42.767 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 5.469 seconds (JVM running for 6.371)
+25-09-24.11:53:43.243 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-24.11:53:43.401 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-24.11:53:43.489 [main            ] INFO  RaffleStrategyTest     - 测试结果：true
+25-09-24.11:53:43.505 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-09-24.11:53:43.506 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-09-24.11:53:43.537 [main            ] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:utaaa, strategyId:100006, awardId:102, ruleValue:1
+25-09-24.11:53:43.538 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-24.11:53:43.538 [main            ] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:utaaa strategyId:100006 awardId:102
+25-09-24.11:53:43.564 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-24.11:53:43.565 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 utaaa 100006 102 null
+25-09-24.11:53:43.566 [main            ] INFO  RaffleStrategyTest     - 请求参数：RaffleFactorEntity(userId=utaaa, strategyId=100006, awardId=null)
+25-09-24.11:53:43.566 [main            ] INFO  RaffleStrategyTest     - 请求结果：awardId=102
+25-09-24.11:53:45.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:53:50.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:53:50.017 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-24.11:53:55.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:54:00.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:54:05.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:54:10.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:54:15.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-24.11:54:19.317 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-24.11:54:19.323 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

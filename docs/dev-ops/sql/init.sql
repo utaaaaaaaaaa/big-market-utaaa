@@ -232,7 +232,7 @@ LOCK TABLES `rule_tree_node` WRITE;
 INSERT INTO `rule_tree_node` (`id`, `tree_id`, `rule_key`, `rule_desc`, `rule_value`, `create_time`, `update_time`)
 VALUES
     (1,'tree_lock','rule_lock','限定用户已完成N次抽奖后解锁','1','2024-01-27 10:03:09','2024-02-03 10:40:18'),
-    (2,'tree_lock','rule_luck_award','兜底奖品随机积分','1,100','2024-01-27 10:03:09','2024-02-03 10:40:19'),
+    (2,'tree_lock','rule_luck_award','兜底奖品随机积分','101:1,100','2024-01-27 10:03:09','2024-02-03 10:40:19'),
     (3,'tree_lock','rule_stock','库存扣减规则',NULL,'2024-01-27 10:04:43','2024-02-03 10:40:21');
 
 /*!40000 ALTER TABLE `rule_tree_node` ENABLE KEYS */;
@@ -263,7 +263,7 @@ INSERT INTO `rule_tree_node_line` (`id`, `tree_id`, `rule_node_from`, `rule_node
 VALUES
     (1,'tree_lock','rule_lock','rule_stock','EQUAL','ALLOW','2024-02-03 09:40:25','2024-02-03 10:40:25'),
     (2,'tree_lock','rule_lock','rule_luck_award','EQUAL','TAKE_OVER','2024-02-03 09:40:25','2024-02-03 10:40:26'),
-    (3,'tree_lock','rule_stock','rule_luck_award','EQUAL','TAKE_OVER','2024-02-03 09:40:25','2024-02-03 10:40:27');
+    (3,'tree_lock','rule_stock','rule_luck_award','EQUAL','ALLOW','2024-02-03 09:40:25','2024-02-03 10:40:27');
 
 /*!40000 ALTER TABLE `rule_tree_node_line` ENABLE KEYS */;
 UNLOCK TABLES;

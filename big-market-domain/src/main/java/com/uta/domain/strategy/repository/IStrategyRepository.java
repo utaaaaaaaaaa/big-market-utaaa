@@ -5,6 +5,7 @@ import com.uta.domain.strategy.model.entity.StrategyEntity;
 import com.uta.domain.strategy.model.entity.StrategyRuleEntity;
 import com.uta.domain.strategy.model.vo.AwardRuleModelVO;
 import com.uta.domain.strategy.model.vo.RuleTreeVO;
+import com.uta.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -40,6 +41,15 @@ public interface IStrategyRepository {
 
     RuleTreeVO getRuleTreeVOByTreeId(String treeId);
 
+    void cacheStrategyAwardCount(String key, Integer awardCount);
+
+    Boolean subtractionAwardStock(String key);
+
+    void awardStockConsumeSendMsgQueue(StrategyAwardStockKeyVO build);
+
+    StrategyAwardStockKeyVO takeQueueValue();
+
+    void updateStrategyAwardStock(Long strategyId, Integer awardId);
 }
 
 

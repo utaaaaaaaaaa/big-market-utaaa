@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -25,6 +26,13 @@ public interface StrategyAwardMapper extends BaseMapper<StrategyAward> {
     AwardRuleModelVO queryAwardRuleModel(
             @Param("strategyId") Long strategyId,
             @Param("randomAwardId") Integer awardId
+    );
+
+    @Update("update strategy_award set award_count_surplus = award_count_surplus - 1" +
+            " where strategy_id = #{strategyId} and award_id = #{awardId} and award_count_surplus > 0")
+    void updateStrategyAwardStock(
+            @Param("strategyId") Long strategyId,
+            @Param("awardId") Integer awardId
     );
 }
 
