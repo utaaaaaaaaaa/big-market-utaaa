@@ -34,6 +34,11 @@ public interface StrategyAwardMapper extends BaseMapper<StrategyAward> {
             @Param("strategyId") Long strategyId,
             @Param("awardId") Integer awardId
     );
+
+    StrategyAwardEntity queryStrategyAwardEntity(
+            @Param("strategyId") Long strategyId,
+            @Param("awardId") Integer awardId
+    );
 }
 
 

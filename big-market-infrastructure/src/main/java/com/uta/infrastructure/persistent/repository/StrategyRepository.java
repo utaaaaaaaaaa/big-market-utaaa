@@ -11,6 +11,8 @@ import com.uta.infrastructure.persistent.po.RuleTreeNode;
 import com.uta.infrastructure.persistent.po.RuleTreeNodeLine;
 import com.uta.infrastructure.persistent.redis.IRedisService;
 import com.uta.types.common.Constants;
+import com.uta.types.enums.ResponseCode;
+import com.uta.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBlockingQueue;
 import org.redisson.api.RDelayedQueue;
@@ -57,7 +59,7 @@ public class StrategyRepository implements IStrategyRepository {
     @Override
     public List<StrategyAwardEntity> getStrategyAwardList(Long strategyId) {
         //redis缓存中查找策略奖品
-        String cachedKey = Constants.RedisKey.STRATEGY_AWARD_KEY + strategyId;
+        String cachedKey = Constants.RedisKey.STRATEGY_AWARD_LIST_KEY + strategyId;
         List<StrategyAwardEntity> strategyAwardEntities = redisService.getValue(cachedKey);
         if (strategyAwardEntities != null && !strategyAwardEntities.isEmpty()) {
             return strategyAwardEntities;
@@ -85,7 +87,11 @@ public class StrategyRepository implements IStrategyRepository {
 
     @Override
     public int getRateRange(String key) {
-        return redisService.getValue(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key);
+        String cacheKey = Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key;
+        if (!redisService.isExists(cacheKey)) {
+           throw new AppException(ResponseCode.UN_ASSEMBLED_STRATEGY_ARMORY.getCode(), cacheKey + Constants.COLON +ResponseCode.UN_ASSEMBLED_STRATEGY_ARMORY.getInfo());
+        }
+        return redisService.getValue(cacheKey);
     }
 
     @Override
@@ -231,5 +237,21 @@ public class StrategyRepository implements IStrategyRepository {
     @Override
     public void updateStrategyAwardStock(Long strategyId, Integer awardId) {
         strategyAwardMapper.updateStrategyAwardStock(strategyId, awardId);
+    }
+
+    @Override
+    public StrategyAwardEntity getStrategyAwardEntity(Long strategyId, Integer awardId) {
+
+        //redis缓存中查找策略奖品
+        String cachedKey = Constants.RedisKey.STRATEGY_AWARD_KEY + strategyId;
+        StrategyAwardEntity strategyAwardEntities = redisService.getValue(cachedKey);
+        if (strategyAwardEntities != null) {
+            return strategyAwardEntities;
+        }
+
+        StrategyAwardEntity strategyAwardEntity = strategyAwardMapper.queryStrategyAwardEntity(strategyId, awardId);
+        redisService.setValue(cachedKey, strategyAwardEntity);
+
+        return strategyAwardEntity;
     }
 }

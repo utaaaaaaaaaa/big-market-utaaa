@@ -4,11 +4,15 @@ import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.uta.domain.strategy.model.entity.RaffleFactorEntity;
 import com.uta.domain.strategy.model.entity.RuleActionEntity;
 import com.uta.domain.strategy.model.entity.RuleMatterEntity;
+import com.uta.domain.strategy.model.entity.StrategyAwardEntity;
 import com.uta.domain.strategy.model.vo.AwardRuleModelVO;
 import com.uta.domain.strategy.model.vo.RuleLogicCheckTypeVO;
 import com.uta.domain.strategy.model.vo.RuleTreeVO;
 import com.uta.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 import com.uta.domain.strategy.repository.IStrategyRepository;
+import com.uta.domain.strategy.service.IRaffleAward;
+import com.uta.domain.strategy.service.IRaffleStock;
+import com.uta.domain.strategy.service.IRaffleStrategy;
 import com.uta.domain.strategy.service.armory.IStrategyDispatch;
 import com.uta.domain.strategy.service.rule.chain.ILogicChain;
 import com.uta.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
@@ -28,7 +32,7 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @Service
-public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
+public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRaffleStock, IRaffleAward {
 
     @Resource
     private DefaultLogicFactory factory;
@@ -153,5 +157,8 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
         repository.updateStrategyAwardStock(strategyId, awardId);
     }
 
-
+    @Override
+    public List<StrategyAwardEntity> getRaffleAwardList(Long strategyId) {
+        return repository.getStrategyAwardList(strategyId);
+    }
 }
