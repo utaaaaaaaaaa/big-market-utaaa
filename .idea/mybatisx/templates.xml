@@ -69,16 +69,24 @@
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="RuleTree" />
-                  <option name="tableName" value="rule_tree" />
+                  <option name="className" value="RaffleActivity" />
+                  <option name="tableName" value="raffle_activity" />
                 </TableUIInfo>
                 <TableUIInfo>
-                  <option name="className" value="RuleTreeNode" />
-                  <option name="tableName" value="rule_tree_node" />
+                  <option name="className" value="RaffleActivityCount" />
+                  <option name="tableName" value="raffle_activity_count" />
                 </TableUIInfo>
                 <TableUIInfo>
-                  <option name="className" value="RuleTreeNodeLine" />
-                  <option name="tableName" value="rule_tree_node_line" />
+                  <option name="className" value="RaffleActivityAccount" />
+                  <option name="tableName" value="raffle_activity_account" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="RaffleActivityAccountFlow" />
+                  <option name="tableName" value="raffle_activity_account_flow" />
+                </TableUIInfo>
+                <TableUIInfo>
+                  <option name="className" value="RaffleActivityOrder" />
+                  <option name="tableName" value="raffle_activity_order" />
                 </TableUIInfo>
               </list>
             </option>
