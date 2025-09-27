@@ -1,13 +1,16 @@
 package com.uta.infrastructure.persistent.repository;
 
 import cn.bugstack.middleware.db.router.strategy.IDBRouterStrategy;
+import com.uta.domain.activity.event.ActivitySkuStockZeroMessageEvent;
 import com.uta.domain.activity.model.aggregate.CreateOrderAggregate;
 import com.uta.domain.activity.model.entity.ActivityCountEntity;
 import com.uta.domain.activity.model.entity.ActivityEntity;
 import com.uta.domain.activity.model.entity.ActivityOrderEntity;
 import com.uta.domain.activity.model.entity.ActivitySkuEntity;
+import com.uta.domain.activity.model.vo.ActivitySkuStockKeyVO;
 import com.uta.domain.activity.model.vo.ActivityStateVO;
 import com.uta.domain.activity.repository.IActivityRepository;
+import com.uta.infrastructure.event.EventPublisher;
 import com.uta.infrastructure.persistent.dao.*;
 import com.uta.infrastructure.persistent.po.*;
 import com.uta.infrastructure.persistent.redis.IRedisService;
@@ -15,11 +18,15 @@ import com.uta.types.common.Constants;
 import com.uta.types.enums.ResponseCode;
 import com.uta.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.api.RBlockingQueue;
+import org.redisson.api.RDelayedQueue;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 @Repository
 @Slf4j
@@ -37,6 +44,11 @@ public class ActivityRepository implements IActivityRepository {
     private RaffleActivityOrderMapper raffleActivityOrderMapper;
     @Resource
     private RaffleActivityAccountMapper raffleActivityAccountMapper;
+
+    @Resource
+    private EventPublisher eventPublisher;
+    @Resource
+    private ActivitySkuStockZeroMessageEvent activitySkuStockZeroMessageEvent;
 
     @Resource
     private TransactionTemplate transactionTemplate;
@@ -154,6 +166,65 @@ public class ActivityRepository implements IActivityRepository {
             dbRouter.clear();
         }
 
+    }
+
+    @Override
+    public void cacheActivitySkuStockCount(String cacheKey, Integer stockCount) {
+        if (redisService.isExists(cacheKey)) {return;}
+        redisService.setValue(cacheKey, stockCount);
+    }
+
+    @Override
+    public boolean subtractionActivitySkuStock(Long sku, String cacheKey, Date endDateTime) {
+        long surplus = redisService.decr(cacheKey);
+        if (surplus == 0){
+            // 库存消耗完了以后，发送MQ消息，更新数据库缓存
+            eventPublisher.publish(activitySkuStockZeroMessageEvent.topic(), activitySkuStockZeroMessageEvent.buildEventMessage(sku));
+            return true;
+        }else if(surplus < 0){
+            redisService.setAtomicLong(cacheKey, 0);
+            return false;
+        }
+
+        // 加锁兜底，同时设置加锁时间为活动到期 + 1天
+        String lockKey = cacheKey + Constants.UNDERLINE + surplus;
+        long expireMills = endDateTime.getTime() - System.currentTimeMillis() + TimeUnit.DAYS.toMillis(1);
+        Boolean lock = redisService.setNx(lockKey, expireMills, TimeUnit.MILLISECONDS);
+        if (!lock){
+            log.info("活动sku加锁失败：{}",lockKey);
+        }
+        return lock;
+    }
+
+    @Override
+    public void activitySkuStockConsumeSendQueue(ActivitySkuStockKeyVO activitySkuStockKeyVO) {
+        String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUEUE_KEY;
+        RBlockingQueue<ActivitySkuStockKeyVO> blockingQueue = redisService.getBlockingQueue(cacheKey);
+        blockingQueue.offer(activitySkuStockKeyVO);
+    }
+
+    @Override
+    public ActivitySkuStockKeyVO takeQueueValue() {
+        String key = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUEUE_KEY;
+        RBlockingQueue<ActivitySkuStockKeyVO> blockingQueue = redisService.getBlockingQueue(key);
+        return blockingQueue.poll();
+    }
+
+    @Override
+    public void clearQueueValue() {
+        String key = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUEUE_KEY;
+        RBlockingQueue<ActivitySkuStockKeyVO> blockingQueue = redisService.getBlockingQueue(key);
+        blockingQueue.clear();
+    }
+
+    @Override
+    public void updateActivitySkuStock(Long sku) {
+        raffleActivitySkuMapper.updateActivitySkuStock(sku);
+    }
+
+    @Override
+    public void clearActivitySkuStock(Long sku) {
+        raffleActivitySkuMapper.clearActivitySkuStock(sku);
     }
 
 }

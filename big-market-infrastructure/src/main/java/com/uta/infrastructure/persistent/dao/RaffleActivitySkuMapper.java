@@ -15,6 +15,9 @@ public interface RaffleActivitySkuMapper extends BaseMapper<RaffleActivitySku> {
 
     RaffleActivitySku queryActivitySku(Long sku);
 
+    void updateActivitySkuStock(Long sku);
+
+    void clearActivitySkuStock(Long sku);
 }
 
 
