@@ -19,7 +19,6 @@ import java.util.List;
 @DBRouterStrategy(splitTable = true)
 public interface RaffleActivityOrderMapper extends BaseMapper<RaffleActivityOrder> {
 
-    @DBRouter(key = "userId")
     int insert(RaffleActivityOrder raffleActivityOrder);
 
     @DBRouter

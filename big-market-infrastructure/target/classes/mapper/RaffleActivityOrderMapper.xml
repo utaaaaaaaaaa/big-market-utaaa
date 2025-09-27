@@ -17,6 +17,7 @@
             <result property="dayCount" column="day_count" jdbcType="INTEGER"/>
             <result property="monthCount" column="month_count" jdbcType="INTEGER"/>
             <result property="state" column="state" jdbcType="VARCHAR"/>
+            <result property="outBusinessNo" column="out_business_no" jdbcType="VARCHAR"/>
             <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
             <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
     </resultMap>
@@ -25,19 +26,19 @@
         id,user_id,sku,
         activity_id,activity_name,strategy_id,
         order_id,order_time,total_count,
-        day_count,month_count,state,
+        day_count,month_count,state,out_business_no
         create_time,update_time
     </sql>
 
     <insert id="insert" parameterType="com.uta.infrastructure.persistent.po.RaffleActivityOrder">
-        insert into raffle_activity_order(user_id, sku, activity_id, activity_name, strategy_id, order_id, order_time,total_count, day_count, month_count, state, create_time, update_time)
-        values(#{userId},#{sku}, #{activityId}, #{activityName}, #{strategyId}, #{orderId}, #{orderTime},#{totalCount}, #{dayCount}, #{monthCount}, #{state}, now(), now())
+        insert into raffle_activity_order(user_id, sku, activity_id, activity_name, strategy_id, order_id, order_time,total_count, day_count, month_count, state, out_business_no, create_time, update_time)
+        values(#{userId},#{sku}, #{activityId}, #{activityName}, #{strategyId}, #{orderId}, #{orderTime},#{totalCount}, #{dayCount}, #{monthCount}, #{state},#{outBusinessNo}, now(), now())
     </insert>
 
 
     <select id="queryRaffleActivityOrderByUserId"
             resultType="com.uta.infrastructure.persistent.po.RaffleActivityOrder">
-        select user_id, sku, activity_id, activity_name, strategy_id, order_id, order_time,total_count, day_count, month_count, state
+        select user_id, sku, activity_id, activity_name, strategy_id, order_id, order_time,total_count, day_count, month_count, state, out_business_no
         from raffle_activity_order
         where user_id = #{userId}
     </select>

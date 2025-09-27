@@ -7,7 +7,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum OrderStateVO {
 
-    completed("completed", "完成");
+    completed("complete", "完成");
 
     private final String code;
     private final String desc;

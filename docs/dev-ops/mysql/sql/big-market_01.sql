@@ -64,20 +64,22 @@ CREATE TABLE `raffle_activity_order_000` (
                                              `day_count` int(8) NOT NULL COMMENT '日次数',
                                              `month_count` int(8) NOT NULL COMMENT '月次数',
                                              `state` varchar(8) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
                                              `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                              `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
                                              PRIMARY KEY (`id`),
                                              UNIQUE KEY `uq_order_id` (`order_id`),
+                                             UNIQUE KEY `out_business_no` (`out_business_no`),
                                              KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
 
 LOCK TABLES `raffle_activity_order_000` WRITE;
 /*!40000 ALTER TABLE `raffle_activity_order_000` DISABLE KEYS */;
 
-INSERT INTO `raffle_activity_order_000` (`id`, `user_id`, `sku`, `activity_id`, `activity_name`, `strategy_id`, `order_id`, `order_time`, `total_count`, `day_count`, `month_count`, `state`, `create_time`, `update_time`)
+INSERT INTO `raffle_activity_order_000` (`id`, `user_id`, `sku`, `activity_id`, `activity_name`, `strategy_id`, `order_id`, `order_time`, `total_count`, `day_count`, `month_count`, `state`, `out_business_no`, `create_time`, `update_time`)
 VALUES
-    (1,'ODRhfGEfX',0,100301,'测试活动',100006,'826130522615','2024-03-09 06:26:20',0,0,0,'not_used','2024-03-09 14:26:19','2024-03-09 14:26:19'),
-    (2,'IoTtOmcBeivNUYv',0,100301,'测试活动',100006,'469450480489','2024-03-09 06:26:20',0,0,0,'not_used','2024-03-09 14:26:20','2024-03-09 14:26:20');
+    (1,'ODRhfGEfX',0,100301,'测试活动',100006,'826130522615','2024-03-09 06:26:20',0,0,0,'not_used','700091009111','2024-03-09 14:26:19','2024-03-09 14:26:19'),
+    (2,'IoTtOmcBeivNUYv',0,100301,'测试活动',100006,'469450480489','2024-03-09 06:26:20',0,0,0,'not_used','700091002121','2024-03-09 14:26:20','2024-03-09 14:26:20');
 
 /*!40000 ALTER TABLE `raffle_activity_order_000` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -101,10 +103,12 @@ CREATE TABLE `raffle_activity_order_001` (
                                              `day_count` int(8) NOT NULL COMMENT '日次数',
                                              `month_count` int(8) NOT NULL COMMENT '月次数',
                                              `state` varchar(8) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
                                              `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                              `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
                                              PRIMARY KEY (`id`),
                                              UNIQUE KEY `uq_order_id` (`order_id`),
+                                             UNIQUE KEY `out_business_no` (`out_business_no`),
                                              KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
 
@@ -128,10 +132,12 @@ CREATE TABLE `raffle_activity_order_002` (
                                              `day_count` int(8) NOT NULL COMMENT '日次数',
                                              `month_count` int(8) NOT NULL COMMENT '月次数',
                                              `state` varchar(8) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
                                              `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                              `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
                                              PRIMARY KEY (`id`),
                                              UNIQUE KEY `uq_order_id` (`order_id`),
+                                             UNIQUE KEY `out_business_no` (`out_business_no`),
                                              KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
 
@@ -155,10 +161,12 @@ CREATE TABLE `raffle_activity_order_003` (
                                              `day_count` int(8) NOT NULL COMMENT '日次数',
                                              `month_count` int(8) NOT NULL COMMENT '月次数',
                                              `state` varchar(8) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
                                              `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                              `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
                                              PRIMARY KEY (`id`),
                                              UNIQUE KEY `uq_order_id` (`order_id`),
+                                             UNIQUE KEY `out_business_no` (`out_business_no`),
                                              KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
 

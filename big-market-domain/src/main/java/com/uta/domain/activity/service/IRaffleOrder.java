@@ -2,6 +2,7 @@ package com.uta.domain.activity.service;
 
 import com.uta.domain.activity.model.entity.ActivityOrderEntity;
 import com.uta.domain.activity.model.entity.ActivityShopCartEntity;
+import com.uta.domain.activity.model.entity.SkuRechargeEntity;
 
 /**
  * @description 抽奖活动订单接口
@@ -16,5 +17,12 @@ public interface IRaffleOrder {
      */
     ActivityOrderEntity createRaffleActivityOrder(ActivityShopCartEntity activityShopCartEntity);
 
+    /***
+     * 创建sku充值订单
+     *
+     * @param skuRechargeEntity 活动sku充值对象实体
+     * @return 定单号
+     */
+    String createSkuRechargeOrder(SkuRechargeEntity skuRechargeEntity);
 
 }

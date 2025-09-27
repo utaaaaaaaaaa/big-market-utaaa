@@ -13,6 +13,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface RaffleActivityAccountMapper extends BaseMapper<RaffleActivityAccount> {
 
+    int updateAccountQuota(RaffleActivityAccount raffleActivityAccount);
 }
 
 
