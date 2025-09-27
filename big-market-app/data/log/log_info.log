@@ -1,409 +1,85 @@
-25-09-26.11:29:32.025 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 102452 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-26.11:29:32.025 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-25-09-26.11:29:32.879 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-26.11:29:32.881 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-26.11:29:32.923 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
-25-09-26.11:29:33.906 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-26.11:29:34.050 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-26.11:29:34.200 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:29:34.216 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:29:37.853 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-26.11:29:37.935 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.268 seconds (JVM running for 7.203)
-25-09-26.11:29:38.398 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-09-26.11:29:38.571 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-09-26.11:29:38.601 [main            ] INFO  RaffleActivityTest     - [RaffleActivityOrder(id=null, userId=ODRhfGEfX, activityId=100301, activityName=测试活动, strategyId=100006, orderId=826130522615, orderTime=Sat Mar 09 14:26:20 CST 2024, state=not_used, createTime=null, updateTime=null)]
-25-09-26.11:32:42.465 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 115936 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-26.11:32:42.466 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-25-09-26.11:32:43.298 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-26.11:32:43.300 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-26.11:32:43.336 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
-25-09-26.11:32:44.278 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-26.11:32:44.424 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-26.11:32:44.579 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:32:44.607 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:32:48.538 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-26.11:32:48.632 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.504 seconds (JVM running for 7.488)
-25-09-26.11:32:49.096 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-09-26.11:32:49.260 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-09-26.11:34:41.063 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 43600 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-26.11:34:41.064 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-25-09-26.11:34:41.897 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-26.11:34:41.899 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-26.11:34:41.938 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
-25-09-26.11:34:42.902 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-26.11:34:43.054 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-26.11:34:43.192 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:34:43.209 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:34:47.350 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-26.11:34:47.449 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.739 seconds (JVM running for 7.701)
-25-09-26.11:34:48.078 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-09-26.11:34:48.289 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-09-26.11:34:48.317 [main            ] INFO  RaffleActivityTest     - raffleActivity:RaffleActivity(id=1, activityId=100301, activityName=测试活动, activityDesc=测试活动, beginDateTime=Sat Mar 09 18:15:10 CST 2024, endDateTime=Thu Mar 09 18:15:10 CST 2034, stockCount=1000, stockCountSurplus=1000, activityCountId=1, strategyId=100006, state=0, createTime=Sat Mar 09 18:15:10 CST 2024, updateTime=Sat Mar 09 18:15:17 CST 2024)
-25-09-26.11:34:48.326 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-09-26.11:34:48.339 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-09-26.11:34:48.344 [main            ] INFO  RaffleActivityTest     - raffleActivityOrder:[RaffleActivityOrder(id=null, userId=ODRhfGEfX, activityId=100301, activityName=测试活动, strategyId=100006, orderId=826130522615, orderTime=Sat Mar 09 14:26:20 CST 2024, state=not_used, createTime=null, updateTime=null)]
-25-09-26.11:37:52.185 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 115120 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-26.11:37:52.187 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-25-09-26.11:37:53.156 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-26.11:37:53.158 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-26.11:37:53.197 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
-25-09-26.11:37:54.252 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-26.11:37:54.400 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-26.11:37:54.532 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:37:54.553 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:37:58.296 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-26.11:37:58.383 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.6 seconds (JVM running for 7.645)
-25-09-26.11:37:58.896 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-09-26.11:38:00.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
-25-09-26.11:38:04.094 [main            ] ERROR HikariPool             - Retail_HikariCP - Exception during pool initialization.
-java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:895)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:820)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
-	at org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource.getConnection(AbstractRoutingDataSource.java:194)
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	at jdk.proxy2/jdk.proxy2.$Proxy111.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
-	at jdk.proxy2/jdk.proxy2.$Proxy127.insert(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at cn.bugstack.middleware.db.router.DBRouterJoinPoint.doRouter(DBRouterJoinPoint.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241)
-	at jdk.proxy2/jdk.proxy2.$Proxy128.insert(Unknown Source)
-	at com.uta.infrastructure.RaffleActivityTest.testInsert(RaffleActivityTest.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: com.mysql.cj.exceptions.CJException: Unknown database 'big_market_02'
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:128)
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:849)
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:771)
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:739)
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:156)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:468)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:213)
-	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1430)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:134)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:839)
-	... 126 common frames omitted
-25-09-26.11:40:34.446 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 32720 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-26.11:40:34.447 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-25-09-26.11:40:35.251 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-26.11:40:35.253 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-26.11:40:35.288 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
-25-09-26.11:40:36.356 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-26.11:40:36.502 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-26.11:40:36.643 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:40:36.659 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:40:37.133 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-09-26.11:40:40.415 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-26.11:40:40.497 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.387 seconds (JVM running for 7.291)
-25-09-26.11:40:40.919 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-09-26.11:40:45.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
-25-09-26.11:40:46.110 [main            ] ERROR HikariPool             - Retail_HikariCP - Exception during pool initialization.
-java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:895)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:820)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
-	at org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource.getConnection(AbstractRoutingDataSource.java:194)
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	at jdk.proxy2/jdk.proxy2.$Proxy111.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
-	at jdk.proxy2/jdk.proxy2.$Proxy127.insert(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at cn.bugstack.middleware.db.router.DBRouterJoinPoint.doRouter(DBRouterJoinPoint.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241)
-	at jdk.proxy2/jdk.proxy2.$Proxy128.insert(Unknown Source)
-	at com.uta.infrastructure.RaffleActivityTest.testInsert(RaffleActivityTest.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: com.mysql.cj.exceptions.CJException: Unknown database 'big_market_02'
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:128)
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:849)
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:771)
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:739)
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:156)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:468)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:213)
-	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1430)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:134)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:839)
-	... 126 common frames omitted
-25-09-26.11:41:33.417 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 124808 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-26.11:41:33.417 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-25-09-26.11:41:34.255 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-26.11:41:34.257 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-26.11:41:34.295 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
-25-09-26.11:41:35.343 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-26.11:41:35.512 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-26.11:41:35.668 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:41:35.688 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:41:36.198 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-09-26.11:41:39.373 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-26.11:41:39.457 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.389 seconds (JVM running for 7.271)
-25-09-26.11:41:39.903 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-09-26.11:41:40.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
-25-09-26.11:41:40.134 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-09-26.11:44:15.546 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 79580 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-09-26.11:44:15.547 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-25-09-26.11:44:16.400 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-09-26.11:44:16.402 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-09-26.11:44:16.447 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
-25-09-26.11:44:17.387 [main            ] INFO  Version                - Redisson 3.27.1
-25-09-26.11:44:17.530 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-09-26.11:44:17.682 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:44:17.699 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-09-26.11:44:18.154 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-09-26.11:44:21.519 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-09-26.11:44:21.606 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.392 seconds (JVM running for 7.313)
-25-09-26.11:44:22.110 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-09-26.11:44:22.344 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-09-26.11:44:22.366 [main            ] INFO  RaffleActivityTest     - raffleActivityOrder:[RaffleActivityOrder(id=null, userId=utaaa, activityId=100301, activityName=测试活动, strategyId=100006, orderId=030976182095, orderTime=Fri Sep 26 11:41:40 CST 2025, state=not_used, createTime=null, updateTime=null)]
+25-09-27.10:27:40.446 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 117184 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-27.10:27:40.447 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+25-09-27.10:27:41.320 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-27.10:27:41.322 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-27.10:27:41.359 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+25-09-27.10:27:42.389 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-27.10:27:42.540 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:27:42.705 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:27:42.724 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:27:43.198 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.10:27:46.174 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-27.10:27:46.255 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.143 seconds (JVM running for 7.051)
+25-09-27.10:27:46.744 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-27.10:27:46.991 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-27.10:28:30.009 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 119244 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-27.10:28:30.010 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+25-09-27.10:28:30.791 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-27.10:28:30.793 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-27.10:28:30.831 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+25-09-27.10:28:31.714 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-27.10:28:31.856 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:28:31.984 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:28:32.000 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:28:32.377 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.10:28:34.924 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-27.10:28:35.025 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.346 seconds (JVM running for 6.248)
+25-09-27.10:28:35.553 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-27.10:28:35.785 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-27.10:29:17.127 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 24492 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-27.10:29:17.127 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+25-09-27.10:29:17.986 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-27.10:29:17.988 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-27.10:29:18.021 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-09-27.10:29:18.953 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-27.10:29:19.100 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:29:19.231 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:29:19.246 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:29:19.635 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.10:29:22.381 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-27.10:29:22.468 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.706 seconds (JVM running for 6.584)
+25-09-27.10:29:23.075 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-27.10:29:23.283 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-27.10:30:51.860 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 124688 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-27.10:30:51.861 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+25-09-27.10:30:52.754 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-27.10:30:52.757 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-27.10:30:52.793 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+25-09-27.10:30:53.708 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-27.10:30:53.844 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:30:53.988 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:30:54.009 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:30:54.406 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.10:30:56.949 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-27.10:30:57.038 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.523 seconds (JVM running for 6.457)
+25-09-27.10:30:57.552 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-27.10:30:57.725 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-27.10:31:13.654 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 122644 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-27.10:31:13.655 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+25-09-27.10:31:14.433 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-27.10:31:14.435 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-27.10:31:14.471 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+25-09-27.10:31:15.324 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-27.10:31:15.461 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:31:15.592 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:31:15.607 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:31:15.991 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.10:31:18.428 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-27.10:31:18.503 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.164 seconds (JVM running for 6.032)
+25-09-27.10:31:18.979 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-27.10:31:19.172 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-27.10:31:40.210 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 17.0.12 on u_uta with PID 68232 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-27.10:31:40.212 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+25-09-27.10:31:40.955 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-27.10:31:40.957 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-27.10:31:40.998 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+25-09-27.10:31:41.885 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-27.10:31:42.031 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:31:42.153 [redisson-netty-1-6] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:31:42.168 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-27.10:31:42.570 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.10:31:45.215 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-27.10:31:45.298 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.407 seconds (JVM running for 6.304)
+25-09-27.10:31:45.775 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-27.10:31:45.991 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-27.10:31:46.016 [main            ] INFO  RaffleActivityTest     - raffleActivityOrder:[RaffleActivityOrder(id=null, userId=utaaa, sku=9011, activityId=100301, activityName=测试活动, strategyId=100006, orderId=882523100465, orderTime=Sat Sep 27 10:30:57 CST 2025, totalCount=0, dayCount=0, monthCount=0, state=not_used, createTime=null, updateTime=null)]

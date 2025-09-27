@@ -10,9 +10,9 @@ import lombok.Data;
 
 /**
  * 抽奖活动单
- * @TableName raffle_activity_order
+ * @TableName raffle_activity_order_000
  */
-@TableName(value ="raffle_activity_order")
+@TableName(value ="raffle_activity_order_000")
 @Data
 public class RaffleActivityOrder implements Serializable {
     /**
@@ -25,6 +25,11 @@ public class RaffleActivityOrder implements Serializable {
      * 用户ID
      */
     private String userId;
+
+    /**
+     * 商品sku
+     */
+    private Long sku;
 
     /**
      * 活动ID
@@ -52,7 +57,22 @@ public class RaffleActivityOrder implements Serializable {
     private Date orderTime;
 
     /**
-     * 订单状态（not_used、used、expire）
+     * 总次数
+     */
+    private Integer totalCount;
+
+    /**
+     * 日次数
+     */
+    private Integer dayCount;
+
+    /**
+     * 月次数
+     */
+    private Integer monthCount;
+
+    /**
+     * 订单状态（complete）
      */
     private String state;
 

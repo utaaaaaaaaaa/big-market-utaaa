@@ -19,4 +19,12 @@
         day_count,month_count,create_time,
         update_time
     </sql>
+
+    <select id="queryRaffleActivityCountByActivityCountId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select activity_count_id, total_count, day_count, month_count
+        from raffle_activity_count
+        where activity_count_id = #{activityCountId}
+    </select>
+
+
 </mapper>
