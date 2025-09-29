@@ -1,4 +1,4 @@
-package com.uta.domain.activity.service.rule;
+package com.uta.domain.activity.service.quota.rule;
 
 public interface IActionChainArmory {
 

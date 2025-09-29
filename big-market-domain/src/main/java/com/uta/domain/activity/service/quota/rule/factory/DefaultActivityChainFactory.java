@@ -1,6 +1,6 @@
-package com.uta.domain.activity.service.rule.factory;
+package com.uta.domain.activity.service.quota.rule.factory;
 
-import com.uta.domain.activity.service.rule.IActionChain;
+import com.uta.domain.activity.service.quota.rule.IActionChain;
 import lombok.*;
 import org.springframework.stereotype.Service;
 

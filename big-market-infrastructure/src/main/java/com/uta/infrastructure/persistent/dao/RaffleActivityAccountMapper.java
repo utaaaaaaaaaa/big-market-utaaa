@@ -1,7 +1,10 @@
 package com.uta.infrastructure.persistent.dao;
 
+import cn.bugstack.middleware.db.router.annotation.DBRouter;
 import com.uta.infrastructure.persistent.po.RaffleActivityAccount;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.uta.infrastructure.persistent.po.RaffleActivityAccountDay;
+import com.uta.infrastructure.persistent.po.RaffleActivityAccountMonth;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -14,6 +17,19 @@ import org.apache.ibatis.annotations.Mapper;
 public interface RaffleActivityAccountMapper extends BaseMapper<RaffleActivityAccount> {
 
     int updateAccountQuota(RaffleActivityAccount raffleActivityAccount);
+
+    @DBRouter
+    RaffleActivityAccount queryActivityAccountByUserId(RaffleActivityAccount raffleActivityAccountReq);
+
+    int updateActivityAccountSubtractionQuota(RaffleActivityAccount raffleActivityAccount);
+
+    void updateActivityAccountMonthSurplusImageQuota(RaffleActivityAccount raffleActivityAccount);
+
+    void updateActivityAccountDaySurplusImageQuota(RaffleActivityAccount raffleActivityAccount);
+
+    RaffleActivityAccountMonth queryActivityAccountMonthByUserId(RaffleActivityAccountMonth raffleActivityAccountMonthReq);
+
+    RaffleActivityAccountDay queryActivityAccountDayByUserId(RaffleActivityAccountDay raffleActivityAccountDayReq);
 }
 
 

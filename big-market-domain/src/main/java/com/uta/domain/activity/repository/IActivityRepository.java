@@ -1,9 +1,8 @@
 package com.uta.domain.activity.repository;
 
 import com.uta.domain.activity.model.aggregate.CreateOrderAggregate;
-import com.uta.domain.activity.model.entity.ActivityCountEntity;
-import com.uta.domain.activity.model.entity.ActivityEntity;
-import com.uta.domain.activity.model.entity.ActivitySkuEntity;
+import com.uta.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
+import com.uta.domain.activity.model.entity.*;
 import com.uta.domain.activity.model.vo.ActivitySkuStockKeyVO;
 
 import java.util.Date;
@@ -31,5 +30,15 @@ public interface IActivityRepository {
     void updateActivitySkuStock(Long sku);
 
     void clearActivitySkuStock(Long sku);
+
+    void saveCreatePartakeOrderAggregate(CreatePartakeOrderAggregate createPartakeOrderAggregate);
+
+    ActivityAccountEntity queryActivityAccountByUserId(String userId, Long activityId);
+
+    ActivityAccountMonthEntity queryActivityAccountMonthByUserId(String userId, Long activityId, String month);
+
+    ActivityAccountDayEntity queryActivityAccountDayByUserId(String userId, Long activityId, String day);
+
+    UserRaffleOrderEntity queryNoUsedRaffleOrder(PartakeRaffleActivityEntity partakeRaffleActivity);
 }
 

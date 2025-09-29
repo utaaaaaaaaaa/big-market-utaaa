@@ -5,7 +5,7 @@ import com.uta.domain.activity.model.vo.ActivitySkuStockKeyVO;
 /**
  * 活动库存处理接口
  */
-public interface ISkuStock {
+public interface IRaffleActivitySkuStockService {
 
     /**
      * 获取sku库存消耗队列

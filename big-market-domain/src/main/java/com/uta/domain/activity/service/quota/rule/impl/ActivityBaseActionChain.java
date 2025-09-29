@@ -1,14 +1,13 @@
-package com.uta.domain.activity.service.rule.impl;
+package com.uta.domain.activity.service.quota.rule.impl;
 
 import com.uta.domain.activity.model.entity.ActivityCountEntity;
 import com.uta.domain.activity.model.entity.ActivityEntity;
 import com.uta.domain.activity.model.entity.ActivitySkuEntity;
 import com.uta.domain.activity.model.vo.ActivityStateVO;
-import com.uta.domain.activity.service.rule.AbstractActionChain;
+import com.uta.domain.activity.service.quota.rule.AbstractActionChain;
 import com.uta.types.enums.ResponseCode;
 import com.uta.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;

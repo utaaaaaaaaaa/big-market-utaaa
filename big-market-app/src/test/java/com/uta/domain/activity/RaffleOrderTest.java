@@ -1,7 +1,7 @@
 package com.uta.domain.activity;
 
 import com.uta.domain.activity.model.entity.SkuRechargeEntity;
-import com.uta.domain.activity.service.IRaffleOrder;
+import com.uta.domain.activity.service.IRaffleActivityAccountQuotaService;
 import com.uta.domain.activity.service.armory.IActivityArmory;
 import com.uta.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +18,7 @@ import java.util.concurrent.CountDownLatch;
 public class RaffleOrderTest {
 
     @Resource
-    private IRaffleOrder raffleOrder;
+    private IRaffleActivityAccountQuotaService raffleOrder;
 
     @Resource
     private IActivityArmory activityArmory;
@@ -35,7 +35,7 @@ public class RaffleOrderTest {
         skuRechargeEntity.setSku(9011L);
         skuRechargeEntity.setOutBusinessNo("400028219012");
 
-        String orderId = raffleOrder.createSkuRechargeOrder(skuRechargeEntity);
+        String orderId = raffleOrder.createOrder(skuRechargeEntity);
         log.info("测试结果：{}", orderId);
     }
 
@@ -48,7 +48,7 @@ public class RaffleOrderTest {
                 skuRechargeEntity.setSku(9011L);
                 skuRechargeEntity.setOutBusinessNo(RandomStringUtils.randomNumeric(12));
 
-                String orderId = raffleOrder.createSkuRechargeOrder(skuRechargeEntity);
+                String orderId = raffleOrder.createOrder(skuRechargeEntity);
                 log.info("测试结果：{}", orderId);
             }catch (AppException e){
                 log.warn(e.getInfo());

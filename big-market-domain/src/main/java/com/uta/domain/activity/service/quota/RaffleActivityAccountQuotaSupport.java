@@ -1,21 +1,21 @@
-package com.uta.domain.activity.service;
+package com.uta.domain.activity.service.quota;
 
 import com.uta.domain.activity.model.entity.ActivityCountEntity;
 import com.uta.domain.activity.model.entity.ActivityEntity;
 import com.uta.domain.activity.model.entity.ActivitySkuEntity;
 import com.uta.domain.activity.repository.IActivityRepository;
-import com.uta.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import com.uta.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 
 /**
  * @description 抽奖活动支撑类
  */
-public class RaffleActivitySupport {
+public class RaffleActivityAccountQuotaSupport {
 
     protected DefaultActivityChainFactory defaultActivityChainFactory;
 
     protected IActivityRepository activityRepository;
 
-    public RaffleActivitySupport(DefaultActivityChainFactory defaultActivityChainFactory, IActivityRepository activityRepository) {
+    public RaffleActivityAccountQuotaSupport(DefaultActivityChainFactory defaultActivityChainFactory, IActivityRepository activityRepository) {
         this.defaultActivityChainFactory = defaultActivityChainFactory;
         this.activityRepository = activityRepository;
     }

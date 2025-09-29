@@ -1,12 +1,13 @@
-package com.uta.domain.activity.service;
+package com.uta.domain.activity.service.quota;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.uta.domain.activity.model.aggregate.CreateOrderAggregate;
 import com.uta.domain.activity.model.entity.*;
 import com.uta.domain.activity.repository.IActivityRepository;
-import com.uta.domain.activity.service.rule.IActionChain;
-import com.uta.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import com.uta.domain.activity.service.IRaffleActivityAccountQuotaService;
+import com.uta.domain.activity.service.quota.rule.IActionChain;
+import com.uta.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 import com.uta.types.enums.ResponseCode;
 import com.uta.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -15,9 +16,9 @@ import lombok.extern.slf4j.Slf4j;
  * @description 抽奖活动抽象类，定义标准的流程
  */
 @Slf4j
-public abstract class AbstractRaffleActivity extends RaffleActivitySupport implements IRaffleOrder {
+public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityAccountQuotaSupport implements IRaffleActivityAccountQuotaService {
 
-    public AbstractRaffleActivity(DefaultActivityChainFactory defaultActivityChainFactory, IActivityRepository activityRepository) {
+    public AbstractRaffleActivityAccountQuota(DefaultActivityChainFactory defaultActivityChainFactory, IActivityRepository activityRepository) {
         super(defaultActivityChainFactory, activityRepository);
     }
 
@@ -36,7 +37,7 @@ public abstract class AbstractRaffleActivity extends RaffleActivitySupport imple
     }
 
     @Override
-    public String createSkuRechargeOrder(SkuRechargeEntity skuRechargeEntity) {
+    public String createOrder(SkuRechargeEntity skuRechargeEntity) {
         // 1. 参数校验
         String userId = skuRechargeEntity.getUserId();
         Long sku = skuRechargeEntity.getSku();

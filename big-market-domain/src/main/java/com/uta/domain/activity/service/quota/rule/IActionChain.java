@@ -1,4 +1,4 @@
-package com.uta.domain.activity.service.rule;
+package com.uta.domain.activity.service.quota.rule;
 
 import com.uta.domain.activity.model.entity.ActivityCountEntity;
 import com.uta.domain.activity.model.entity.ActivityEntity;

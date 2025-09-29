@@ -5,9 +5,9 @@ import com.uta.domain.activity.model.entity.ActivityShopCartEntity;
 import com.uta.domain.activity.model.entity.SkuRechargeEntity;
 
 /**
- * @description 抽奖活动订单接口
+ * @description 抽奖活动用户额度订单接口
  */
-public interface IRaffleOrder {
+public interface IRaffleActivityAccountQuotaService {
 
     /**
      * 以sku创建抽奖活动订单，获得参与抽奖资格（可消耗的次数）
@@ -23,6 +23,6 @@ public interface IRaffleOrder {
      * @param skuRechargeEntity 活动sku充值对象实体
      * @return 定单号
      */
-    String createSkuRechargeOrder(SkuRechargeEntity skuRechargeEntity);
+    String createOrder(SkuRechargeEntity skuRechargeEntity);
 
 }

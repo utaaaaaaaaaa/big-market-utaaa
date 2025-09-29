@@ -1,0 +1,135 @@
+25-09-27.10:27:42.540 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:27:43.198 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.10:28:31.856 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:28:32.377 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.10:29:19.100 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:29:19.635 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.10:30:53.844 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:30:54.406 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.10:31:15.461 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:31:15.991 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.10:31:42.031 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.10:31:42.570 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.16:17:40.177 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.16:19:09.519 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.16:19:10.061 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.16:20:09.482 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.16:20:10.095 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.16:21:13.215 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.16:21:13.842 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.16:21:35.449 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.16:21:36.117 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.16:23:23.607 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m40s899ms243µs300ns).
+25-09-27.16:24:43.601 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.16:24:44.358 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.16:26:00.249 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m8s189ms120µs300ns).
+25-09-27.16:26:06.593 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.16:26:07.253 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.16:26:54.352 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.16:26:54.925 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.16:26:58.544 [main            ] ERROR ActivityRepository     - 写入订单记录，唯一索引异常，userId:utaaa, activityId:100301, sku:9011
+25-09-27.16:29:22.388 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.16:29:22.938 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.21:51:24.537 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.21:51:25.117 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.21:51:28.897 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.897 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.902 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.902 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.907 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.907 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.912 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.912 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.917 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.917 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.921 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.921 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.925 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.925 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.929 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.929 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.933 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.933 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.937 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.937 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.942 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.942 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.945 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.946 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.950 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.950 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.954 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.954 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.960 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.961 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.965 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.965 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.970 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.970 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.976 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.976 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.980 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.980 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:51:28.985 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:51:28.986 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:31.647 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.21:52:32.186 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.21:52:35.517 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.518 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.523 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.524 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.528 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.528 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.533 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.533 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.538 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.538 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.543 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.543 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.546 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.547 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.551 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.551 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.555 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.555 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.559 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.559 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.563 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.563 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.567 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.567 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.571 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.571 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.576 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.576 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.584 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.584 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.590 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.590 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.597 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.597 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.604 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.604 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.610 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.610 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:35.614 [main            ] ERROR ActivityBaseActionChain - 当前活动未开启，activityId:100301, state:create
+25-09-27.21:52:35.614 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+25-09-27.21:52:52.320 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.21:52:52.843 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.21:52:57.047 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-09-27.22:00:42.336 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.22:00:42.893 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.22:00:47.435 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-09-27.22:02:31.208 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m44s415ms696µs900ns).
+25-09-27.22:02:31.211 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m44s232ms74µs800ns).
+25-09-27.22:04:04.018 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.22:04:04.649 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.22:04:13.210 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-09-27.22:05:01.834 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=49s624ms142µs200ns).
+25-09-27.22:05:01.836 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=49s355ms578µs100ns).
+25-09-27.22:06:27.045 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.22:06:27.572 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.22:06:31.974 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-09-27.22:09:38.502 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-27.22:09:39.036 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-27.22:09:42.865 [main            ] WARN  RaffleOrderTest        - 活动库存不足

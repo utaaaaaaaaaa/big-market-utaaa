@@ -13,20 +13,20 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * 抽奖活动账户表
- * @TableName raffle_activity_account
+ * 用户抽奖订单表
+ * @TableName user_raffle_order
  */
-@TableName(value ="raffle_activity_account")
+@TableName(value ="user_raffle_order")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RaffleActivityAccount implements Serializable {
+public class UserRaffleOrder implements Serializable {
     /**
-     * 自增ID
+     * 
      */
     @TableId(type = IdType.AUTO)
-    private Long id;
+    private Integer id;
 
     /**
      * 用户ID
@@ -39,34 +39,29 @@ public class RaffleActivityAccount implements Serializable {
     private Long activityId;
 
     /**
-     * 总次数
+     * 活动名称
      */
-    private Integer totalCount;
+    private String activityName;
 
     /**
-     * 总次数-剩余
+     * 抽奖策略ID
      */
-    private Integer totalCountSurplus;
+    private Long strategyId;
 
     /**
-     * 日次数
+     * 订单ID
      */
-    private Integer dayCount;
+    private String orderId;
 
     /**
-     * 日次数-剩余
+     * 下单时间
      */
-    private Integer dayCountSurplus;
+    private Date orderTime;
 
     /**
-     * 月次数
+     * 订单状态；create-创建、used-已使用、cancel-已作废
      */
-    private Integer monthCount;
-
-    /**
-     * 月次数-剩余
-     */
-    private Integer monthCountSurplus;
+    private String orderState;
 
     /**
      * 创建时间
@@ -80,6 +75,4 @@ public class RaffleActivityAccount implements Serializable {
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
-
-
 }

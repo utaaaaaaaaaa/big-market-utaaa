@@ -1,20 +1,21 @@
-package com.uta.domain.activity.service;
+package com.uta.domain.activity.service.quota;
 
 import com.uta.domain.activity.model.aggregate.CreateOrderAggregate;
 import com.uta.domain.activity.model.entity.*;
 import com.uta.domain.activity.model.vo.ActivitySkuStockKeyVO;
 import com.uta.domain.activity.model.vo.OrderStateVO;
 import com.uta.domain.activity.repository.IActivityRepository;
-import com.uta.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import com.uta.domain.activity.service.IRaffleActivitySkuStockService;
+import com.uta.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
 @Service
-public class RaffleActivityService extends AbstractRaffleActivity implements ISkuStock{
+public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAccountQuota implements IRaffleActivitySkuStockService {
 
-    public RaffleActivityService(DefaultActivityChainFactory defaultActivityChainFactory, IActivityRepository activityRepository) {
+    public RaffleActivityAccountQuotaService(DefaultActivityChainFactory defaultActivityChainFactory, IActivityRepository activityRepository) {
         super(defaultActivityChainFactory, activityRepository);
     }
 

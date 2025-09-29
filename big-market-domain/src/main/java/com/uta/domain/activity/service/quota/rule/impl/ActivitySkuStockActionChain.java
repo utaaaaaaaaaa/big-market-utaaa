@@ -1,13 +1,12 @@
-package com.uta.domain.activity.service.rule.impl;
+package com.uta.domain.activity.service.quota.rule.impl;
 
 import com.uta.domain.activity.model.entity.ActivityCountEntity;
 import com.uta.domain.activity.model.entity.ActivityEntity;
 import com.uta.domain.activity.model.entity.ActivitySkuEntity;
 import com.uta.domain.activity.model.vo.ActivitySkuStockKeyVO;
 import com.uta.domain.activity.repository.IActivityRepository;
-import com.uta.domain.activity.service.armory.IActivityArmory;
 import com.uta.domain.activity.service.armory.IActivityDispatch;
-import com.uta.domain.activity.service.rule.AbstractActionChain;
+import com.uta.domain.activity.service.quota.rule.AbstractActionChain;
 import com.uta.types.enums.ResponseCode;
 import com.uta.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;

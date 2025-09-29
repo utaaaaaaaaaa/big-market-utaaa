@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.uta.infrastructure.persistent.dao.TaskMapper">
+
+    <resultMap id="BaseResultMap" type="com.uta.infrastructure.persistent.po.Task">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="topic" column="topic" jdbcType="VARCHAR"/>
+            <result property="message" column="message" jdbcType="VARCHAR"/>
+            <result property="state" column="state" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,topic,message,
+        state,create_time,update_time
+    </sql>
+</mapper>
