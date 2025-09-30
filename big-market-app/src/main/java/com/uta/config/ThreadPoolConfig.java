@@ -12,7 +12,7 @@ import java.util.concurrent.*;
 @Slf4j
 @EnableAsync
 @Configuration
-@EnableConfigurationProperties(ThreadPoolConfigProperties.class)
+@EnableConfigurationProperties(ThreadPoolConfigProperties.class) // 相当于把ThreadPoolConfigProperties标记为可以自动注入配置类的bean
 public class ThreadPoolConfig {
 
     @Bean

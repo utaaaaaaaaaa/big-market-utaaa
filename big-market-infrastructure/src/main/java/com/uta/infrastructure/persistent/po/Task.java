@@ -27,6 +27,16 @@ public class Task implements Serializable {
     private String topic;
 
     /**
+     * 用户id
+     */
+    private String userId;
+
+    /**
+     * 消息id
+     */
+    private String messageId;
+
+    /**
      * 消息主体
      */
     private String message;

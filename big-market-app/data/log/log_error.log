@@ -19,3 +19,7 @@
 25-09-29.23:39:50.124 [main            ] ERROR ActivityRepository     - 写入日额度、月额度记录，唯一索引异常，userId:utaaa, activityId:100301
 25-09-29.23:43:09.084 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
 25-09-29.23:43:09.732 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-30.23:46:18.486 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-30.23:46:19.017 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-30.23:50:44.096 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-30.23:50:44.617 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]

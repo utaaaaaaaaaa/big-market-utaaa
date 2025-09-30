@@ -7,6 +7,8 @@
     <resultMap id="BaseResultMap" type="com.uta.infrastructure.persistent.po.Task">
             <id property="id" column="id" jdbcType="INTEGER"/>
             <result property="topic" column="topic" jdbcType="VARCHAR"/>
+            <result property="userId" column="user_id" jdbcType="VARCHAR"/>
+            <result property="messageId" column="message_id" jdbcType="VARCHAR"/>
             <result property="message" column="message" jdbcType="VARCHAR"/>
             <result property="state" column="state" jdbcType="VARCHAR"/>
             <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
@@ -14,7 +16,28 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,topic,message,
+        id,topic,message,user_id,message_id
         state,create_time,update_time
     </sql>
+    <update id="updateTaskMessageCompleted"
+            parameterType="com.uta.infrastructure.persistent.po.UserAwardRecord">
+        update task
+        set state = 'completed', update_time = now()
+        where user_id = #{userId} and message_id = #{messageId}
+    </update>
+
+    <update id="updateTaskMessageFail" parameterType="com.uta.infrastructure.persistent.po.UserAwardRecord">
+        update task
+        set state = 'fail', update_time = now()
+        where user_id = #{userId} and message_id = #{messageId}
+    </update>
+
+    <select id="queryNoSendMessageTaskList" resultMap="BaseResultMap">
+        select user_id, topic, message_id, message
+        from task
+        where state = 'fail' or (state = 'create' and now() - update_time > 6000)
+        limit 10
+    </select>
+
+
 </mapper>

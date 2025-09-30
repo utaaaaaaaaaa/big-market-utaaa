@@ -1,8 +1,11 @@
 package com.uta.infrastructure.persistent.dao;
 
+import cn.bugstack.middleware.db.router.annotation.DBRouter;
 import com.uta.infrastructure.persistent.po.Task;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
 
 /**
 * @author 24333
@@ -13,6 +16,13 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface TaskMapper extends BaseMapper<Task> {
 
+    @DBRouter
+    void updateTaskMessageCompleted(Task task);
+
+    @DBRouter
+    void updateTaskMessageFail(Task task);
+
+    List<Task> queryNoSendMessageTaskList();
 }
 
 

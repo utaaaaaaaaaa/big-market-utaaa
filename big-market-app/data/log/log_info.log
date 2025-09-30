@@ -193,3 +193,77 @@
 25-09-29.23:43:14.110 [main            ] INFO  RaffleActivityPartakeServiceTest - 测试结果：{"activityId":100301,"activityName":"测试活动","orderId":"496262858692","orderState":"create","orderTime":1759160593631,"strategyId":100006,"userId":"utaaa"}
 25-09-29.23:43:14.130 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
 25-09-29.23:43:14.195 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-09-30.23:46:15.801 [main            ] INFO  AwardServiceTest       - Starting AwardServiceTest using Java 17.0.12 on u_uta with PID 112800 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-30.23:46:15.802 [main            ] INFO  AwardServiceTest       - The following 1 profile is active: "dev"
+25-09-30.23:46:16.654 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-30.23:46:16.659 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-30.23:46:16.716 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+25-09-30.23:46:18.354 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-30.23:46:18.486 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-30.23:46:18.623 [redisson-netty-1-8] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-30.23:46:18.632 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-30.23:46:19.017 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-30.23:46:21.626 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-30.23:46:21.767 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-09-30.23:46:21.877 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#438aaa9f:0/SimpleConnection@69e308e2 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 64242]
+25-09-30.23:46:22.062 [main            ] INFO  AwardServiceTest       - Started AwardServiceTest in 6.58 seconds (JVM running for 7.517)
+25-09-30.23:46:22.515 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-30.23:46:22.723 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-30.23:46:22.936 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"13053497059","timestamp":1759247182419}
+25-09-30.23:46:22.955 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"13053497059","timestamp":1759247182419}
+25-09-30.23:46:23.498 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"00562866382","timestamp":1759247183468}
+25-09-30.23:46:23.500 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"00562866382","timestamp":1759247183468}
+25-09-30.23:46:24.033 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"02311156341","timestamp":1759247184019}
+25-09-30.23:46:24.036 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"02311156341","timestamp":1759247184019}
+25-09-30.23:46:24.598 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"86436282979","timestamp":1759247184584}
+25-09-30.23:46:24.600 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"86436282979","timestamp":1759247184584}
+25-09-30.23:46:25.025 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-30.23:46:25.056 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-30.23:46:25.133 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"86875726863","timestamp":1759247185120}
+25-09-30.23:46:25.134 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"86875726863","timestamp":1759247185120}
+25-09-30.23:46:25.689 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"25278714158","timestamp":1759247185651}
+25-09-30.23:46:25.691 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"25278714158","timestamp":1759247185651}
+25-09-30.23:46:26.220 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"01458417651","timestamp":1759247186203}
+25-09-30.23:46:26.224 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"01458417651","timestamp":1759247186203}
+25-09-30.23:46:26.757 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"93497861326","timestamp":1759247186741}
+25-09-30.23:46:26.758 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"93497861326","timestamp":1759247186741}
+25-09-30.23:46:27.308 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"76264676618","timestamp":1759247187267}
+25-09-30.23:46:27.309 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"76264676618","timestamp":1759247187267}
+25-09-30.23:46:27.870 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"35115769774","timestamp":1759247187824}
+25-09-30.23:46:27.877 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"35115769774","timestamp":1759247187824}
+25-09-30.23:46:55.145 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-09-30.23:46:55.147 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-09-30.23:46:55.273 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-09-30.23:46:56.063 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-09-30.23:50:41.391 [main            ] INFO  AwardServiceTest       - Starting AwardServiceTest using Java 17.0.12 on u_uta with PID 124444 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-09-30.23:50:41.392 [main            ] INFO  AwardServiceTest       - The following 1 profile is active: "dev"
+25-09-30.23:50:42.209 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-30.23:50:42.212 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-30.23:50:42.263 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+25-09-30.23:50:43.966 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-30.23:50:44.096 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-30.23:50:44.220 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-30.23:50:44.235 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-30.23:50:44.617 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-09-30.23:50:47.163 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-30.23:50:47.296 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-09-30.23:50:47.347 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#438aaa9f:0/SimpleConnection@69e308e2 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 61408]
+25-09-30.23:50:47.421 [main            ] INFO  AwardServiceTest       - Started AwardServiceTest in 6.37 seconds (JVM running for 7.328)
+25-09-30.23:50:47.915 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-30.23:50:48.052 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-30.23:50:48.115 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"57311723441","timestamp":1759247447783}
+25-09-30.23:50:48.124 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"57311723441","timestamp":1759247447783}
+25-09-30.23:50:50.045 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-30.23:50:50.058 [pool-3-thread-3 ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"13053497059","timestamp":1759247182419}
+25-09-30.23:50:50.062 [pool-3-thread-4 ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"00562866382","timestamp":1759247183468}
+25-09-30.23:50:50.062 [pool-3-thread-6 ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"86436282979","timestamp":1759247184584}
+25-09-30.23:50:50.062 [pool-3-thread-5 ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"02311156341","timestamp":1759247184019}
+25-09-30.23:50:50.062 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"13053497059","timestamp":1759247182419}
+25-09-30.23:50:50.066 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"00562866382","timestamp":1759247183468}
+25-09-30.23:50:50.068 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"86436282979","timestamp":1759247184584}
+25-09-30.23:50:50.069 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-30.23:50:50.070 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":101,"awardTitle":"OpenAI 增加使用次数","userId":"utaaa"},"id":"02311156341","timestamp":1759247184019}
+25-09-30.23:51:09.408 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-09-30.23:51:09.409 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-09-30.23:51:09.622 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-09-30.23:51:10.231 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
