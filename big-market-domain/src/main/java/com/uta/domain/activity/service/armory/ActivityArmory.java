@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.List;
 
 @Slf4j
 @Service
@@ -16,6 +17,19 @@ public class ActivityArmory implements IActivityArmory,IActivityDispatch {
 
     @Resource
     private IActivityRepository activityRepository;
+
+    @Override
+    public boolean assembleActivitySkuByActivityId(Long activityId) {
+        List<ActivitySkuEntity> activitySkuEntityList = activityRepository.queryActivitySkuListByActivityId(activityId);
+        for (ActivitySkuEntity activitySkuEntity : activitySkuEntityList) {
+            cacheActivitySkuStockCount(activitySkuEntity.getSku(), activitySkuEntity.getStockCount());
+            // 预热活动对应次数【添加到缓存】
+            activityRepository.queryRaffleActivityCountByActivityCountId(activitySkuEntity.getActivityCountId());
+        }
+        // 预热活动【添加到缓存】
+        activityRepository.queryRaffleActivityByActivityId(activityId);
+        return true;
+    }
 
     @Override
     public boolean assembleActivitySku(Long sku) {
@@ -27,7 +41,7 @@ public class ActivityArmory implements IActivityArmory,IActivityDispatch {
 
         // 预热活动对应次数【添加到缓存】
         activityRepository.queryRaffleActivityCountByActivityCountId(activitySkuEntity.getActivityCountId());
-        return false;
+        return true;
     }
 
     private void cacheActivitySkuStockCount(Long sku, Integer stockCount) {

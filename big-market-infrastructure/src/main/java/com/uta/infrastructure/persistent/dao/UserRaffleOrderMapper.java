@@ -18,6 +18,9 @@ public interface UserRaffleOrderMapper extends BaseMapper<UserRaffleOrder> {
 
     @DBRouter
     UserRaffleOrder queryNoUsedRaffleOrder(UserRaffleOrder userRaffleOrderReq);
+
+    @DBRouter
+    int updateUserRaffleOrderStateUsed(UserRaffleOrder userRaffleOrder);
 }
 
 

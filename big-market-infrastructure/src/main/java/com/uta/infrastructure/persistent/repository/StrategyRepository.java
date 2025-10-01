@@ -6,6 +6,7 @@ import com.uta.domain.strategy.model.entity.StrategyRuleEntity;
 import com.uta.domain.strategy.model.vo.*;
 import com.uta.domain.strategy.repository.IStrategyRepository;
 import com.uta.infrastructure.persistent.dao.*;
+import com.uta.infrastructure.persistent.po.RaffleActivityAccountDay;
 import com.uta.infrastructure.persistent.po.RuleTree;
 import com.uta.infrastructure.persistent.po.RuleTreeNode;
 import com.uta.infrastructure.persistent.po.RuleTreeNodeLine;
@@ -22,10 +23,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -52,6 +51,12 @@ public class StrategyRepository implements IStrategyRepository {
 
     @Resource
     private RuleTreeNodeLineMapper ruleTreeNodeLineMapper;
+
+    @Resource
+    private RaffleActivityMapper raffleActivityMapper;
+
+    @Resource
+    private RaffleActivityAccountDayMapper raffleActivityAccountDayMapper;
 
     @Resource
     private IRedisService redisService;
@@ -253,5 +258,26 @@ public class StrategyRepository implements IStrategyRepository {
         redisService.setValue(cachedKey, strategyAwardEntity);
 
         return strategyAwardEntity;
+    }
+
+    @Override
+    public Long queryStrategyIdByActivityId(Long activityId) {
+        return raffleActivityMapper.queryStrategyIdByActivityId(activityId);
+    }
+
+    @Override
+    public Integer queryTodayUserRaffleCount(String userId, Long strategyId) {
+        Long activityId = raffleActivityMapper.queryActivityIdByStrategyId(strategyId);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String today = sdf.format(new Date());
+        RaffleActivityAccountDay raffleActivityAccountDay = raffleActivityAccountDayMapper.queryActivityAccountDayByUserId(
+                RaffleActivityAccountDay.builder()
+                        .userId(userId)
+                        .activityId(activityId)
+                        .day(today)
+                        .build()
+        );
+        if (raffleActivityAccountDay == null) {return 0;}
+        return raffleActivityAccountDay.getDayCount() - raffleActivityAccountDay.getDayCountSurplus();
     }
 }

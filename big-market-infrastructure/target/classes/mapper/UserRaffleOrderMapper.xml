@@ -23,6 +23,11 @@
         order_time,order_state,create_time,
         update_time
     </sql>
+    <update id="updateUserRaffleOrderStateUsed">
+        update user_raffle_order
+        set order_state = 'used', update_time = now()
+        where user_id = #{userId} and order_id = #{orderId} and order_state = 'create'
+    </update>
     <select id="queryNoUsedRaffleOrder" resultType="com.uta.infrastructure.persistent.po.UserRaffleOrder">
         select * from user_raffle_order
         where user_id = #{userId} and activity_id = #{activityId} and order_state = 'create'

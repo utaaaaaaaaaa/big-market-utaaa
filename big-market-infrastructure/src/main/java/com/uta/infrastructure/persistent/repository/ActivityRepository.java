@@ -24,7 +24,9 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 @Repository
@@ -298,7 +300,7 @@ public class ActivityRepository implements IActivityRepository {
                                         .build());
                         if (countDay != 1) {
                             status.setRollbackOnly();
-                            log.warn("用户月账户额度不够，userId:{}, activityId:{}, Day:{}",userId,activityId,activityAccountDayEntity.getDay());
+                            log.warn("用户日账户额度不够，userId:{}, activityId:{}, Day:{}",userId,activityId,activityAccountDayEntity.getDay());
                             throw new AppException(ResponseCode.ACCOUNT_DAY_QUOTA_ERROR.getCode(), ResponseCode.ACCOUNT_DAY_QUOTA_ERROR.getInfo());
                         }
                     }else{
@@ -363,6 +365,22 @@ public class ActivityRepository implements IActivityRepository {
         userRaffleOrderEntity.setOrderTime(userRaffleOrderRes.getOrderTime());
         userRaffleOrderEntity.setOrderState(UserRaffleOrderStateVO.valueOf(userRaffleOrderRes.getOrderState()));
         return userRaffleOrderEntity;
+    }
+
+    @Override
+    public List<ActivitySkuEntity> queryActivitySkuListByActivityId(Long activityId) {
+        List<RaffleActivitySku> raffleActivitySkus = raffleActivitySkuMapper.queryActivitySkuListByActivityId(activityId);
+        List<ActivitySkuEntity> activitySkuEntities = new ArrayList<>();
+        for (RaffleActivitySku activitySku : raffleActivitySkus) {
+            ActivitySkuEntity activitySkuEntity = new ActivitySkuEntity();
+            activitySkuEntity.setSku(activitySku.getSku());
+            activitySkuEntity.setActivityId(activitySku.getActivityId());
+            activitySkuEntity.setActivityCountId(activitySku.getActivityCountId());
+            activitySkuEntity.setStockCount(activitySku.getStockCount());
+            activitySkuEntity.setStockCountSurplus(activitySku.getStockCountSurplus());
+            activitySkuEntities.add(activitySkuEntity);
+        }
+        return activitySkuEntities;
     }
 
     @Override

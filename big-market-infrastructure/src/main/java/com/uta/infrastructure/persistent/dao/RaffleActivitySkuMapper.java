@@ -4,6 +4,8 @@ import com.uta.infrastructure.persistent.po.RaffleActivitySku;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
 /**
 * @author 24333
 * @description 针对表【raffle_activity_sku】的数据库操作Mapper
@@ -18,6 +20,8 @@ public interface RaffleActivitySkuMapper extends BaseMapper<RaffleActivitySku> {
     void updateActivitySkuStock(Long sku);
 
     void clearActivitySkuStock(Long sku);
+
+    List<RaffleActivitySku> queryActivitySkuListByActivityId(Long activityId);
 }
 
 

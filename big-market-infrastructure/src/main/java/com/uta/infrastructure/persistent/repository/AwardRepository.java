@@ -11,8 +11,10 @@ import com.uta.domain.award.repository.IAwardRepository;
 import com.uta.infrastructure.event.EventPublisher;
 import com.uta.infrastructure.persistent.dao.TaskMapper;
 import com.uta.infrastructure.persistent.dao.UserAwardRecordMapper;
+import com.uta.infrastructure.persistent.dao.UserRaffleOrderMapper;
 import com.uta.infrastructure.persistent.po.Task;
 import com.uta.infrastructure.persistent.po.UserAwardRecord;
+import com.uta.infrastructure.persistent.po.UserRaffleOrder;
 import com.uta.types.enums.ResponseCode;
 import com.uta.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -32,6 +34,9 @@ public class AwardRepository implements IAwardRepository {
 
     @Resource
     private TaskMapper taskMapper;
+
+    @Resource
+    private UserRaffleOrderMapper userRaffleOrderMapper;
 
     @Resource
     private IDBRouterStrategy dbRouter;
@@ -67,6 +72,10 @@ public class AwardRepository implements IAwardRepository {
         task.setMessage(JSON.toJSONString(taskEntity.getMessage()));
         task.setState(taskEntity.getState().getCode());
 
+        UserRaffleOrder userRaffleOrder = new UserRaffleOrder();
+        userRaffleOrder.setUserId(userId);
+        userRaffleOrder.setOrderId(userAwardRecord.getOrderId());
+
         try {
             dbRouter.doRouter(userId);
             transactionTemplate.execute(status -> {
@@ -75,6 +84,13 @@ public class AwardRepository implements IAwardRepository {
                    userAwardRecordMapper.insert(userAwardRecord);
                    // 写入任务
                    taskMapper.insert(task);
+                   // 更新抽奖单状态
+                   int count = userRaffleOrderMapper.updateUserRaffleOrderStateUsed(userRaffleOrder);
+                   if (count != 1) {
+                       status.setRollbackOnly();
+                       log.error("更新用户抽奖单状态，该抽奖单已使用过，不可重复抽奖 userId:{},activityId:{},orderId:{}", userId, activityId, userRaffleOrder.getOrderId());
+                       throw new AppException(ResponseCode.ACTIVITY_ORDER_ERROR.getCode(), ResponseCode.ACTIVITY_ORDER_ERROR.getInfo());
+                   }
                    return 1;
                }catch (DuplicateKeyException e){
                    status.setRollbackOnly();

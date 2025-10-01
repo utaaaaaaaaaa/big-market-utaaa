@@ -1,10 +1,10 @@
 package com.uta.trigger.http;
 
-import com.uta.api.IRaffleService;
+import com.uta.api.IRaffleStrategyService;
 import com.uta.api.entity.dto.GetRaffleAwardListDTO;
-import com.uta.api.entity.dto.RaffleDTO;
+import com.uta.api.entity.dto.RaffleStrategyDTO;
 import com.uta.api.entity.vo.GetRaffleAwardListVO;
-import com.uta.api.entity.vo.RaffleVO;
+import com.uta.api.entity.vo.RaffleStrategyVO;
 import com.uta.domain.strategy.model.entity.RaffleAwardEntity;
 import com.uta.domain.strategy.model.entity.RaffleFactorEntity;
 import com.uta.domain.strategy.model.entity.StrategyAwardEntity;
@@ -17,7 +17,6 @@ import com.uta.types.model.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.metrics.jfr.FlightRecorderApplicationStartup;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,8 +25,8 @@ import java.util.stream.Collectors;
 @Slf4j
 @RestController
 @CrossOrigin("${app.config.cross-origin}")
-@RequestMapping("/api/${app.config.api-version}/raffle/")
-public class RaffleController implements IRaffleService {
+@RequestMapping("/api/${app.config.api-version}/raffle/strategy")
+public class RaffleStrategyController implements IRaffleStrategyService {
 
     @Autowired
     private IStrategyArmory strategyArmory;
@@ -84,7 +83,7 @@ public class RaffleController implements IRaffleService {
 
     @Override
     @PostMapping("random_raffle")
-    public Response<RaffleVO> raffle(@RequestBody RaffleDTO raffleDTO) {
+    public Response<RaffleStrategyVO> raffle(@RequestBody RaffleStrategyDTO raffleDTO) {
         Long strategyId = raffleDTO.getStrategyId();
         try {
             log.info("抽奖开始 strategyId:{}", strategyId);
@@ -92,23 +91,23 @@ public class RaffleController implements IRaffleService {
                     .userId("system")
                     .strategyId(strategyId)
                     .build());
-            return Response.<RaffleVO>builder()
+            return Response.<RaffleStrategyVO>builder()
                     .code(ResponseCode.SUCCESS.getCode())
                     .info(ResponseCode.SUCCESS.getInfo())
-                    .data(RaffleVO.builder()
+                    .data(RaffleStrategyVO.builder()
                             .awardId(raffleAwardEntity.getAwardId())
                             .awardIndex(raffleAwardEntity.getSort())
                             .build())
                     .build();
         }catch (AppException e){
             log.info("抽奖失败 strategyId:{}", strategyId);
-            return Response.<RaffleVO>builder()
+            return Response.<RaffleStrategyVO>builder()
                     .code(e.getCode())
                     .info(e.getInfo())
                     .build();
         }catch (Exception e){
             log.info("抽奖失败 strategyId:{}", strategyId);
-            return Response.<RaffleVO>builder()
+            return Response.<RaffleStrategyVO>builder()
                     .code(ResponseCode.UN_ERROR.getCode())
                     .info(ResponseCode.UN_ERROR.getInfo())
                     .build();

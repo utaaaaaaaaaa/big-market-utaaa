@@ -10,6 +10,11 @@ public interface IRaffleActivityPartakeService {
 
     /**
      * 创建抽奖订单
+     */
+    UserRaffleOrderEntity createOrder(String userId, Long activityId);
+
+    /**
+     * 创建抽奖订单
      *
      * @param partakeRaffleActivity 参与抽奖活动实体对象
      */

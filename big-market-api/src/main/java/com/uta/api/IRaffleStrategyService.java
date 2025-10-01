@@ -1,9 +1,9 @@
 package com.uta.api;
 
 import com.uta.api.entity.dto.GetRaffleAwardListDTO;
-import com.uta.api.entity.dto.RaffleDTO;
+import com.uta.api.entity.dto.RaffleStrategyDTO;
 import com.uta.api.entity.vo.GetRaffleAwardListVO;
-import com.uta.api.entity.vo.RaffleVO;
+import com.uta.api.entity.vo.RaffleStrategyVO;
 import com.uta.types.model.Response;
 
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 抽奖服务接口
  */
-public interface IRaffleService {
+public interface IRaffleStrategyService {
 
     /**
      * 装配策略
@@ -32,6 +32,6 @@ public interface IRaffleService {
      * @param raffleDTO 请求参数
      * @return 抽奖结果
      */
-    Response<RaffleVO> raffle(RaffleDTO raffleDTO);
+    Response<RaffleStrategyVO> raffle(RaffleStrategyDTO raffleDTO);
 
 }

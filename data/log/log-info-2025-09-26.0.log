@@ -1,0 +1,1600 @@
+25-09-25.17:15:36.914 [main            ] INFO  Application            - Starting Application using Java 17.0.12 on u_uta with PID 121780 (D:\_Code\java\big-market-utaaa\big-market-app\target\classes started by 24333 in D:\_Code\java\big-market-utaaa)
+25-09-25.17:15:36.916 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-25.17:15:37.621 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-25.17:15:37.624 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-25.17:15:37.655 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+25-09-25.17:15:38.229 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-09-25.17:15:38.236 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-25.17:15:38.237 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-25.17:15:38.237 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.83]
+25-09-25.17:15:38.373 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-25.17:15:38.373 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1426 ms
+25-09-25.17:15:38.647 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-25.17:15:38.770 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-25.17:15:38.896 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:15:38.913 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:15:39.784 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-25.17:15:39.807 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-25.17:15:39.817 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-09-25.17:15:39.829 [main            ] INFO  Application            - Started Application in 3.291 seconds (JVM running for 3.888)
+25-09-25.17:15:40.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:15:40.228 [RMI TCP Connection(1)-172.31.112.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-25.17:15:40.228 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-25.17:15:40.229 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-09-25.17:15:40.231 [RMI TCP Connection(2)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-25.17:15:40.419 [RMI TCP Connection(2)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-25.17:15:45.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:15:50.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:15:55.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:00.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:05.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:10.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:15.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:20.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:25.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:30.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:35.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:40.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:45.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:50.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:16:55.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:00.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:05.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:10.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:15.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:20.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:25.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:30.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:35.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:37.031 [http-nio-8091-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+25-09-25.17:17:40.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:45.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:47.190 [http-nio-8091-exec-3] INFO  RaffleController       - 抽奖策略装配开始 strategyId:100001
+25-09-25.17:17:50.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:17:55.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:00.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:05.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:10.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:15.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:20.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:25.127 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:30.027 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:35.643 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:40.095 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:45.901 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:50.402 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:18:56.094 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:19:54.665 [main            ] INFO  Application            - Starting Application using Java 17.0.12 on u_uta with PID 123240 (D:\_Code\java\big-market-utaaa\big-market-app\target\classes started by 24333 in D:\_Code\java\big-market-utaaa)
+25-09-25.17:19:54.666 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-25.17:19:55.356 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-25.17:19:55.357 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-25.17:19:55.388 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+25-09-25.17:19:55.967 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-09-25.17:19:55.973 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-25.17:19:55.974 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-25.17:19:55.974 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.83]
+25-09-25.17:19:56.115 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-25.17:19:56.115 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1414 ms
+25-09-25.17:19:56.401 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-25.17:19:56.525 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-25.17:19:56.647 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:19:56.663 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:19:57.591 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-25.17:19:57.612 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-25.17:19:57.625 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-09-25.17:19:57.639 [main            ] INFO  Application            - Started Application in 3.333 seconds (JVM running for 4.046)
+25-09-25.17:19:57.753 [RMI TCP Connection(1)-172.31.112.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-25.17:19:57.753 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-25.17:19:57.754 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-09-25.17:19:57.797 [RMI TCP Connection(3)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-25.17:19:57.983 [RMI TCP Connection(3)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-25.17:20:00.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:20:05.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:20:09.668 [http-nio-8091-exec-3] INFO  RaffleController       - 抽奖策略装配开始 strategyId:100006
+25-09-25.17:20:10.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:20:15.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:20:20.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:20:25.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:20:30.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:20:35.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:20:40.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:20:45.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:20:50.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:20:55.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:00.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:05.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:10.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:15.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:20.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:25.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:30.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:35.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:40.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:45.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:50.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:21:55.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:00.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:05.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:10.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:13.052 [http-nio-8091-exec-5] INFO  RaffleController       - 查询奖品列表 strategyId:100006
+25-09-25.17:22:15.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:20.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:25.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:30.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:35.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:40.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:45.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:50.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:22:55.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:00.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:05.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:10.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:11.815 [http-nio-8091-exec-8] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+25-09-25.17:23:15.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:20.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:25.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:30.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:35.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:40.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:45.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:48.337 [http-nio-8091-exec-9] INFO  RaffleController       - 抽奖开始 strategyId:null
+25-09-25.17:23:48.338 [http-nio-8091-exec-9] INFO  RaffleController       - 抽奖失败 strategyId:null
+25-09-25.17:23:50.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:23:55.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:00.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:05.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:10.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:15.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:20.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:25.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:30.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:35.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:40.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:45.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:49.569 [http-nio-8091-exec-21] INFO  RaffleController       - 抽奖开始 strategyId:null
+25-09-25.17:24:49.569 [http-nio-8091-exec-21] INFO  RaffleController       - 抽奖失败 strategyId:null
+25-09-25.17:24:50.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:24:55.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:00.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:05.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:10.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:17.965 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:17.966 [http-nio-8091-exec-13] INFO  RaffleController       - 抽奖开始 strategyId:null
+25-09-25.17:25:17.966 [http-nio-8091-exec-13] INFO  RaffleController       - 抽奖失败 strategyId:null
+25-09-25.17:25:20.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:25.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:30.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:35.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:40.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:45.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:50.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:25:55.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:26:00.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:26:05.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:26:10.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:26:14.699 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-25.17:26:14.705 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-25.17:26:19.007 [main            ] INFO  Application            - Starting Application using Java 17.0.12 on u_uta with PID 115632 (D:\_Code\java\big-market-utaaa\big-market-app\target\classes started by 24333 in D:\_Code\java\big-market-utaaa)
+25-09-25.17:26:19.008 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-25.17:26:19.694 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-25.17:26:19.695 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-25.17:26:19.725 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-09-25.17:26:20.278 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-09-25.17:26:20.284 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-25.17:26:20.284 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-25.17:26:20.284 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.83]
+25-09-25.17:26:20.415 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-25.17:26:20.415 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1374 ms
+25-09-25.17:26:20.703 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-25.17:26:20.824 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-25.17:26:20.942 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:26:20.956 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:26:22.055 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-25.17:26:22.077 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-25.17:26:22.089 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-09-25.17:26:22.100 [main            ] INFO  Application            - Started Application in 3.441 seconds (JVM running for 4.063)
+25-09-25.17:26:22.252 [RMI TCP Connection(4)-172.31.112.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-25.17:26:22.252 [RMI TCP Connection(4)-172.31.112.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-25.17:26:22.254 [RMI TCP Connection(4)-172.31.112.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-09-25.17:26:22.259 [RMI TCP Connection(3)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-25.17:26:22.498 [RMI TCP Connection(3)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-25.17:26:25.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:26:30.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:26:31.519 [http-nio-8091-exec-2] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.17:26:31.550 [http-nio-8091-exec-2] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.17:26:31.551 [http-nio-8091-exec-2] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.17:26:31.644 [http-nio-8091-exec-2] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.17:26:31.645 [http-nio-8091-exec-2] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.17:26:31.646 [http-nio-8091-exec-2] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.17:26:31.672 [http-nio-8091-exec-2] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.17:26:31.673 [http-nio-8091-exec-2] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.17:26:31.678 [http-nio-8091-exec-2] INFO  RaffleController       - 抽奖失败 strategyId:100006
+25-09-25.17:26:35.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:26:35.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.17:26:40.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:26:45.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:26:50.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:26:55.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:00.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:05.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:10.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:15.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:20.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:25.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:30.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:35.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:40.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:45.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:50.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:27:55.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:28:00.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:28:05.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:28:10.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:28:15.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:28:20.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:28:25.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:28:30.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:28:34.006 [http-nio-8091-exec-10] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.17:28:34.016 [http-nio-8091-exec-10] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=101
+25-09-25.17:28:34.016 [http-nio-8091-exec-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 101 rule_default
+25-09-25.17:29:12.692 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s52ms406µs100ns).
+25-09-25.17:29:12.692 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:29:12.735 [http-nio-8091-exec-10] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:101, ruleValue:1
+25-09-25.17:29:12.736 [http-nio-8091-exec-10] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.17:29:12.736 [http-nio-8091-exec-10] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:101
+25-09-25.17:29:12.747 [http-nio-8091-exec-10] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.17:29:14.640 [http-nio-8091-exec-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 101 null
+25-09-25.17:29:16.593 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:31:33.127 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:31:33.127 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m38s578ms153µs700ns).
+25-09-25.17:31:33.130 [http-nio-8091-exec-10] INFO  RaffleController       - 抽奖失败 strategyId:100006
+25-09-25.17:31:33.133 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:101
+25-09-25.17:31:33.240 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-25.17:31:33.249 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-25.17:31:39.316 [main            ] INFO  Application            - Starting Application using Java 17.0.12 on u_uta with PID 122012 (D:\_Code\java\big-market-utaaa\big-market-app\target\classes started by 24333 in D:\_Code\java\big-market-utaaa)
+25-09-25.17:31:39.318 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-25.17:31:40.045 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-25.17:31:40.046 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-25.17:31:40.077 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+25-09-25.17:31:40.684 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-09-25.17:31:40.690 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-25.17:31:40.692 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-25.17:31:40.692 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.83]
+25-09-25.17:31:40.846 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-25.17:31:40.846 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1490 ms
+25-09-25.17:31:41.152 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-25.17:31:41.325 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-25.17:31:41.455 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:31:41.473 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:31:42.520 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-25.17:31:42.543 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-25.17:31:42.555 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-09-25.17:31:42.568 [main            ] INFO  Application            - Started Application in 3.61 seconds (JVM running for 4.321)
+25-09-25.17:31:42.912 [RMI TCP Connection(1)-172.31.112.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-25.17:31:42.912 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-25.17:31:42.913 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-09-25.17:31:42.915 [RMI TCP Connection(2)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-25.17:31:43.070 [RMI TCP Connection(2)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-25.17:31:45.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:31:50.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:31:55.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:31:59.522 [http-nio-8091-exec-5] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.17:31:59.538 [http-nio-8091-exec-5] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.17:31:59.538 [http-nio-8091-exec-5] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.17:32:01.568 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:32:01.631 [http-nio-8091-exec-5] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.17:32:01.632 [http-nio-8091-exec-5] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.17:32:01.633 [http-nio-8091-exec-5] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.17:32:01.653 [http-nio-8091-exec-5] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.17:32:01.653 [http-nio-8091-exec-5] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.17:32:04.055 [http-nio-8091-exec-5] INFO  RaffleController       - 抽奖失败 strategyId:100006
+25-09-25.17:32:05.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:32:05.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.17:32:10.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:32:15.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:32:21.278 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:32:23.287 [http-nio-8091-exec-4] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.17:32:25.285 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:32:25.295 [http-nio-8091-exec-4] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.17:32:25.296 [http-nio-8091-exec-4] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.17:32:31.919 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:32:31.930 [http-nio-8091-exec-4] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.17:32:31.930 [http-nio-8091-exec-4] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.17:32:31.930 [http-nio-8091-exec-4] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.17:32:31.936 [http-nio-8091-exec-4] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.17:32:32.943 [http-nio-8091-exec-4] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.17:32:48.657 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:32:50.335 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.17:33:57.210 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:42:14.284 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:42:14.285 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m43s862ms283µs500ns).
+25-09-25.17:42:14.292 [http-nio-8091-exec-4] INFO  RaffleController       - 抽奖失败 strategyId:100006
+25-09-25.17:42:14.372 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-25.17:42:14.379 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-25.17:42:18.861 [main            ] INFO  Application            - Starting Application using Java 17.0.12 on u_uta with PID 97208 (D:\_Code\java\big-market-utaaa\big-market-app\target\classes started by 24333 in D:\_Code\java\big-market-utaaa)
+25-09-25.17:42:18.863 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-25.17:42:19.630 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-25.17:42:19.632 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-25.17:42:19.668 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+25-09-25.17:42:20.329 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-09-25.17:42:20.334 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-25.17:42:20.336 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-25.17:42:20.336 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.83]
+25-09-25.17:42:20.483 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-25.17:42:20.483 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1585 ms
+25-09-25.17:42:20.784 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-25.17:42:20.907 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-25.17:42:21.027 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:42:21.044 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:42:21.943 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-25.17:42:21.969 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-25.17:42:21.982 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-09-25.17:42:21.995 [main            ] INFO  Application            - Started Application in 3.491 seconds (JVM running for 4.296)
+25-09-25.17:42:22.415 [RMI TCP Connection(4)-172.31.112.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-25.17:42:22.415 [RMI TCP Connection(4)-172.31.112.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-25.17:42:22.416 [RMI TCP Connection(4)-172.31.112.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-09-25.17:42:22.417 [RMI TCP Connection(5)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-25.17:42:22.596 [RMI TCP Connection(5)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-25.17:42:25.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:42:30.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:42:34.251 [http-nio-8091-exec-2] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.17:42:34.266 [http-nio-8091-exec-2] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.17:42:34.267 [http-nio-8091-exec-2] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.17:42:34.330 [http-nio-8091-exec-2] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.17:42:34.331 [http-nio-8091-exec-2] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.17:42:34.332 [http-nio-8091-exec-2] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.17:42:34.354 [http-nio-8091-exec-2] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.17:42:34.355 [http-nio-8091-exec-2] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.17:42:38.172 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:42:47.069 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:42:48.457 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.17:43:31.830 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s124ms958µs).
+25-09-25.17:43:35.924 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:43:39.929 [http-nio-8091-exec-2] INFO  RaffleController       - 抽奖失败 strategyId:100006
+25-09-25.17:43:40.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:43:45.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:43:50.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:43:55.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:00.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:05.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:10.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:15.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:20.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:25.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:30.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:35.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:40.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:45.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:50.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:44:55.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:00.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:05.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:10.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:15.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:20.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:25.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:30.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:35.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:40.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:45.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:50.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:45:55.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:00.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:05.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:10.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:15.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:20.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:25.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:30.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:35.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:40.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:45.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:50.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:46:55.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:47:00.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:47:05.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:47:10.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:47:15.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:47:18.441 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-25.17:47:18.446 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-25.17:47:20.844 [main            ] INFO  Application            - Starting Application using Java 17.0.12 on u_uta with PID 31652 (D:\_Code\java\big-market-utaaa\big-market-app\target\classes started by 24333 in D:\_Code\java\big-market-utaaa)
+25-09-25.17:47:20.845 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-25.17:47:21.516 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-25.17:47:21.518 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-25.17:47:21.550 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+25-09-25.17:47:22.092 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-09-25.17:47:22.097 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-25.17:47:22.098 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-25.17:47:22.098 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.83]
+25-09-25.17:47:22.237 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-25.17:47:22.238 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1359 ms
+25-09-25.17:47:22.520 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-25.17:47:22.643 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-25.17:47:22.761 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:47:22.777 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:47:23.690 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-25.17:47:23.712 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-25.17:47:23.723 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-09-25.17:47:23.735 [main            ] INFO  Application            - Started Application in 3.248 seconds (JVM running for 3.902)
+25-09-25.17:47:23.985 [RMI TCP Connection(1)-172.31.112.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-25.17:47:23.985 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-25.17:47:23.986 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-09-25.17:47:24.004 [RMI TCP Connection(3)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-25.17:47:24.178 [RMI TCP Connection(3)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-25.17:47:25.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:47:27.344 [http-nio-8091-exec-3] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.17:47:27.359 [http-nio-8091-exec-3] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.17:47:27.360 [http-nio-8091-exec-3] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.17:47:27.439 [http-nio-8091-exec-3] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.17:47:27.441 [http-nio-8091-exec-3] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.17:47:27.441 [http-nio-8091-exec-3] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.17:47:27.465 [http-nio-8091-exec-3] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.17:47:27.465 [http-nio-8091-exec-3] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.17:47:30.355 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:47:35.275 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:47:35.280 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.17:47:50.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:47:55.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:48:00.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:48:05.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:48:06.963 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-25.17:48:06.970 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-25.17:58:39.189 [main            ] INFO  Application            - Starting Application using Java 17.0.12 on u_uta with PID 114780 (D:\_Code\java\big-market-utaaa\big-market-app\target\classes started by 24333 in D:\_Code\java\big-market-utaaa)
+25-09-25.17:58:39.191 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-25.17:58:39.788 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-25.17:58:39.789 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-25.17:58:39.822 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+25-09-25.17:58:40.295 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-09-25.17:58:40.300 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-25.17:58:40.301 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-25.17:58:40.302 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.83]
+25-09-25.17:58:40.429 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-25.17:58:40.429 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1210 ms
+25-09-25.17:58:40.672 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-25.17:58:40.793 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-25.17:58:40.904 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:58:40.921 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.17:58:41.726 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-25.17:58:41.747 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-25.17:58:41.760 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-09-25.17:58:41.770 [main            ] INFO  Application            - Started Application in 2.877 seconds (JVM running for 3.445)
+25-09-25.17:58:42.079 [RMI TCP Connection(1)-172.31.112.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-25.17:58:42.079 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-25.17:58:42.080 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-09-25.17:58:42.083 [RMI TCP Connection(2)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-25.17:58:42.283 [RMI TCP Connection(2)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-25.17:58:45.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:58:50.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:58:55.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:00.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:05.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:10.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:11.077 [http-nio-8091-exec-2] INFO  RaffleController       - 查询奖品列表 strategyId:100006
+25-09-25.17:59:15.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:20.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:25.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:30.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:35.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:40.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:45.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:50.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.17:59:55.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:00.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:05.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:08.728 [http-nio-8091-exec-4] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+25-09-25.18:00:10.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:15.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:20.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:24.048 [http-nio-8091-exec-3] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:00:24.079 [http-nio-8091-exec-3] INFO  RaffleController       - 抽奖失败 strategyId:100006
+25-09-25.18:00:25.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:30.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:34.979 [http-nio-8091-exec-5] INFO  RaffleController       - 抽奖策略装配开始 strategyId:100006
+25-09-25.18:00:35.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:37.814 [http-nio-8091-exec-6] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:00:37.825 [http-nio-8091-exec-6] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:00:37.825 [http-nio-8091-exec-6] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:00:37.873 [http-nio-8091-exec-6] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:00:37.875 [http-nio-8091-exec-6] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:00:37.875 [http-nio-8091-exec-6] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:00:37.898 [http-nio-8091-exec-6] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:00:37.899 [http-nio-8091-exec-6] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:00:40.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:45.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:45.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:00:50.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:00:55.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:00.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:05.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:10.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:15.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:20.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:25.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:30.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:35.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:40.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:45.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:50.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:01:55.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:00.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:05.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:10.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:15.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:20.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:25.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:30.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:35.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:40.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:45.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:50.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:02:55.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:00.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:05.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:10.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:15.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:20.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:25.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:30.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:35.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:40.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:45.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:50.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:03:55.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:00.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:05.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:10.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:15.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:20.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:25.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:30.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:35.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:40.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:45.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:50.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:04:55.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:00.031 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:05.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:10.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:15.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:20.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:25.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:30.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:35.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:40.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:45.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:50.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:05:55.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:00.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:05.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:10.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:15.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:20.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:25.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:30.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:35.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:38.895 [http-nio-8091-exec-10] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:38.908 [http-nio-8091-exec-10] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:38.908 [http-nio-8091-exec-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:38.988 [http-nio-8091-exec-10] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:38.988 [http-nio-8091-exec-10] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:38.988 [http-nio-8091-exec-10] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:39.003 [http-nio-8091-exec-10] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:39.003 [http-nio-8091-exec-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:39.011 [http-nio-8091-exec-11] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:39.019 [http-nio-8091-exec-11] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:39.019 [http-nio-8091-exec-11] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:39.027 [http-nio-8091-exec-11] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:39.027 [http-nio-8091-exec-11] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:39.027 [http-nio-8091-exec-11] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:39.034 [http-nio-8091-exec-11] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:39.034 [http-nio-8091-exec-11] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:39.163 [http-nio-8091-exec-13] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:39.171 [http-nio-8091-exec-13] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:39.171 [http-nio-8091-exec-13] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:39.176 [http-nio-8091-exec-13] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:39.176 [http-nio-8091-exec-13] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:39.176 [http-nio-8091-exec-13] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:39.181 [http-nio-8091-exec-13] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:39.181 [http-nio-8091-exec-13] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:40.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:40.539 [http-nio-8091-exec-14] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:40.547 [http-nio-8091-exec-14] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:40.547 [http-nio-8091-exec-14] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:40.552 [http-nio-8091-exec-14] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:40.552 [http-nio-8091-exec-14] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:40.552 [http-nio-8091-exec-14] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:40.554 [http-nio-8091-exec-14] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:40.554 [http-nio-8091-exec-14] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:40.647 [http-nio-8091-exec-15] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:40.653 [http-nio-8091-exec-15] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:40.653 [http-nio-8091-exec-15] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:40.657 [http-nio-8091-exec-15] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:40.657 [http-nio-8091-exec-15] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:40.657 [http-nio-8091-exec-15] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:40.660 [http-nio-8091-exec-15] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:40.660 [http-nio-8091-exec-15] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:40.679 [http-nio-8091-exec-16] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:40.684 [http-nio-8091-exec-16] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:40.684 [http-nio-8091-exec-16] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:40.687 [http-nio-8091-exec-16] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:40.687 [http-nio-8091-exec-16] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:40.687 [http-nio-8091-exec-16] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:40.692 [http-nio-8091-exec-16] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:40.692 [http-nio-8091-exec-16] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:41.625 [http-nio-8091-exec-18] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:41.633 [http-nio-8091-exec-18] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:41.633 [http-nio-8091-exec-18] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:41.637 [http-nio-8091-exec-18] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:41.637 [http-nio-8091-exec-18] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:41.637 [http-nio-8091-exec-18] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:41.640 [http-nio-8091-exec-18] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:41.641 [http-nio-8091-exec-18] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:41.828 [http-nio-8091-exec-19] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:41.835 [http-nio-8091-exec-19] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:41.835 [http-nio-8091-exec-19] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:41.837 [http-nio-8091-exec-19] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:41.837 [http-nio-8091-exec-19] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:41.837 [http-nio-8091-exec-19] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:41.841 [http-nio-8091-exec-19] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:41.841 [http-nio-8091-exec-19] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:41.952 [http-nio-8091-exec-17] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:41.958 [http-nio-8091-exec-17] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=101
+25-09-25.18:06:41.959 [http-nio-8091-exec-17] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 101 rule_default
+25-09-25.18:06:41.963 [http-nio-8091-exec-17] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:101, ruleValue:1
+25-09-25.18:06:41.963 [http-nio-8091-exec-17] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:41.963 [http-nio-8091-exec-17] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:101
+25-09-25.18:06:41.967 [http-nio-8091-exec-17] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:41.967 [http-nio-8091-exec-17] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 101 null
+25-09-25.18:06:42.570 [http-nio-8091-exec-20] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:42.575 [http-nio-8091-exec-20] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:42.576 [http-nio-8091-exec-20] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:42.580 [http-nio-8091-exec-20] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:42.580 [http-nio-8091-exec-20] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:42.580 [http-nio-8091-exec-20] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:42.583 [http-nio-8091-exec-20] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:42.583 [http-nio-8091-exec-20] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:42.678 [http-nio-8091-exec-22] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:42.683 [http-nio-8091-exec-22] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:42.683 [http-nio-8091-exec-22] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:42.685 [http-nio-8091-exec-22] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:42.686 [http-nio-8091-exec-22] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:42.686 [http-nio-8091-exec-22] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:42.688 [http-nio-8091-exec-22] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:42.688 [http-nio-8091-exec-22] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:43.312 [http-nio-8091-exec-21] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:43.319 [http-nio-8091-exec-21] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:43.319 [http-nio-8091-exec-21] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:43.323 [http-nio-8091-exec-21] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:43.323 [http-nio-8091-exec-21] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:43.323 [http-nio-8091-exec-21] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:43.325 [http-nio-8091-exec-21] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:43.325 [http-nio-8091-exec-21] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:43.610 [http-nio-8091-exec-27] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:43.615 [http-nio-8091-exec-27] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:43.615 [http-nio-8091-exec-27] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:43.619 [http-nio-8091-exec-27] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:43.619 [http-nio-8091-exec-27] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:43.619 [http-nio-8091-exec-27] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:43.621 [http-nio-8091-exec-27] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:43.622 [http-nio-8091-exec-27] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:44.056 [http-nio-8091-exec-24] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:44.061 [http-nio-8091-exec-24] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:44.061 [http-nio-8091-exec-24] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:44.064 [http-nio-8091-exec-24] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:44.064 [http-nio-8091-exec-24] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:44.064 [http-nio-8091-exec-24] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:44.067 [http-nio-8091-exec-24] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:44.067 [http-nio-8091-exec-24] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:44.631 [http-nio-8091-exec-29] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:44.638 [http-nio-8091-exec-29] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:44.638 [http-nio-8091-exec-29] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:44.643 [http-nio-8091-exec-29] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:44.643 [http-nio-8091-exec-29] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:44.643 [http-nio-8091-exec-29] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:44.648 [http-nio-8091-exec-29] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:44.648 [http-nio-8091-exec-29] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:44.770 [http-nio-8091-exec-26] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:06:44.776 [http-nio-8091-exec-26] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:06:44.776 [http-nio-8091-exec-26] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:06:44.779 [http-nio-8091-exec-26] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:06:44.779 [http-nio-8091-exec-26] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:06:44.779 [http-nio-8091-exec-26] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:06:44.782 [http-nio-8091-exec-26] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:06:44.782 [http-nio-8091-exec-26] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:06:45.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:45.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:06:50.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:50.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:06:55.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:06:55.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:07:00.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:00.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:07:05.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:05.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:07:10.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:10.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:07:15.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:15.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:07:20.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:20.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:07:25.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:25.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:101
+25-09-25.18:07:30.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:30.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:07:35.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:35.017 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:07:40.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:40.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:07:45.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:45.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:07:50.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:50.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:07:55.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:07:55.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:08:00.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:08:00.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:08:05.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:08:10.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:08:15.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:08:20.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:08:25.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:08:30.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:08:35.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:08:40.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:08:45.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:08:50.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:08:55.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:00.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:05.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:10.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:15.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:20.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:25.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:30.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:35.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:40.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:45.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:50.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:09:55.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:00.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:04.446 [http-nio-8091-exec-35] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:10:04.447 [http-nio-8091-exec-36] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:10:04.447 [http-nio-8091-exec-34] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:10:04.453 [http-nio-8091-exec-35] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:10:04.453 [http-nio-8091-exec-34] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=101
+25-09-25.18:10:04.453 [http-nio-8091-exec-36] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:10:04.453 [http-nio-8091-exec-34] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 101 rule_default
+25-09-25.18:10:04.453 [http-nio-8091-exec-35] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:10:04.453 [http-nio-8091-exec-36] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:10:04.470 [http-nio-8091-exec-35] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:10:04.471 [http-nio-8091-exec-35] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:10:04.471 [http-nio-8091-exec-35] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:10:04.471 [http-nio-8091-exec-34] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:101, ruleValue:1
+25-09-25.18:10:04.471 [http-nio-8091-exec-36] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:10:04.471 [http-nio-8091-exec-36] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:10:04.471 [http-nio-8091-exec-34] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:10:04.471 [http-nio-8091-exec-36] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:10:04.471 [http-nio-8091-exec-34] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:101
+25-09-25.18:10:04.483 [http-nio-8091-exec-34] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:10:04.483 [http-nio-8091-exec-34] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 101 null
+25-09-25.18:10:04.484 [http-nio-8091-exec-36] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:10:04.484 [http-nio-8091-exec-36] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:10:04.484 [http-nio-8091-exec-35] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:10:04.484 [http-nio-8091-exec-35] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:10:05.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:05.090 [http-nio-8091-exec-33] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:10:05.090 [http-nio-8091-exec-37] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:10:05.091 [http-nio-8091-exec-38] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:10:05.094 [http-nio-8091-exec-38] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:10:05.094 [http-nio-8091-exec-38] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:10:05.095 [http-nio-8091-exec-37] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:10:05.095 [http-nio-8091-exec-33] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:10:05.095 [http-nio-8091-exec-37] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:10:05.095 [http-nio-8091-exec-33] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:10:05.098 [http-nio-8091-exec-38] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:10:05.098 [http-nio-8091-exec-38] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:10:05.098 [http-nio-8091-exec-38] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:10:05.098 [http-nio-8091-exec-37] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:10:05.099 [http-nio-8091-exec-37] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:10:05.099 [http-nio-8091-exec-37] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:10:05.099 [http-nio-8091-exec-33] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:10:05.099 [http-nio-8091-exec-33] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:10:05.099 [http-nio-8091-exec-33] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:10:05.100 [http-nio-8091-exec-38] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:10:05.100 [http-nio-8091-exec-38] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:10:05.101 [http-nio-8091-exec-37] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:10:05.101 [http-nio-8091-exec-37] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:10:05.102 [http-nio-8091-exec-33] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:10:05.102 [http-nio-8091-exec-33] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:10:05.704 [http-nio-8091-exec-40] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:10:05.704 [http-nio-8091-exec-39] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:10:05.704 [http-nio-8091-exec-41] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.18:10:05.708 [http-nio-8091-exec-41] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:10:05.708 [http-nio-8091-exec-39] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:10:05.708 [http-nio-8091-exec-40] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.18:10:05.708 [http-nio-8091-exec-41] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:10:05.708 [http-nio-8091-exec-39] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:10:05.708 [http-nio-8091-exec-40] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.18:10:05.711 [http-nio-8091-exec-40] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:10:05.712 [http-nio-8091-exec-40] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:10:05.712 [http-nio-8091-exec-40] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:10:05.712 [http-nio-8091-exec-41] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:10:05.712 [http-nio-8091-exec-41] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:10:05.712 [http-nio-8091-exec-41] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:10:05.712 [http-nio-8091-exec-39] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.18:10:05.712 [http-nio-8091-exec-39] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.18:10:05.712 [http-nio-8091-exec-39] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.18:10:05.715 [http-nio-8091-exec-40] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:10:05.715 [http-nio-8091-exec-40] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:10:05.715 [http-nio-8091-exec-41] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:10:05.715 [http-nio-8091-exec-41] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:10:05.715 [http-nio-8091-exec-39] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.18:10:05.715 [http-nio-8091-exec-39] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.18:10:10.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:10.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:10:15.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:15.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:101
+25-09-25.18:10:20.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:20.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:10:25.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:25.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:10:30.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:30.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:10:35.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:35.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:10:40.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:40.027 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:10:45.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:45.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:10:50.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:50.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.18:10:55.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.18:10:58.084 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-25.18:10:58.095 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-25.22:21:08.498 [main            ] INFO  Application            - Starting Application using Java 17.0.12 on u_uta with PID 82284 (D:\_Code\java\big-market-utaaa\big-market-app\target\classes started by 24333 in D:\_Code\java\big-market-utaaa)
+25-09-25.22:21:08.500 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-25.22:21:09.231 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-25.22:21:09.233 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-25.22:21:09.265 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+25-09-25.22:21:09.937 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-09-25.22:21:09.945 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-25.22:21:09.946 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-25.22:21:09.946 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.83]
+25-09-25.22:21:10.100 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-25.22:21:10.101 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1564 ms
+25-09-25.22:21:10.403 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-25.22:21:10.537 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-25.22:21:10.664 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.22:21:10.687 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.22:21:11.712 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-25.22:21:11.739 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-25.22:21:11.753 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-09-25.22:21:11.767 [main            ] INFO  Application            - Started Application in 3.608 seconds (JVM running for 4.216)
+25-09-25.22:21:11.918 [RMI TCP Connection(1)-172.31.112.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-25.22:21:11.918 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-25.22:21:11.919 [RMI TCP Connection(1)-172.31.112.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-09-25.22:21:11.920 [RMI TCP Connection(2)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-25.22:21:12.107 [RMI TCP Connection(2)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-25.22:21:15.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:21:20.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:21:25.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:21:30.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:21:35.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:21:40.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:21:45.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:21:50.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:21:55.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:00.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:05.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:10.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:15.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:20.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:25.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:30.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:35.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:40.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:45.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:50.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:22:55.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:00.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:05.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:10.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:15.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:20.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:25.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:30.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:35.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:40.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:45.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:50.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:23:55.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:00.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:05.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:10.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:15.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:19.027 [http-nio-8091-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.uta.types.model.Response<java.util.List<com.uta.api.entity.vo.GetRaffleAwardListVO>> com.uta.trigger.http.RaffleController.getRaffleAwardList(com.uta.api.entity.dto.GetRaffleAwardListDTO)]
+25-09-25.22:24:20.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:25.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:30.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:35.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:40.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:45.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:50.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:24:55.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:00.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:05.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:10.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:15.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:19.999 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:25.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:30.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:35.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:40.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:45.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:50.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:25:55.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:00.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:05.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:10.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:15.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:20.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:25.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:30.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:35.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:40.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:45.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:50.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:26:55.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:00.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:05.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:10.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:15.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:20.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:25.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:30.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:35.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:40.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:45.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:50.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:27:55.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:00.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:05.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:10.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:15.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:20.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:25.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:30.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:35.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:40.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:45.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:50.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:28:55.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:00.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:05.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:10.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:15.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:20.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:25.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:30.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:35.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:40.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:45.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:50.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:29:55.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:00.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:05.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:10.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:15.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:20.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:25.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:30.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:35.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:40.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:45.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:50.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:30:55.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:00.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:05.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:10.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:15.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:20.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:25.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:30.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:35.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:40.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:45.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:50.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:31:55.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:00.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:05.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:10.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:15.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:20.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:25.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:30.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:35.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:40.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:45.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:50.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:55.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:32:59.795 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-25.22:32:59.802 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-09-25.22:33:04.241 [main            ] INFO  Application            - Starting Application using Java 17.0.12 on u_uta with PID 121484 (D:\_Code\java\big-market-utaaa\big-market-app\target\classes started by 24333 in D:\_Code\java\big-market-utaaa)
+25-09-25.22:33:04.243 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-25.22:33:04.946 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-09-25.22:33:04.947 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-09-25.22:33:04.981 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+25-09-25.22:33:05.495 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-09-25.22:33:05.500 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-25.22:33:05.502 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-25.22:33:05.502 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.83]
+25-09-25.22:33:05.634 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-25.22:33:05.635 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1360 ms
+25-09-25.22:33:05.893 [main            ] INFO  Version                - Redisson 3.27.1
+25-09-25.22:33:06.010 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-09-25.22:33:06.116 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.22:33:06.132 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-09-25.22:33:07.002 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-09-25.22:33:07.023 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-25.22:33:07.031 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-09-25.22:33:07.046 [main            ] INFO  Application            - Started Application in 3.15 seconds (JVM running for 3.727)
+25-09-25.22:33:07.470 [RMI TCP Connection(2)-172.31.112.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-25.22:33:07.470 [RMI TCP Connection(2)-172.31.112.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-25.22:33:07.470 [RMI TCP Connection(2)-172.31.112.1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+25-09-25.22:33:07.484 [RMI TCP Connection(3)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-09-25.22:33:07.606 [RMI TCP Connection(3)-172.31.112.1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-09-25.22:33:10.020 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:33:15.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:33:20.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:33:20.469 [http-nio-8091-exec-2] INFO  RaffleController       - 查询奖品列表 strategyId:0
+25-09-25.22:33:25.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:33:30.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:33:35.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:33:40.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:33:45.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:33:50.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:33:55.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:00.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:05.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:10.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:15.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:20.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:25.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:30.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:35.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:40.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:45.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:50.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:34:55.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:00.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:05.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:10.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:14.848 [http-nio-8091-exec-4] INFO  RaffleController       - 查询奖品列表 strategyId:10006
+25-09-25.22:35:15.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:20.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:25.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:27.440 [http-nio-8091-exec-5] INFO  RaffleController       - 查询奖品列表 strategyId:100006
+25-09-25.22:35:30.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:35.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:40.002 [http-nio-8091-exec-6] INFO  RaffleController       - 查询奖品列表 strategyId:100001
+25-09-25.22:35:40.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:45.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:50.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:55.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:35:57.683 [http-nio-8091-exec-7] INFO  RaffleController       - 查询奖品列表 strategyId:100005
+25-09-25.22:36:00.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:36:02.995 [http-nio-8091-exec-9] INFO  RaffleController       - 抽奖开始 strategyId:100005
+25-09-25.22:36:03.025 [http-nio-8091-exec-9] INFO  RaffleController       - 抽奖失败 strategyId:100005
+25-09-25.22:36:05.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:36:10.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:36:15.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:36:20.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:36:25.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:36:26.399 [http-nio-8091-exec-10] INFO  RaffleController       - 抽奖策略装配开始 strategyId:100005
+25-09-25.22:36:30.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:36:35.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:36:40.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:36:45.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:36:50.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:36:55.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:00.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:05.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:07.856 [http-nio-8091-exec-12] INFO  RaffleController       - 抽奖开始 strategyId:100005
+25-09-25.22:37:07.871 [http-nio-8091-exec-12] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100005, ruleModel=default, awardId=104
+25-09-25.22:37:07.872 [http-nio-8091-exec-12] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100005 104 rule_default
+25-09-25.22:37:07.900 [http-nio-8091-exec-12] INFO  RaffleController       - 抽奖失败 strategyId:100005
+25-09-25.22:37:10.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:15.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:20.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:25.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:30.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:35.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:40.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:45.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:46.386 [http-nio-8091-exec-13] INFO  RaffleController       - 查询奖品列表 strategyId:100006
+25-09-25.22:37:47.144 [http-nio-8091-exec-15] INFO  RaffleController       - 抽奖策略装配开始 strategyId:100006
+25-09-25.22:37:50.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:37:55.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:00.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:05.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:10.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:15.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:15.700 [http-nio-8091-exec-16] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:38:15.710 [http-nio-8091-exec-16] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=101
+25-09-25.22:38:15.710 [http-nio-8091-exec-16] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 101 rule_default
+25-09-25.22:38:15.731 [http-nio-8091-exec-16] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:101, ruleValue:1
+25-09-25.22:38:15.732 [http-nio-8091-exec-16] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:38:15.732 [http-nio-8091-exec-16] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:101
+25-09-25.22:38:15.765 [http-nio-8091-exec-16] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:38:15.765 [http-nio-8091-exec-16] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 101 null
+25-09-25.22:38:20.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:20.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:101
+25-09-25.22:38:25.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:30.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:35.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:40.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:45.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:50.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:38:55.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:00.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:05.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:10.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:15.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:20.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:25.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:30.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:35.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:40.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:45.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:47.570 [http-nio-8091-exec-18] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:39:47.579 [http-nio-8091-exec-18] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:39:47.579 [http-nio-8091-exec-18] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:39:47.588 [http-nio-8091-exec-18] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:39:47.588 [http-nio-8091-exec-18] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:39:47.588 [http-nio-8091-exec-18] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:39:47.592 [http-nio-8091-exec-18] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:39:47.592 [http-nio-8091-exec-18] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:39:50.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:55.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:39:55.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:40:00.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:40:01.528 [http-nio-8091-exec-19] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:40:01.538 [http-nio-8091-exec-19] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:40:01.538 [http-nio-8091-exec-19] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:40:01.543 [http-nio-8091-exec-19] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:40:01.543 [http-nio-8091-exec-19] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:40:01.543 [http-nio-8091-exec-19] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:40:01.548 [http-nio-8091-exec-19] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:40:01.548 [http-nio-8091-exec-19] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:40:05.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:40:05.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:40:10.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:40:15.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:40:20.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:40:25.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:40:30.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:40:35.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:40:40.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:40:45.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:40:50.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:40:55.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:00.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:05.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:10.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:15.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:20.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:25.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:30.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:30.133 [http-nio-8091-exec-21] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:41:30.142 [http-nio-8091-exec-21] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:41:30.142 [http-nio-8091-exec-21] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:41:30.146 [http-nio-8091-exec-21] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:41:30.146 [http-nio-8091-exec-21] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:41:30.146 [http-nio-8091-exec-21] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:41:30.151 [http-nio-8091-exec-21] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:41:30.151 [http-nio-8091-exec-21] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:41:35.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:35.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:41:40.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:45.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:50.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:41:55.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:00.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:05.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:10.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:13.811 [http-nio-8091-exec-23] INFO  RaffleController       - 抽奖策略装配开始 strategyId:100006
+25-09-25.22:42:15.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:20.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:25.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:30.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:35.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:40.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:45.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:50.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:55.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:42:58.687 [http-nio-8091-exec-22] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:42:58.699 [http-nio-8091-exec-22] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:42:58.699 [http-nio-8091-exec-22] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:42:58.717 [http-nio-8091-exec-22] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:42:58.717 [http-nio-8091-exec-22] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:42:58.717 [http-nio-8091-exec-22] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:42:58.720 [http-nio-8091-exec-22] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:42:58.720 [http-nio-8091-exec-22] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:43:00.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:43:05.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:43:05.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:43:10.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:43:15.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:43:16.992 [http-nio-8091-exec-24] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:43:16.999 [http-nio-8091-exec-24] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:43:16.999 [http-nio-8091-exec-24] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:43:17.004 [http-nio-8091-exec-24] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:43:17.004 [http-nio-8091-exec-24] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:43:17.004 [http-nio-8091-exec-24] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:43:17.007 [http-nio-8091-exec-24] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:43:17.007 [http-nio-8091-exec-24] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:43:20.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:43:20.017 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:43:24.832 [http-nio-8091-exec-25] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:43:24.838 [http-nio-8091-exec-25] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=101
+25-09-25.22:43:24.838 [http-nio-8091-exec-25] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 101 rule_default
+25-09-25.22:43:24.846 [http-nio-8091-exec-25] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:101, ruleValue:1
+25-09-25.22:43:24.846 [http-nio-8091-exec-25] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:43:24.846 [http-nio-8091-exec-25] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:101
+25-09-25.22:43:24.855 [http-nio-8091-exec-25] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:43:24.855 [http-nio-8091-exec-25] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 101 null
+25-09-25.22:43:25.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:43:30.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:43:30.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:101
+25-09-25.22:43:35.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:43:40.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:43:45.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:43:50.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:43:55.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:00.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:05.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:10.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:15.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:20.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:25.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:30.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:35.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:40.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:45.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:50.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:44:55.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:00.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:05.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:10.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:15.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:20.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:25.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:30.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:35.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:40.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:44.848 [http-nio-8091-exec-27] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:45:44.856 [http-nio-8091-exec-27] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:45:44.856 [http-nio-8091-exec-27] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:45:44.862 [http-nio-8091-exec-27] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:45:44.863 [http-nio-8091-exec-27] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:45:44.863 [http-nio-8091-exec-27] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:45:44.867 [http-nio-8091-exec-27] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:45:44.868 [http-nio-8091-exec-27] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:45:45.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:50.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:45:50.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:45:55.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:00.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:00.715 [http-nio-8091-exec-28] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:46:00.719 [http-nio-8091-exec-28] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:46:00.719 [http-nio-8091-exec-28] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:46:00.722 [http-nio-8091-exec-28] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:46:00.722 [http-nio-8091-exec-28] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:46:00.722 [http-nio-8091-exec-28] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:46:00.725 [http-nio-8091-exec-28] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:46:00.725 [http-nio-8091-exec-28] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:46:05.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:05.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:46:10.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:15.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:20.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:25.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:30.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:35.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:40.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:45.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:50.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:46:55.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:00.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:05.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:10.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:15.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:20.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:25.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:30.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:35.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:40.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:45.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:50.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:50.113 [http-nio-8091-exec-30] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:47:50.123 [http-nio-8091-exec-30] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:47:50.123 [http-nio-8091-exec-30] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:47:50.128 [http-nio-8091-exec-30] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:47:50.128 [http-nio-8091-exec-30] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:47:50.128 [http-nio-8091-exec-30] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:47:50.138 [http-nio-8091-exec-30] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:47:50.138 [http-nio-8091-exec-30] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:47:55.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:47:55.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:48:00.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:48:05.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:48:10.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:48:15.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:48:20.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:48:25.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:48:30.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:48:35.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:48:40.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:48:45.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:48:50.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:48:55.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:00.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:05.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:10.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:15.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:20.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:25.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:30.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:35.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:40.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:45.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:50.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:49:55.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:00.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:05.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:10.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:15.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:20.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:25.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:30.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:35.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:40.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:45.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:50.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:50:55.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:00.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:05.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:10.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:15.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:20.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:25.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:30.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:35.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:40.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:45.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:50.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:51:55.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:00.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:05.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:10.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:15.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:20.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:25.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:30.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:35.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:40.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:45.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:50.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:52:55.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:00.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:05.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:10.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:15.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:20.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:25.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:30.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:35.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:40.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:45.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:50.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:53:55.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:00.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:05.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:10.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:15.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:20.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:25.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:30.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:35.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:40.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:45.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:50.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:54:55.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:00.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:05.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:10.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:15.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:20.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:25.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:30.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:35.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:40.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:45.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:50.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:55:55.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:00.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:05.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:10.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:15.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:20.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:25.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:30.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:35.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:40.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:45.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:50.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:56:55.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:00.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:05.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:10.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:15.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:20.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:25.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:30.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:35.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:40.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:45.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:50.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:51.646 [http-nio-8091-exec-32] INFO  RaffleController       - 查询奖品列表 strategyId:100006
+25-09-25.22:57:55.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:57:57.928 [http-nio-8091-exec-33] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:57:57.934 [http-nio-8091-exec-33] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:57:57.934 [http-nio-8091-exec-33] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:57:57.940 [http-nio-8091-exec-33] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:57:57.940 [http-nio-8091-exec-33] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:57:57.940 [http-nio-8091-exec-33] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:57:57.943 [http-nio-8091-exec-33] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:57:57.943 [http-nio-8091-exec-33] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:58:00.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:58:05.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:58:05.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:58:10.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:58:15.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:58:20.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:58:25.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:58:30.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:58:35.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:58:40.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:58:45.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:58:50.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:58:55.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:00.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:05.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:10.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:15.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:20.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:21.850 [http-nio-8091-exec-35] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:59:21.855 [http-nio-8091-exec-35] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:59:21.855 [http-nio-8091-exec-35] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:59:21.859 [http-nio-8091-exec-35] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:59:21.859 [http-nio-8091-exec-35] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:59:21.859 [http-nio-8091-exec-35] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:59:21.865 [http-nio-8091-exec-35] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:59:21.865 [http-nio-8091-exec-35] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:59:25.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:25.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:59:28.645 [http-nio-8091-exec-36] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:59:28.651 [http-nio-8091-exec-36] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:59:28.651 [http-nio-8091-exec-36] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:59:28.653 [http-nio-8091-exec-36] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:59:28.653 [http-nio-8091-exec-36] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:59:28.653 [http-nio-8091-exec-36] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:59:28.657 [http-nio-8091-exec-36] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:59:28.657 [http-nio-8091-exec-36] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:59:30.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:35.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:35.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:59:40.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:40.195 [http-nio-8091-exec-37] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:59:40.203 [http-nio-8091-exec-37] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:59:40.203 [http-nio-8091-exec-37] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:59:40.207 [http-nio-8091-exec-37] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:59:40.207 [http-nio-8091-exec-37] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:59:40.207 [http-nio-8091-exec-37] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:59:40.210 [http-nio-8091-exec-37] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:59:40.210 [http-nio-8091-exec-37] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:59:45.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:45.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.22:59:50.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:50.713 [http-nio-8091-exec-38] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.22:59:50.719 [http-nio-8091-exec-38] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.22:59:50.719 [http-nio-8091-exec-38] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.22:59:50.722 [http-nio-8091-exec-38] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.22:59:50.722 [http-nio-8091-exec-38] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.22:59:50.722 [http-nio-8091-exec-38] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.22:59:50.724 [http-nio-8091-exec-38] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.22:59:50.724 [http-nio-8091-exec-38] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.22:59:55.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.22:59:55.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.23:00:00.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:05.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:10.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:13.374 [http-nio-8091-exec-39] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.23:00:13.382 [http-nio-8091-exec-39] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.23:00:13.382 [http-nio-8091-exec-39] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.23:00:13.387 [http-nio-8091-exec-39] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.23:00:13.387 [http-nio-8091-exec-39] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.23:00:13.387 [http-nio-8091-exec-39] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.23:00:13.388 [http-nio-8091-exec-39] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.23:00:13.389 [http-nio-8091-exec-39] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.23:00:15.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:20.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:20.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.23:00:25.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:27.718 [http-nio-8091-exec-40] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.23:00:27.722 [http-nio-8091-exec-40] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.23:00:27.722 [http-nio-8091-exec-40] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.23:00:27.724 [http-nio-8091-exec-40] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.23:00:27.724 [http-nio-8091-exec-40] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.23:00:27.724 [http-nio-8091-exec-40] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.23:00:27.726 [http-nio-8091-exec-40] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.23:00:27.727 [http-nio-8091-exec-40] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.23:00:30.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:35.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:35.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.23:00:40.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:45.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:47.263 [http-nio-8091-exec-41] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.23:00:47.271 [http-nio-8091-exec-41] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.23:00:47.271 [http-nio-8091-exec-41] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.23:00:47.276 [http-nio-8091-exec-41] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.23:00:47.276 [http-nio-8091-exec-41] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.23:00:47.276 [http-nio-8091-exec-41] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.23:00:47.283 [http-nio-8091-exec-41] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.23:00:47.283 [http-nio-8091-exec-41] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.23:00:50.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:55.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:00:55.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.23:00:56.073 [http-nio-8091-exec-42] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.23:00:56.077 [http-nio-8091-exec-42] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.23:00:56.077 [http-nio-8091-exec-42] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.23:00:56.080 [http-nio-8091-exec-42] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.23:00:56.080 [http-nio-8091-exec-42] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.23:00:56.080 [http-nio-8091-exec-42] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.23:00:56.082 [http-nio-8091-exec-42] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.23:00:56.082 [http-nio-8091-exec-42] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.23:01:00.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:01:00.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.23:01:03.713 [http-nio-8091-exec-44] INFO  RaffleController       - 抽奖开始 strategyId:100006
+25-09-25.23:01:03.717 [http-nio-8091-exec-44] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=system, strategyId=100006, ruleModel=default, awardId=102
+25-09-25.23:01:03.717 [http-nio-8091-exec-44] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 102 rule_default
+25-09-25.23:01:03.719 [http-nio-8091-exec-44] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:system, strategyId:100006, awardId:102, ruleValue:1
+25-09-25.23:01:03.719 [http-nio-8091-exec-44] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-09-25.23:01:03.719 [http-nio-8091-exec-44] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:system strategyId:100006 awardId:102
+25-09-25.23:01:03.721 [http-nio-8091-exec-44] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-09-25.23:01:03.721 [http-nio-8091-exec-44] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 102 null
+25-09-25.23:01:05.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:01:10.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:01:10.038 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存 strategyId:100006, awardId:102
+25-09-25.23:01:15.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:01:20.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:01:25.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:01:30.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:01:35.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:01:40.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:01:45.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:01:50.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:01:55.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:00.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:05.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:10.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:15.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:20.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:25.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:30.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:35.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:40.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:45.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:50.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 【定时任务】-更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次】
+25-09-25.23:02:54.443 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-09-25.23:02:54.450 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

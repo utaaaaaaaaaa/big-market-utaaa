@@ -18,6 +18,11 @@ public interface RaffleActivityMapper extends BaseMapper<RaffleActivity> {
     @Select("select * from raffle_activity where activity_id = #{id}")
     RaffleActivity queryRaffleActivityByActivityId(Long id);
 
+    @Select("select strategy_id from raffle_activity where activity_id = #{activityId}")
+    Long queryStrategyIdByActivityId(Long activityId);
+
+    @Select("select activity_id from raffle_activity where strategy_id = #{strategyId}")
+    Long queryActivityIdByStrategyId(Long strategyId);
 }
 
 

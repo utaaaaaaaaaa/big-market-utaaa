@@ -1,16 +1,20 @@
 package com.uta.domain.strategy.service.rule.tree.impl;
 
 import com.uta.domain.strategy.model.vo.RuleLogicCheckTypeVO;
+import com.uta.domain.strategy.repository.IStrategyRepository;
 import com.uta.domain.strategy.service.rule.tree.ILogicTreeNode;
 import com.uta.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
+
 @Slf4j
 @Component("rule_lock")
 public class RuleLockLogicTreeNode implements ILogicTreeNode {
 
-    private Long userRaffleCount = 10L;
+    @Resource
+    private IStrategyRepository strategyRepository;
 
     @Override
     public DefaultTreeFactory.TreeActionEntity logic(String userId, Long strategyId, Integer awardId, String ruleValue) {
@@ -21,6 +25,8 @@ public class RuleLockLogicTreeNode implements ILogicTreeNode {
         }catch (Exception e){
             throw new RuntimeException("【规则过滤】-次数锁异常 ruleValue: "+ ruleValue);
         }
+
+        Integer userRaffleCount = strategyRepository.queryTodayUserRaffleCount(userId, strategyId);
 
         if (userRaffleCount >= raffleCount) {
             return DefaultTreeFactory.TreeActionEntity.builder()
