@@ -38,6 +38,10 @@
         from raffle_activity_sku
         where sku = #{sku}
     </select>
+    <select id="queryActivitySkuListByActivityId"
+            resultType="com.uta.infrastructure.persistent.po.RaffleActivitySku">
+        select * from raffle_activity_sku where activity_id = #{activityId}
+    </select>
 
 
 </mapper>
