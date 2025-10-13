@@ -1,0 +1,85 @@
+25-10-13.19:18:41.815 [main            ] INFO  RaffleStrategyControllerTest - Starting RaffleStrategyControllerTest using Java 17.0.12 on u_uta with PID 37364 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-10-13.19:18:41.816 [main            ] INFO  RaffleStrategyControllerTest - The following 1 profile is active: "dev"
+25-10-13.19:18:42.758 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-13.19:18:42.764 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-13.19:18:42.816 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+25-10-13.19:18:44.664 [main            ] INFO  Version                - Redisson 3.27.1
+25-10-13.19:18:44.803 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-13.19:18:44.940 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-13.19:18:44.956 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-13.19:18:45.431 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-10-13.19:18:48.474 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-13.19:18:48.627 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-10-13.19:18:48.772 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1752e45c:0/SimpleConnection@6bc08a77 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 51498]
+25-10-13.19:18:48.913 [main            ] INFO  RaffleStrategyControllerTest - Started RaffleStrategyControllerTest in 7.452 seconds (JVM running for 8.474)
+25-10-13.19:18:49.328 [main            ] INFO  RaffleStrategyController - 查询奖品列表 userId:utaaa activityId：100301
+25-10-13.19:18:49.353 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-13.19:18:49.555 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-13.19:18:49.743 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-13.19:18:49.807 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-13.19:18:49.937 [main            ] INFO  RaffleStrategyControllerTest - 请求参数：{"activityId":100301,"userId":"utaaa"}
+25-10-13.19:18:49.946 [main            ] INFO  RaffleStrategyControllerTest - 测试结果：{"code":"0000","data":[{"awardId":101,"awardRuleLockCount":1,"awardTitle":"随机积分","isAwardUnlock":false,"sort":1,"waitUnlockCount":1},{"awardId":102,"awardRuleLockCount":1,"awardTitle":"随机积分","isAwardUnlock":false,"sort":2,"waitUnlockCount":1}],"info":"成功"}
+25-10-13.19:18:49.969 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-13.19:18:49.971 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-13.19:18:50.012 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-13.19:18:50.030 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-13.19:18:50.907 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-13.19:18:50.918 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-13.19:42:10.199 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 38772 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-10-13.19:42:10.200 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+25-10-13.19:42:11.051 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-13.19:42:11.053 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-13.19:42:11.102 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+25-10-13.19:42:12.781 [main            ] INFO  Version                - Redisson 3.27.1
+25-10-13.19:42:12.916 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-13.19:42:13.059 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-13.19:42:13.083 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-13.19:42:13.525 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-10-13.19:42:16.461 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-13.19:42:16.571 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-10-13.19:42:16.659 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#481ed95c:0/SimpleConnection@67eabe02 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 57594]
+25-10-13.19:42:16.751 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 6.892 seconds (JVM running for 7.943)
+25-10-13.19:42:17.136 [main            ] INFO  RaffleActivityController - 活动装配，数据预热，开始 activityId:100301
+25-10-13.19:42:17.157 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-13.19:42:17.324 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-13.19:42:17.547 [main            ] INFO  RaffleActivityController - 活动装配，数据预热，完成 activityId:100301
+25-10-13.19:42:17.650 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":true,"info":"成功"}
+25-10-13.19:42:17.667 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-13.19:42:17.668 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-13.19:42:17.742 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-13.19:42:17.752 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-13.19:42:29.172 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 36056 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-10-13.19:42:29.172 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+25-10-13.19:42:30.023 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-13.19:42:30.023 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-13.19:42:30.096 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 0 Redis repository interfaces.
+25-10-13.19:42:31.931 [main            ] INFO  Version                - Redisson 3.27.1
+25-10-13.19:42:32.053 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-13.19:42:32.184 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-13.19:42:32.201 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-13.19:42:32.693 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-10-13.19:42:35.742 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-13.19:42:35.872 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-10-13.19:42:35.924 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5ed65e4b:0/SimpleConnection@8961e55 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56750]
+25-10-13.19:42:36.021 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 7.203 seconds (JVM running for 8.133)
+25-10-13.19:42:36.413 [main            ] INFO  RaffleActivityController - 活动抽奖 userId:utaaa activityId:100301
+25-10-13.19:42:36.482 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-13.19:42:36.657 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-13.19:42:36.776 [main            ] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:utaaa activityId:100301 orderId:788440504502
+25-10-13.19:42:36.797 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=utaaa, strategyId=100006, ruleModel=default, awardId=102
+25-10-13.19:42:36.799 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 utaaa 100006 102 rule_default
+25-10-13.19:42:36.800 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-13.19:42:36.822 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-13.19:42:36.864 [main            ] INFO  RuleLockLogicTreeNode  - 【规则过滤】-次数锁 userId:utaaa, strategyId:100006, awardId:102, ruleValue:1
+25-10-13.19:42:36.870 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_lock code:0000
+25-10-13.19:42:36.871 [main            ] INFO  RuleStockLogicTreeNode - 【规则过滤】-库存扣减 userId:utaaa strategyId:100006 awardId:102
+25-10-13.19:42:36.896 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0001
+25-10-13.19:42:36.897 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 utaaa 100006 102 null
+25-10-13.19:42:37.047 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardId":102,"awardTitle":"随机积分","userId":"utaaa"},"id":"58782607255","timestamp":1760355756907}
+25-10-13.19:42:37.058 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"utaaa"}
+25-10-13.19:42:37.061 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"awardId":102,"awardIndex":2,"awardTitle":"随机积分"},"info":"成功"}
+25-10-13.19:42:37.066 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic:send_award, message:{"data":{"awardId":102,"awardTitle":"随机积分","userId":"utaaa"},"id":"58782607255","timestamp":1760355756907}
+25-10-13.19:42:37.078 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-13.19:42:37.082 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-13.19:42:38.006 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-13.19:42:38.072 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.

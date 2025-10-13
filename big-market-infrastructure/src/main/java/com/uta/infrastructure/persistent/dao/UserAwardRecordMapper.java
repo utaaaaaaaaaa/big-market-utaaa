@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
 * @author 24333
-* @description 针对表【user_award_record_000(用户中奖记录表)】的数据库操作Mapper
+* @description 针对表【user_award_record(用户中奖记录表)】的数据库操作Mapper
 * @createDate 2025-09-28 06:56:19
 * @Entity persistent.pojo.UserAwardRecord000
 */

@@ -7,7 +7,7 @@ import lombok.Getter;
 @Getter
 public enum TaskStateVO {
 
-    created("create","创建"),
+    create("create","创建"),
     completed("completed","发奖完成"),
     fail("fail","发奖失败")
     ;

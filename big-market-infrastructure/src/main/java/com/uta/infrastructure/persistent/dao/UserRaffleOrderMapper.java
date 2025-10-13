@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
 * @author 24333
-* @description 针对表【user_raffle_order_000(用户抽奖订单表)】的数据库操作Mapper
+* @description 针对表【user_raffle_order(用户抽奖订单表)】的数据库操作Mapper
 * @createDate 2025-09-28 06:56:19
 * @Entity persistent.pojo.UserRaffleOrder
 */

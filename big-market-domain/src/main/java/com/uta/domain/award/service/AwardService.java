@@ -4,14 +4,12 @@ import com.uta.domain.award.event.SendAwardMessageEvent;
 import com.uta.domain.award.model.aggregate.UserAwardRecordAggregate;
 import com.uta.domain.award.model.entity.TaskEntity;
 import com.uta.domain.award.model.entity.UserAwardRecordEntity;
-import com.uta.domain.award.model.vo.AwardStateVO;
 import com.uta.domain.award.model.vo.TaskStateVO;
 import com.uta.domain.award.repository.IAwardRepository;
 import com.uta.types.event.BaseEvent;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.Date;
 
 @Service
 public class AwardService implements IAwardService {
@@ -41,7 +39,7 @@ public class AwardService implements IAwardService {
         taskEntity.setUserId(userId);
         taskEntity.setMessageId(sendAwardMessageEventMessage.getId());
         taskEntity.setMessage(sendAwardMessageEventMessage);
-        taskEntity.setState(TaskStateVO.created);
+        taskEntity.setState(TaskStateVO.create);
 
         // 构建聚合对象
         UserAwardRecordAggregate userAwardRecordAggregate = UserAwardRecordAggregate.builder()
