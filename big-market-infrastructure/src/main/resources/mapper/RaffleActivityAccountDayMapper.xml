@@ -30,4 +30,10 @@
         select * from raffle_activity_account_day
         where activity_id = #{activityId} and user_id = #{userId} and day = #{day}
     </select>
+    <select id="queryUserDayPartakeCount" parameterType="com.uta.infrastructure.persistent.po.RaffleActivityAccountDay" resultType="java.lang.Integer">
+        select day_count - day_count_surplus
+        from raffle_activity_account_day
+        where user_id = #{userId} and activity_id = #{activityId} and day = #{day}
+    </select>
+
 </mapper>

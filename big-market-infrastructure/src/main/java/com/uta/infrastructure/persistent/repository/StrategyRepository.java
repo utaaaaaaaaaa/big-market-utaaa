@@ -209,6 +209,11 @@ public class StrategyRepository implements IStrategyRepository {
 
     @Override
     public Boolean subtractionAwardStock(String key) {
+        return this.subtractionAwardStock(key, null);
+    }
+
+    @Override
+    public Boolean subtractionAwardStock(String key, Date endDateTime) {
         //返回剩余库存值
         long surplus = redisService.decr(key);
         if (surplus < 0) {
@@ -217,7 +222,13 @@ public class StrategyRepository implements IStrategyRepository {
         }
         //setNx 设置库存剩余数量锁，防止运营意外操作导致超卖
         String lockKey = key + Constants.UNDERLINE + surplus;
-        Boolean lock = redisService.setNx(lockKey);
+        Boolean lock;
+        if (endDateTime != null){
+            long expireMillis = endDateTime.getTime() - System.currentTimeMillis() + TimeUnit.DAYS.toMillis(1);
+            lock = redisService.setNx(lockKey, expireMillis, TimeUnit.MILLISECONDS);
+        }else {
+            lock = redisService.setNx(lockKey);
+        }
         if (!lock){
             log.info("策略奖品库存加锁失败 lockKey：{}", lockKey);
         }
@@ -280,4 +291,18 @@ public class StrategyRepository implements IStrategyRepository {
         if (raffleActivityAccountDay == null) {return 0;}
         return raffleActivityAccountDay.getDayCount() - raffleActivityAccountDay.getDayCountSurplus();
     }
+
+    @Override
+    public Map<String, Integer> queryAwardRuleLockCount(String[] treeIds) {
+        if (null == treeIds || treeIds.length == 0) return new HashMap<>();
+        List<RuleTreeNode> ruleTreeNodes = ruleTreeNodeMapper.queryRuleLocks(treeIds);
+        Map<String, Integer> resultMap = new HashMap<>();
+        for (RuleTreeNode node : ruleTreeNodes) {
+            String treeId = node.getTreeId();
+            Integer ruleValue = Integer.valueOf(node.getRuleValue());
+            resultMap.put(treeId, ruleValue);
+        }
+        return resultMap;
+    }
+
 }

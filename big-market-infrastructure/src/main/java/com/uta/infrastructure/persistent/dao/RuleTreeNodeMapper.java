@@ -18,6 +18,8 @@ public interface RuleTreeNodeMapper extends BaseMapper<RuleTreeNode> {
 
     @Select("select * from rule_tree_node where tree_id = #{treeId}")
     List<RuleTreeNode> queryRuleTreeNodeListByTreeId(String treeId);
+
+    List<RuleTreeNode> queryRuleLocks(String[] treeIds);
 }
 
 

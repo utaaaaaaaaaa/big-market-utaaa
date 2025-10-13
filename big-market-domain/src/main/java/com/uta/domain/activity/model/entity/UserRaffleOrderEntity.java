@@ -52,4 +52,9 @@ public class UserRaffleOrderEntity {
      */
     private UserRaffleOrderStateVO orderState;
 
+    /**
+     * 结束时间
+     */
+    private Date endDateTime;
+
 }

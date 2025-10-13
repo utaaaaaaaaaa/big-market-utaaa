@@ -56,4 +56,9 @@ public class StrategyAwardEntity {
      */
     private Integer sort;
 
+    /**
+     * 规则模型
+     */
+    private String ruleModels;
+
 }

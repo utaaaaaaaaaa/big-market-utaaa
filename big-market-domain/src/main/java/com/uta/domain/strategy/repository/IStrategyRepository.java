@@ -8,6 +8,7 @@ import com.uta.domain.strategy.model.vo.RuleTreeVO;
 import com.uta.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 import org.springframework.stereotype.Component;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -45,6 +46,8 @@ public interface IStrategyRepository {
 
     Boolean subtractionAwardStock(String key);
 
+    Boolean subtractionAwardStock(String key, Date endDateTime);
+
     void awardStockConsumeSendMsgQueue(StrategyAwardStockKeyVO build);
 
     StrategyAwardStockKeyVO takeQueueValue();
@@ -56,6 +59,8 @@ public interface IStrategyRepository {
     Long queryStrategyIdByActivityId(Long activityId);
 
     Integer queryTodayUserRaffleCount(String userId, Long strategyId);
+
+    Map<String, Integer> queryAwardRuleLockCount(String[] treeIds);
 }
 
 
