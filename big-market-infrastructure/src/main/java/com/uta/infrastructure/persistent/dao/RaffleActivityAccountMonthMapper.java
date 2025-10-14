@@ -19,6 +19,8 @@ public interface RaffleActivityAccountMonthMapper extends BaseMapper<RaffleActiv
 
     @DBRouter
     RaffleActivityAccountMonth queryActivityAccountMonthByUserId(RaffleActivityAccountMonth raffleActivityAccountMonthReq);
+
+    void addAccountQuota(RaffleActivityAccountMonth raffleActivityAccountMonth);
 }
 
 

@@ -20,6 +20,13 @@
         month,month_count,month_count_surplus,
         create_time,update_time
     </sql>
+    <insert id="addAccountQuota">
+        update raffle_activity_account_month
+        set month_count_surplus = month_count_surplus + #{monthCountSurplus},
+            month_count = month_count + #{monthCount},
+            update_time = now()
+        where user_id = #{userId} and activity_id = #{activityId} and month = #{month}
+    </insert>
 
     <update id="updateActivityAccountSubtractionQuota" parameterType="com.uta.infrastructure.persistent.po.RaffleActivityAccountMonth">
         update raffle_activity_account_month
