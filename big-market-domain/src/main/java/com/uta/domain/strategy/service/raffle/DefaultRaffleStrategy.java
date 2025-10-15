@@ -5,10 +5,7 @@ import com.uta.domain.strategy.model.entity.RaffleFactorEntity;
 import com.uta.domain.strategy.model.entity.RuleActionEntity;
 import com.uta.domain.strategy.model.entity.RuleMatterEntity;
 import com.uta.domain.strategy.model.entity.StrategyAwardEntity;
-import com.uta.domain.strategy.model.vo.AwardRuleModelVO;
-import com.uta.domain.strategy.model.vo.RuleLogicCheckTypeVO;
-import com.uta.domain.strategy.model.vo.RuleTreeVO;
-import com.uta.domain.strategy.model.vo.StrategyAwardStockKeyVO;
+import com.uta.domain.strategy.model.vo.*;
 import com.uta.domain.strategy.repository.IStrategyRepository;
 import com.uta.domain.strategy.service.IRaffleAward;
 import com.uta.domain.strategy.service.IRaffleRule;
@@ -173,4 +170,16 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRa
     public Map<String, Integer> queryAwardRuleLockCount(String[] treeIds) {
         return repository.queryAwardRuleLockCount(treeIds);
     }
+
+    @Override
+    public List<RuleWeightVO> queryAwardRuleWeight(Long strategyId) {
+        return repository.queryAwardRuleWeight(strategyId);
+    }
+
+    @Override
+    public List<RuleWeightVO> queryAwardRuleWeightByActivityId(Long activityId) {
+        Long strategyId = repository.queryStrategyIdByActivityId(activityId);
+        return queryAwardRuleWeight(strategyId);
+    }
+
 }

@@ -67,7 +67,7 @@ public class RaffleActivityAccountDay implements Serializable {
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 
-    public String currentDay() {
+    public static String currentDay() {
         Date now = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         return sdf.format(now);

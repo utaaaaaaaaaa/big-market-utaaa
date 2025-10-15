@@ -5,11 +5,9 @@ import com.uta.domain.strategy.model.entity.StrategyEntity;
 import com.uta.domain.strategy.model.entity.StrategyRuleEntity;
 import com.uta.domain.strategy.model.vo.*;
 import com.uta.domain.strategy.repository.IStrategyRepository;
+import com.uta.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import com.uta.infrastructure.persistent.dao.*;
-import com.uta.infrastructure.persistent.po.RaffleActivityAccountDay;
-import com.uta.infrastructure.persistent.po.RuleTree;
-import com.uta.infrastructure.persistent.po.RuleTreeNode;
-import com.uta.infrastructure.persistent.po.RuleTreeNodeLine;
+import com.uta.infrastructure.persistent.po.*;
 import com.uta.infrastructure.persistent.redis.IRedisService;
 import com.uta.types.common.Constants;
 import com.uta.types.enums.ResponseCode;
@@ -57,6 +55,9 @@ public class StrategyRepository implements IStrategyRepository {
 
     @Resource
     private RaffleActivityAccountDayMapper raffleActivityAccountDayMapper;
+
+    @Resource
+    private RaffleActivityAccountMapper raffleActivityAccountMapper;
 
     @Resource
     private IRedisService redisService;
@@ -304,5 +305,64 @@ public class StrategyRepository implements IStrategyRepository {
         }
         return resultMap;
     }
+
+    @Override
+    public Integer queryActivityAccountTotalUseCount(String userId, Long strategyId) {
+        Long activityId = raffleActivityMapper.queryActivityIdByStrategyId(strategyId);
+        RaffleActivityAccount raffleActivityAccount = raffleActivityAccountMapper.queryActivityAccountByUserId(RaffleActivityAccount.builder()
+                .activityId(activityId)
+                .userId(userId)
+                .build());
+        if (raffleActivityAccount == null) {return 0;}
+        return raffleActivityAccount.getTotalCount() - raffleActivityAccount.getTotalCountSurplus();
+    }
+
+    @Override
+    public List<RuleWeightVO> queryAwardRuleWeight(Long strategyId) {
+        // 优先从缓存获取
+        String cacheKey = Constants.RedisKey.STRATEGY_RULE_WEIGHT_KEY + strategyId;
+        List<RuleWeightVO> ruleWeightVOS = redisService.getValue(cacheKey);
+        if (null != ruleWeightVOS) return ruleWeightVOS;
+
+        ruleWeightVOS = new ArrayList<>();
+        // 1. 查询权重规则配置
+        StrategyRule strategyRuleReq = new StrategyRule();
+        strategyRuleReq.setStrategyId(strategyId.intValue());
+        strategyRuleReq.setRuleModel(DefaultChainFactory.LogicModel.RULE_WEIGHT.getCode());
+        String ruleValue = strategyRuleMapper.queryStrategyRuleValue(strategyId, null, strategyRuleReq.getRuleModel());
+        // 2. 借助实体对象转换规则
+        StrategyRuleEntity strategyRuleEntity = new StrategyRuleEntity();
+        strategyRuleEntity.setRuleModel(DefaultChainFactory.LogicModel.RULE_WEIGHT.getCode());
+        strategyRuleEntity.setRuleValue(ruleValue);
+        Map<String, List<Integer>> ruleWeightValues = strategyRuleEntity.getRuleWeightValues();
+        // 3. 遍历规则组装奖品配置
+        Set<String> ruleWeightKeys = ruleWeightValues.keySet();
+        for (String ruleWeightKey : ruleWeightKeys) {
+            List<Integer> awardIds = ruleWeightValues.get(ruleWeightKey);
+            List<RuleWeightVO.Award> awardList = new ArrayList<>();
+            // 也可以修改为一次从数据库查询
+            for (Integer awardId : awardIds) {
+                StrategyAwardEntity strategyAward = strategyAwardMapper.queryStrategyAwardEntity(strategyId, awardId);
+                awardList.add(RuleWeightVO.Award.builder()
+                        .awardId(strategyAward.getAwardId())
+                        .awardTitle(strategyAward.getAwardTitle())
+                        .build());
+            }
+
+            ruleWeightVOS.add(RuleWeightVO.builder()
+                    .ruleValue(ruleValue)
+                    .weight(Integer.valueOf(ruleWeightKey.split(Constants.COLON)[0]))
+                    .awardIds(awardIds)
+                    .awardList(awardList)
+                    .build());
+        }
+
+        // 设置缓存 - 实际场景中，这类数据，可以在活动下架的时候统一清空缓存。
+        redisService.setValue(cacheKey, ruleWeightVOS);
+
+        return ruleWeightVOS;
+
+    }
+
 
 }

@@ -66,6 +66,7 @@ public class BehaviorRebateRepository implements IBehaviorRebateRepository {
                         userBehaviorRebateOrder.setRebateDesc(behaviorRebateOrderEntity.getRebateDesc());
                         userBehaviorRebateOrder.setRebateType(behaviorRebateOrderEntity.getRebateType());
                         userBehaviorRebateOrder.setRebateConfig(behaviorRebateOrderEntity.getRebateConfig());
+                        userBehaviorRebateOrder.setOutBusinessNo(behaviorRebateOrderEntity.getOutBusinessNo());
                         userBehaviorRebateOrder.setBizId(behaviorRebateOrderEntity.getBizId());
                         userBehaviorRebateOrderMapper.insert(userBehaviorRebateOrder);
 
@@ -107,5 +108,13 @@ public class BehaviorRebateRepository implements IBehaviorRebateRepository {
             }
         }
 
+    }
+
+    @Override
+    public List<BehaviorRebateOrderEntity> queryOrderByOutBusinessNo(String userId, String outBusinessNo) {
+        UserBehaviorRebateOrder userBehaviorRebateOrderReq = new UserBehaviorRebateOrder();
+        userBehaviorRebateOrderReq.setUserId(userId);
+        userBehaviorRebateOrderReq.setOutBusinessNo(outBusinessNo);
+        return userBehaviorRebateOrderMapper.queryOrderByOutBusinessNo(userBehaviorRebateOrderReq);
     }
 }

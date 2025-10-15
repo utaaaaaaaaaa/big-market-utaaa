@@ -2,9 +2,12 @@ package com.uta.infrastructure.persistent.dao;
 
 import cn.bugstack.middleware.db.router.annotation.DBRouter;
 import cn.bugstack.middleware.db.router.annotation.DBRouterStrategy;
+import com.uta.domain.rebate.model.entity.BehaviorRebateOrderEntity;
 import com.uta.infrastructure.persistent.po.UserBehaviorRebateOrder;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
 
 /**
 * @author 24333
@@ -16,6 +19,8 @@ import org.apache.ibatis.annotations.Mapper;
 @DBRouterStrategy(splitTable = true)
 public interface UserBehaviorRebateOrderMapper extends BaseMapper<UserBehaviorRebateOrder> {
 
+    @DBRouter
+    List<BehaviorRebateOrderEntity> queryOrderByOutBusinessNo(UserBehaviorRebateOrder userBehaviorRebateOrderReq);
 }
 
 

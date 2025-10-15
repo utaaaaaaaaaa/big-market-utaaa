@@ -67,7 +67,7 @@ public class RaffleActivityAccountMonth implements Serializable {
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 
-    public String currentMonth() {
+    public static String currentMonth() {
         Date now = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM");
         return sdf.format(now);

@@ -5,6 +5,7 @@ import com.uta.domain.strategy.model.entity.StrategyEntity;
 import com.uta.domain.strategy.model.entity.StrategyRuleEntity;
 import com.uta.domain.strategy.model.vo.AwardRuleModelVO;
 import com.uta.domain.strategy.model.vo.RuleTreeVO;
+import com.uta.domain.strategy.model.vo.RuleWeightVO;
 import com.uta.domain.strategy.model.vo.StrategyAwardStockKeyVO;
 import org.springframework.stereotype.Component;
 
@@ -61,6 +62,10 @@ public interface IStrategyRepository {
     Integer queryTodayUserRaffleCount(String userId, Long strategyId);
 
     Map<String, Integer> queryAwardRuleLockCount(String[] treeIds);
+
+    Integer queryActivityAccountTotalUseCount(String userId, Long strategyId);
+
+    List<RuleWeightVO> queryAwardRuleWeight(Long strategyId);
 }
 
 

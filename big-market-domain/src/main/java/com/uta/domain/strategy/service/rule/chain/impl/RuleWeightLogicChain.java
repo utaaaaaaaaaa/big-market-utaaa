@@ -29,7 +29,7 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
     @Resource
     private IStrategyDispatch strategyDispatch;
 
-    private Long userScore = 5500L;
+//    private Long userScore = 5500L;
 
     @Override
     public DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId) {
@@ -44,6 +44,8 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
                         parts -> parts[0] + Constants.COLON + parts[1],
                         (existing, replacement) -> existing // 重复key时的合并策略（保留现有值）
                 ));
+
+        Integer userScore = repository.queryActivityAccountTotalUseCount(userId, strategyId);
 
         // 4000:102,103,104,105 5000:102,103,104,105,106,107 6000:102,103,104,105,106,107,108,109
         // 对权重key排序

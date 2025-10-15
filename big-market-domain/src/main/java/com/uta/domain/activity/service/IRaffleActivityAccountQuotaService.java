@@ -1,5 +1,6 @@
 package com.uta.domain.activity.service;
 
+import com.uta.domain.activity.model.entity.ActivityAccountEntity;
 import com.uta.domain.activity.model.entity.ActivityOrderEntity;
 import com.uta.domain.activity.model.entity.ActivityShopCartEntity;
 import com.uta.domain.activity.model.entity.SkuRechargeEntity;
@@ -33,4 +34,22 @@ public interface IRaffleActivityAccountQuotaService {
      * @return 今日抽奖次数
      */
     Integer getUserDayPartakeCount(String userId, Long activityId);
+
+    /**
+     * 查询活动账户实体
+     *
+     * @param userId 用户id
+     * @param activityId 活动id
+     * @return 活动账户实体
+     */
+    ActivityAccountEntity getRaffleActivityAccount(String userId, Long activityId);
+
+    /**
+     * 查询用户在一个活动中总抽奖次数
+     *
+     * @param userId 用户id
+     * @param activityId 活动id
+     * @return 抽奖总次数
+     */
+    Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId);
 }

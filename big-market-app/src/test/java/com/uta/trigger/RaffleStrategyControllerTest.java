@@ -3,7 +3,9 @@ package com.uta.trigger;
 import com.alibaba.fastjson.JSON;
 import com.uta.api.IRaffleStrategyService;
 import com.uta.api.entity.dto.GetRaffleAwardListDTO;
+import com.uta.api.entity.dto.RaffleStrategyRuleWeightDTO;
 import com.uta.api.entity.vo.GetRaffleAwardListVO;
+import com.uta.api.entity.vo.RaffleStrategyRuleWeightVO;
 import com.uta.types.model.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -27,6 +29,16 @@ public class RaffleStrategyControllerTest {
         Response<List<GetRaffleAwardListVO>> response = raffleStrategyService.getRaffleAwardList(request);
 
         log.info("请求参数：{}", JSON.toJSONString(request));
+        log.info("测试结果：{}", JSON.toJSONString(response));
+    }
+
+    @Test
+    public void test_queryRaffleStrategyRuleWeight(){
+        RaffleStrategyRuleWeightDTO raffleStrategyRuleWeightDTO = new RaffleStrategyRuleWeightDTO();
+        raffleStrategyRuleWeightDTO.setUserId("utaaa");
+        raffleStrategyRuleWeightDTO.setActivityId(100301L);
+        Response<List<RaffleStrategyRuleWeightVO>> response = raffleStrategyService.queryRaffleStrategyRuleWeight(raffleStrategyRuleWeightDTO);
+
         log.info("测试结果：{}", JSON.toJSONString(response));
     }
 

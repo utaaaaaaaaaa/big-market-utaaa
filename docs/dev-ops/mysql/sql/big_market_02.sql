@@ -416,12 +416,13 @@ CREATE TABLE `raffle_activity_account_month` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动账户表-月次数';
 
 
-# 转储表 user_behavior_rebate_order
+
+# 转储表 user_behavior_rebate_order_000
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `user_behavior_rebate_order`;
+DROP TABLE IF EXISTS `user_behavior_rebate_order_000`;
 
-CREATE TABLE `user_behavior_rebate_order` (
+CREATE TABLE `user_behavior_rebate_order_000` (
                                                   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
                                                   `user_id` varchar(32) NOT NULL COMMENT '用户ID',
                                                   `order_id` varchar(12) NOT NULL COMMENT '订单ID',
@@ -429,7 +430,8 @@ CREATE TABLE `user_behavior_rebate_order` (
                                                   `rebate_desc` varchar(128) NOT NULL COMMENT '返利描述',
                                                   `rebate_type` varchar(16) NOT NULL COMMENT '返利类型（sku 活动库存充值商品、integral 用户活动积分）',
                                                   `rebate_config` varchar(32) NOT NULL COMMENT '返利配置【sku值，积分值】',
-                                                  `biz_id` varchar(64) NOT NULL COMMENT '业务ID - 拼接的唯一值',
+                                                  `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传，方便查询使用',
+                                                  `biz_id` varchar(128) NOT NULL COMMENT '业务ID - 拼接的唯一值。拼接 out_business_no + 自身枚举',
                                                   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                                   `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
                                                   PRIMARY KEY (`id`),
@@ -437,6 +439,17 @@ CREATE TABLE `user_behavior_rebate_order` (
                                                   UNIQUE KEY `uq_biz_id` (`biz_id`),
                                                   KEY `idx_user_id` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户行为返利流水订单表';
+
+LOCK TABLES `user_behavior_rebate_order_000` WRITE;
+/*!40000 ALTER TABLE `user_behavior_rebate_order_000` DISABLE KEYS */;
+
+INSERT INTO `user_behavior_rebate_order_000` (`id`, `user_id`, `order_id`, `behavior_type`, `rebate_desc`, `rebate_type`, `rebate_config`, `out_business_no`, `biz_id`, `create_time`, `update_time`)
+VALUES
+    (5,'xiaofuge1','883971522401','sign','签到返利-sku额度','sku','9011','20240503','xiaofuge1_sku_20240503','2024-05-03 16:01:42','2024-05-03 16:01:42'),
+    (6,'xiaofuge1','995944930386','sign','签到返利-积分','integral','10','20240503','xiaofuge1_integral_20240503','2024-05-03 16:01:43','2024-05-03 16:01:43');
+
+/*!40000 ALTER TABLE `user_behavior_rebate_order_000` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # 转储表 user_behavior_rebate_order_001
@@ -452,7 +465,8 @@ CREATE TABLE `user_behavior_rebate_order_001` (
                                                   `rebate_desc` varchar(128) NOT NULL COMMENT '返利描述',
                                                   `rebate_type` varchar(16) NOT NULL COMMENT '返利类型（sku 活动库存充值商品、integral 用户活动积分）',
                                                   `rebate_config` varchar(32) NOT NULL COMMENT '返利配置【sku值，积分值】',
-                                                  `biz_id` varchar(64) NOT NULL COMMENT '业务ID - 拼接的唯一值',
+                                                  `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传，方便查询使用',
+                                                  `biz_id` varchar(128) NOT NULL COMMENT '业务ID - 拼接的唯一值。拼接 out_business_no + 自身枚举',
                                                   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                                   `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
                                                   PRIMARY KEY (`id`),
@@ -461,16 +475,6 @@ CREATE TABLE `user_behavior_rebate_order_001` (
                                                   KEY `idx_user_id` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户行为返利流水订单表';
 
-LOCK TABLES `user_behavior_rebate_order_001` WRITE;
-/*!40000 ALTER TABLE `user_behavior_rebate_order_001` DISABLE KEYS */;
-
-INSERT INTO `user_behavior_rebate_order_001` (`id`, `user_id`, `order_id`, `behavior_type`, `rebate_desc`, `rebate_type`, `rebate_config`, `biz_id`, `create_time`, `update_time`)
-VALUES
-    (1,'xiaofuge','833814327101','sign','签到返利','sku','9011','xiaofuge_sku_20240430','2024-04-30 18:01:32','2024-04-30 18:01:32'),
-    (3,'xiaofuge','509399206701','sign','签到返利-积分','integral','10','xiaofuge_integral_20240430','2024-04-30 18:05:44','2024-04-30 18:05:44');
-
-/*!40000 ALTER TABLE `user_behavior_rebate_order_001` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 # 转储表 user_behavior_rebate_order_002
@@ -486,7 +490,8 @@ CREATE TABLE `user_behavior_rebate_order_002` (
                                                   `rebate_desc` varchar(128) NOT NULL COMMENT '返利描述',
                                                   `rebate_type` varchar(16) NOT NULL COMMENT '返利类型（sku 活动库存充值商品、integral 用户活动积分）',
                                                   `rebate_config` varchar(32) NOT NULL COMMENT '返利配置【sku值，积分值】',
-                                                  `biz_id` varchar(64) NOT NULL COMMENT '业务ID - 拼接的唯一值',
+                                                  `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传，方便查询使用',
+                                                  `biz_id` varchar(128) NOT NULL COMMENT '业务ID - 拼接的唯一值。拼接 out_business_no + 自身枚举',
                                                   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                                   `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
                                                   PRIMARY KEY (`id`),
@@ -510,7 +515,8 @@ CREATE TABLE `user_behavior_rebate_order_003` (
                                                   `rebate_desc` varchar(128) NOT NULL COMMENT '返利描述',
                                                   `rebate_type` varchar(16) NOT NULL COMMENT '返利类型（sku 活动库存充值商品、integral 用户活动积分）',
                                                   `rebate_config` varchar(32) NOT NULL COMMENT '返利配置【sku值，积分值】',
-                                                  `biz_id` varchar(64) NOT NULL COMMENT '业务ID - 拼接的唯一值',
+                                                  `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传，方便查询使用',
+                                                  `biz_id` varchar(128) NOT NULL COMMENT '业务ID - 拼接的唯一值。拼接 out_business_no + 自身枚举',
                                                   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                                   `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
                                                   PRIMARY KEY (`id`),
@@ -518,7 +524,6 @@ CREATE TABLE `user_behavior_rebate_order_003` (
                                                   UNIQUE KEY `uq_biz_id` (`biz_id`),
                                                   KEY `idx_user_id` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户行为返利流水订单表';
-
 
 
 
