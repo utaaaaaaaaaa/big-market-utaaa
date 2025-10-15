@@ -67,6 +67,8 @@ public class DefaultChainFactory {
         private Integer awardId;
         /**  */
         private String logicModel;
+
+        private String awardRuleValue;
     }
 
     @Getter

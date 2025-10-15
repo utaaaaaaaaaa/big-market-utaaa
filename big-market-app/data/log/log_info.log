@@ -1,685 +1,63 @@
-25-10-14.05:58:08.324 [main            ] INFO  BehaviorRebateServiceTest - Starting BehaviorRebateServiceTest using Java 17.0.12 on u_uta with PID 102072 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-10-14.05:58:08.325 [main            ] INFO  BehaviorRebateServiceTest - The following 1 profile is active: "dev"
-25-10-14.05:58:09.306 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-14.05:58:09.309 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-14.05:58:09.366 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
-25-10-14.05:58:11.158 [main            ] INFO  Version                - Redisson 3.27.1
-25-10-14.05:58:11.309 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-14.05:58:11.456 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-14.05:58:11.472 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-14.05:58:11.934 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-14.05:58:15.248 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-14.05:58:15.409 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-10-14.05:58:15.529 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#7b5833ee:0/SimpleConnection@62b0792 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 60331]
-25-10-14.05:58:15.637 [main            ] INFO  BehaviorRebateServiceTest - Started BehaviorRebateServiceTest in 7.675 seconds (JVM running for 8.699)
-25-10-14.05:58:16.086 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-14.05:58:16.268 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-14.05:58:16.326 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.05:58:16.328 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.05:58:16.630 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.05:58:16.631 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.06:00:28.261 [main            ] INFO  BehaviorRebateServiceTest - Starting BehaviorRebateServiceTest using Java 17.0.12 on u_uta with PID 105092 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-10-14.06:00:28.262 [main            ] INFO  BehaviorRebateServiceTest - The following 1 profile is active: "dev"
-25-10-14.06:00:29.271 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-14.06:00:29.274 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-14.06:00:29.352 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 0 Redis repository interfaces.
-25-10-14.06:00:31.466 [main            ] INFO  Version                - Redisson 3.27.1
-25-10-14.06:00:31.613 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-14.06:00:31.789 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-14.06:00:31.808 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-14.06:00:32.342 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-14.06:00:35.971 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-14.06:00:36.158 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-10-14.06:00:36.224 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1e471884:0/SimpleConnection@6e5a77ef [delegate=amqp://admin@127.0.0.1:5672/, localPort= 59054]
-25-10-14.06:00:36.332 [main            ] INFO  BehaviorRebateServiceTest - Started BehaviorRebateServiceTest in 8.474 seconds (JVM running for 9.576)
-25-10-14.06:00:36.871 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-14.06:00:37.019 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-14.06:00:37.055 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-14.06:00:37.147 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-14.06:00:37.440 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_rebate, message:{"data":{"bizId":"utaaa_sku_20251014","rebateConfig":"9011","rebateType":"sign","userId":"utaaa"},"id":"29815077972","timestamp":1760392837052}
-25-10-14.06:00:37.458 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_rebate, message:{"data":{"bizId":"utaaa_integral_20251014","rebateConfig":"10","rebateType":"sign","userId":"utaaa"},"id":"94060828488","timestamp":1760392837053}
-25-10-14.06:00:37.467 [main            ] INFO  BehaviorRebateServiceTest - 请求参数：{"behaviorTypeVO":"SIGN","outBusinessNo":"20251014","userId":"utaaa"}
-25-10-14.06:00:37.469 [main            ] INFO  BehaviorRebateServiceTest - 请求结果：["666091712245","039472075365"]
-25-10-14.06:00:37.488 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.06:00:37.490 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.06:00:38.304 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.06:00:38.316 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.21:33:49.066 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 110048 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-10-14.21:33:49.067 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-10-14.21:33:50.149 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-14.21:33:50.152 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-14.21:33:50.208 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
-25-10-14.21:33:52.132 [main            ] INFO  Version                - Redisson 3.27.1
-25-10-14.21:33:52.292 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-14.21:33:52.488 [redisson-netty-1-6] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-14.21:33:52.504 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-14.21:33:53.018 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-14.21:33:56.140 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-14.21:33:56.216 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-10-14.21:33:56.310 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#984de01:0/SimpleConnection@3fe21d0e [delegate=amqp://admin@127.0.0.1:5672/, localPort= 63167]
-25-10-14.21:33:56.460 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 7.791 seconds (JVM running for 8.895)
-25-10-14.21:33:56.847 [main            ] INFO  RaffleActivityController - 日历签到返利开始 userId:utaaa
-25-10-14.21:33:56.867 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-14.21:33:57.098 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-14.21:33:57.127 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-14.21:33:57.141 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-14.21:33:57.206 [main            ] ERROR BehaviorRebateRepository - 写入返利记录，唯一索引冲突 userId: utaaa
-org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-### The error may exist in com/uta/infrastructure/persistent/dao/UserBehaviorRebateOrderMapper.java (best guess)
-### The error may involve com.uta.infrastructure.persistent.dao.UserBehaviorRebateOrderMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO user_behavior_rebate_order_000  ( user_id, order_id, behavior_type, rebate_desc, rebate_type, rebate_config, biz_id )  VALUES  ( ?, ?, ?, ?, ?, ?, ? )
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-; Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:244)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
-	at jdk.proxy2/jdk.proxy2.$Proxy119.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
-	at jdk.proxy2/jdk.proxy2.$Proxy138.insert(Unknown Source)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:70)
-	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:57)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository$$FastClassBySpringCGLIB$$4d7ab75e.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository$$EnhancerBySpringCGLIB$$b9e23310.saveUserRebateRecord(<generated>)
-	at com.uta.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:84)
-	at com.uta.trigger.http.RaffleActivityController.calendarSignRebate(RaffleActivityController.java:147)
-	at com.uta.trigger.RaffleActivityControllerTest.test_calendarSign(RaffleActivityControllerTest.java:40)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
-	at jdk.proxy2/jdk.proxy2.$Proxy222.update(Unknown Source)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	... 91 common frames omitted
-25-10-14.21:33:57.215 [main            ] ERROR RaffleActivityController - 日历签到返利异常 userId:utaaa 
-com.uta.types.exception.AppException: null
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:86)
-	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:57)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository$$FastClassBySpringCGLIB$$4d7ab75e.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository$$EnhancerBySpringCGLIB$$b9e23310.saveUserRebateRecord(<generated>)
-	at com.uta.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:84)
-	at com.uta.trigger.http.RaffleActivityController.calendarSignRebate(RaffleActivityController.java:147)
-	at com.uta.trigger.RaffleActivityControllerTest.test_calendarSign(RaffleActivityControllerTest.java:40)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-### The error may exist in com/uta/infrastructure/persistent/dao/UserBehaviorRebateOrderMapper.java (best guess)
-### The error may involve com.uta.infrastructure.persistent.dao.UserBehaviorRebateOrderMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO user_behavior_rebate_order_000  ( user_id, order_id, behavior_type, rebate_desc, rebate_type, rebate_config, biz_id )  VALUES  ( ?, ?, ?, ?, ?, ?, ? )
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-; Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:244)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
-	at jdk.proxy2/jdk.proxy2.$Proxy119.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
-	at jdk.proxy2/jdk.proxy2.$Proxy138.insert(Unknown Source)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:70)
-	... 84 common frames omitted
-Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
-	at jdk.proxy2/jdk.proxy2.$Proxy222.update(Unknown Source)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	... 91 common frames omitted
-25-10-14.21:33:57.373 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0003"}
-25-10-14.21:33:57.393 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.21:33:57.395 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.21:33:57.396 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.21:33:57.432 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.21:33:57.444 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.21:33:57.444 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.21:35:32.443 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 110460 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-10-14.21:35:32.444 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-10-14.21:35:33.421 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-14.21:35:33.423 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-14.21:35:33.478 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
-25-10-14.21:35:35.173 [main            ] INFO  Version                - Redisson 3.27.1
-25-10-14.21:35:35.321 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-14.21:35:35.465 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-14.21:35:35.485 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-14.21:35:36.018 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-14.21:35:39.605 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-14.21:35:39.795 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-10-14.21:35:39.929 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#984de01:0/SimpleConnection@212be8c [delegate=amqp://admin@127.0.0.1:5672/, localPort= 62068]
-25-10-14.21:35:40.059 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 7.975 seconds (JVM running for 9.1)
-25-10-14.21:35:40.549 [main            ] INFO  RaffleActivityController - 日历签到返利开始 userId:utaaa
-25-10-14.21:35:40.574 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-14.21:35:40.726 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-14.21:35:40.754 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-14.21:35:40.769 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-14.21:35:40.836 [main            ] ERROR BehaviorRebateRepository - 写入返利记录，唯一索引冲突 userId: utaaa
-org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-### The error may exist in com/uta/infrastructure/persistent/dao/UserBehaviorRebateOrderMapper.java (best guess)
-### The error may involve com.uta.infrastructure.persistent.dao.UserBehaviorRebateOrderMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO user_behavior_rebate_order_000  ( user_id, order_id, behavior_type, rebate_desc, rebate_type, rebate_config, biz_id )  VALUES  ( ?, ?, ?, ?, ?, ?, ? )
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-; Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:244)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
-	at jdk.proxy2/jdk.proxy2.$Proxy119.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
-	at jdk.proxy2/jdk.proxy2.$Proxy138.insert(Unknown Source)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:70)
-	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:57)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository$$FastClassBySpringCGLIB$$4d7ab75e.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository$$EnhancerBySpringCGLIB$$b9e23310.saveUserRebateRecord(<generated>)
-	at com.uta.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:84)
-	at com.uta.trigger.http.RaffleActivityController.calendarSignRebate(RaffleActivityController.java:147)
-	at com.uta.trigger.RaffleActivityControllerTest.test_calendarSign(RaffleActivityControllerTest.java:40)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
-	at jdk.proxy2/jdk.proxy2.$Proxy222.update(Unknown Source)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	... 91 common frames omitted
-25-10-14.21:35:40.844 [main            ] ERROR RaffleActivityController - 日历签到返利异常 userId:utaaa 
-com.uta.types.exception.AppException: null
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:86)
-	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:57)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository$$FastClassBySpringCGLIB$$4d7ab75e.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository$$EnhancerBySpringCGLIB$$b9e23310.saveUserRebateRecord(<generated>)
-	at com.uta.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:84)
-	at com.uta.trigger.http.RaffleActivityController.calendarSignRebate(RaffleActivityController.java:147)
-	at com.uta.trigger.RaffleActivityControllerTest.test_calendarSign(RaffleActivityControllerTest.java:40)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-### The error may exist in com/uta/infrastructure/persistent/dao/UserBehaviorRebateOrderMapper.java (best guess)
-### The error may involve com.uta.infrastructure.persistent.dao.UserBehaviorRebateOrderMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO user_behavior_rebate_order_000  ( user_id, order_id, behavior_type, rebate_desc, rebate_type, rebate_config, biz_id )  VALUES  ( ?, ?, ?, ?, ?, ?, ? )
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-; Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:244)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
-	at jdk.proxy2/jdk.proxy2.$Proxy119.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
-	at jdk.proxy2/jdk.proxy2.$Proxy138.insert(Unknown Source)
-	at com.uta.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:70)
-	... 84 common frames omitted
-Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'utaaa_sku_20251014' for key 'user_behavior_rebate_order_000.uq_biz_id'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
-	at jdk.proxy2/jdk.proxy2.$Proxy222.update(Unknown Source)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	... 91 common frames omitted
-25-10-14.21:35:41.012 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0003"}
-25-10-14.21:35:41.041 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.21:35:41.043 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.21:35:41.045 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.21:35:42.039 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.21:35:42.040 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.21:35:42.052 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.21:36:15.802 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 99980 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-10-14.21:36:15.803 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-10-14.21:36:16.818 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-14.21:36:16.821 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-14.21:36:16.873 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 0 Redis repository interfaces.
-25-10-14.21:36:19.440 [main            ] INFO  Version                - Redisson 3.27.1
-25-10-14.21:36:20.016 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-14.21:36:20.312 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-14.21:36:20.354 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-14.21:36:21.031 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-14.21:36:27.951 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-14.21:36:28.033 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-10-14.21:36:28.082 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#984de01:0/SimpleConnection@3fe21d0e [delegate=amqp://admin@127.0.0.1:5672/, localPort= 49727]
-25-10-14.21:36:28.179 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 12.78 seconds (JVM running for 13.772)
-25-10-14.21:36:28.587 [main            ] INFO  RaffleActivityController - 日历签到返利开始 userId:utaaa
-25-10-14.21:36:28.611 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-14.21:36:28.756 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-14.21:36:28.785 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-14.21:36:28.802 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-14.21:36:29.007 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_rebate, message:{"data":{"bizId":"utaaa_sku_20251014","rebateConfig":"9011","rebateType":"sku","userId":"utaaa"},"id":"17148403901","timestamp":1760448988782}
-25-10-14.21:36:29.023 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_rebate, message:{"data":{"bizId":"utaaa_integral_20251014","rebateConfig":"10","rebateType":"integral","userId":"utaaa"},"id":"65480649101","timestamp":1760448988783}
-25-10-14.21:36:29.029 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"utaaa_sku_20251014","rebateConfig":"9011","rebateType":"sku","userId":"utaaa"},"id":"17148403901","timestamp":1760448988782}
-25-10-14.21:36:29.031 [main            ] INFO  RaffleActivityController - 日历签到返利完成 userId:utaaa orderIds: ["616727692447","541752757933"]
-25-10-14.21:36:29.035 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":true,"info":"成功"}
-25-10-14.21:36:29.055 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.21:36:29.056 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.21:36:29.058 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-14.21:36:29.130 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息（有效期、状态、sku库存）校验开始。sku:9011 activityId:100301
-25-10-14.21:36:29.131 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
-25-10-14.21:36:29.140 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
-25-10-14.21:36:29.155 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.21:36:29.160 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-14.21:36:29.207 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:25:31.794 [main            ] INFO  RaffleStrategyControllerTest - Starting RaffleStrategyControllerTest using Java 17.0.12 on u_uta with PID 152304 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-10-15.22:25:31.795 [main            ] INFO  RaffleStrategyControllerTest - The following 1 profile is active: "dev"
-25-10-15.22:25:32.707 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-15.22:25:32.710 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-15.22:25:32.774 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
-25-10-15.22:25:34.506 [main            ] INFO  Version                - Redisson 3.27.1
-25-10-15.22:25:34.636 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-15.22:25:34.787 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-15.22:25:34.814 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-15.22:25:35.324 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-15.22:25:38.692 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-15.22:25:38.801 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-10-15.22:25:38.906 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3b362f1:0/SimpleConnection@2be208db [delegate=amqp://admin@127.0.0.1:5672/, localPort= 49869]
-25-10-15.22:25:39.028 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"utaaa_integral_20251014","rebateConfig":"10","rebateType":"integral","userId":"utaaa"},"id":"65480649101","timestamp":1760448988783}
-25-10-15.22:25:39.049 [main            ] INFO  RaffleStrategyControllerTest - Started RaffleStrategyControllerTest in 7.6 seconds (JVM running for 8.58)
-25-10-15.22:25:39.300 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 - 非sku奖励暂时不处理 topic: send_rebate message: {"data":{"bizId":"utaaa_integral_20251014","rebateConfig":"10","rebateType":"integral","userId":"utaaa"},"id":"65480649101","timestamp":1760448988783}
-25-10-15.22:25:39.509 [main            ] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:utaaa activityId：100301
-25-10-15.22:25:39.552 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-15.22:25:39.724 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-15.22:25:39.761 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-15.22:25:39.780 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-15.22:25:39.819 [main            ] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:utaaa activityId：100301
-java.lang.NullPointerException: Cannot invoke "String.split(String)" because "this.ruleValue" is null
-	at com.uta.domain.strategy.model.entity.StrategyRuleEntity.getRuleWeightValues(StrategyRuleEntity.java:56)
-	at com.uta.infrastructure.persistent.repository.StrategyRepository.queryAwardRuleWeight(StrategyRepository.java:337)
+25-10-16.02:25:58.085 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 152260 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-10-16.02:25:58.086 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+25-10-16.02:25:59.039 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-16.02:25:59.041 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-16.02:25:59.100 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 0 Redis repository interfaces.
+25-10-16.02:26:01.021 [main            ] INFO  Version                - Redisson 3.27.1
+25-10-16.02:26:01.187 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-16.02:26:01.321 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:26:01.340 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:26:01.868 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-10-16.02:26:06.059 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-16.02:26:06.398 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-10-16.02:26:06.543 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#18b40fe6:0/SimpleConnection@775fec4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54415]
+25-10-16.02:26:06.886 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 9.142 seconds (JVM running for 10.193)
+25-10-16.02:26:07.896 [main            ] INFO  RaffleActivityController - 日历签到返利开始 userId:user003
+25-10-16.02:26:07.943 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:26:08.292 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:26:08.380 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:26:08.403 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:26:08.833 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_rebate, message:{"data":{"bizId":"user003_sku_20251016","rebateConfig":"9011","rebateType":"sku","userId":"user003"},"id":"40864359685","timestamp":1760552768372}
+25-10-16.02:26:08.855 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_rebate, message:{"data":{"bizId":"user003_integral_20251016","rebateConfig":"10","rebateType":"integral","userId":"user003"},"id":"74132601748","timestamp":1760552768376}
+25-10-16.02:26:08.855 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"user003_sku_20251016","rebateConfig":"9011","rebateType":"sku","userId":"user003"},"id":"40864359685","timestamp":1760552768372}
+25-10-16.02:26:08.863 [main            ] INFO  RaffleActivityController - 日历签到返利完成 userId:user003 orderIds: ["553322956620","783937485885"]
+25-10-16.02:26:08.869 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":true,"info":"成功"}
+25-10-16.02:26:08.904 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:26:08.908 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:26:08.910 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:26:09.024 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息（有效期、状态、sku库存）校验开始。sku:9011 activityId:100301
+25-10-16.02:26:09.024 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-10-16.02:26:09.038 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-10-16.02:26:09.164 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:26:09.820 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:26:09.867 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:32:26.560 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 144128 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-10-16.02:32:26.562 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+25-10-16.02:32:27.542 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-16.02:32:27.544 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-16.02:32:27.594 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+25-10-16.02:32:29.459 [main            ] INFO  Version                - Redisson 3.27.1
+25-10-16.02:32:29.586 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-16.02:32:29.727 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:32:29.747 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:32:30.223 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-10-16.02:32:33.491 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-16.02:32:33.646 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-10-16.02:32:33.737 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#67d5ac2f:0/SimpleConnection@775fec4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 61909]
+25-10-16.02:32:33.812 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"user003_integral_20251016","rebateConfig":"10","rebateType":"integral","userId":"user003"},"id":"74132601748","timestamp":1760552768376}
+25-10-16.02:32:33.831 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 7.612 seconds (JVM running for 8.633)
+25-10-16.02:32:34.114 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 - 非sku奖励暂时不处理 topic: send_rebate message: {"data":{"bizId":"user003_integral_20251016","rebateConfig":"10","rebateType":"integral","userId":"user003"},"id":"74132601748","timestamp":1760552768376}
+25-10-16.02:32:34.291 [main            ] INFO  RaffleActivityController - 活动抽奖 userId:user003 activityId:100301
+25-10-16.02:32:34.368 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:32:34.540 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:32:34.669 [main            ] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:user003 activityId:100301 orderId:214961916216
+25-10-16.02:32:34.688 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=user003, strategyId=100006, ruleModel=default, awardId=102
+25-10-16.02:32:34.689 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user003 100006 102 rule_default
+25-10-16.02:32:34.690 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:32:34.708 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:32:34.727 [main            ] ERROR RaffleActivityController - 活动抽奖失败 userId:user003 activityId:100301
+java.lang.NullPointerException: Cannot invoke "com.uta.infrastructure.persistent.po.RuleTree.getTreeId()" because "ruleTree" is null
+	at com.uta.infrastructure.persistent.repository.StrategyRepository.getRuleTreeVOByTreeId(StrategyRepository.java:191)
 	at com.uta.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$d3f263fc.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
@@ -689,11 +67,12 @@ java.lang.NullPointerException: Cannot invoke "String.split(String)" because "th
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
-	at com.uta.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$6f5907d1.queryAwardRuleWeight(<generated>)
-	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeight(DefaultRaffleStrategy.java:176)
-	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeightByActivityId(DefaultRaffleStrategy.java:182)
-	at com.uta.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:147)
-	at com.uta.trigger.RaffleStrategyControllerTest.test_queryRaffleStrategyRuleWeight(RaffleStrategyControllerTest.java:40)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$17c896a8.getRuleTreeVOByTreeId(<generated>)
+	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:55)
+	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:46)
+	at com.uta.domain.strategy.service.raffle.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:63)
+	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:104)
+	at com.uta.trigger.RaffleActivityControllerTest.test_draw_blacklist(RaffleActivityControllerTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -763,42 +142,43 @@ java.lang.NullPointerException: Cannot invoke "String.split(String)" because "th
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-25-10-15.22:25:39.835 [main            ] INFO  RaffleStrategyControllerTest - 测试结果：{"code":"0001","info":"未知失败"}
-25-10-15.22:25:39.850 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:25:39.851 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:25:39.852 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:25:40.016 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:25:40.016 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-15.22:25:40.037 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-15.22:25:40.043 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:25:40.059 [scheduling-1    ] INFO  UpdateActivitySkuStockJob - 【定时任务】-更新活动sku库存 sku:9011 activityId:100301
-25-10-15.22:25:40.306 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:27:46.658 [main            ] INFO  RaffleStrategyControllerTest - Starting RaffleStrategyControllerTest using Java 17.0.12 on u_uta with PID 152580 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-10-15.22:27:46.660 [main            ] INFO  RaffleStrategyControllerTest - The following 1 profile is active: "dev"
-25-10-15.22:27:47.706 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-15.22:27:47.712 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-15.22:27:47.768 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
-25-10-15.22:27:50.031 [main            ] INFO  Version                - Redisson 3.27.1
-25-10-15.22:27:50.221 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-15.22:27:50.359 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-15.22:27:50.388 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-15.22:27:50.967 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-15.22:27:54.807 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-15.22:27:54.883 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-10-15.22:27:54.924 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1fd37440:0/SimpleConnection@3d2b8e [delegate=amqp://admin@127.0.0.1:5672/, localPort= 49635]
-25-10-15.22:27:55.040 [main            ] INFO  RaffleStrategyControllerTest - Started RaffleStrategyControllerTest in 8.812 seconds (JVM running for 10.189)
-25-10-15.22:27:55.493 [main            ] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:utaaa activityId：100301
-25-10-15.22:27:55.535 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-15.22:27:55.740 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-15.22:27:55.766 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-15.22:27:55.824 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-15.22:28:47.725 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=48s921ms643µs500ns).
-25-10-15.22:28:47.725 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=48s921ms430µs800ns).
-25-10-15.22:28:47.734 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-15.22:28:47.735 [main            ] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:utaaa activityId：100301
-java.lang.NullPointerException: Cannot invoke "String.split(String)" because "this.ruleValue" is null
-	at com.uta.domain.strategy.model.entity.StrategyRuleEntity.getRuleWeightValues(StrategyRuleEntity.java:56)
-	at com.uta.infrastructure.persistent.repository.StrategyRepository.queryAwardRuleWeight(StrategyRepository.java:337)
+25-10-16.02:32:34.746 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"user003"}
+25-10-16.02:32:34.749 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0001","info":"未知失败"}
+25-10-16.02:32:35.005 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:32:35.008 [scheduling-1    ] INFO  UpdateActivitySkuStockJob - 【定时任务】-更新活动sku库存 sku:9011 activityId:100301
+25-10-16.02:32:35.018 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:39:55.226 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:39:55.229 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:39:55.231 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:39:55.238 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:39:55.511 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:39:56.222 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:39:59.704 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 132508 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-10-16.02:39:59.705 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+25-10-16.02:40:00.900 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-16.02:40:00.903 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-16.02:40:00.971 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+25-10-16.02:40:03.064 [main            ] INFO  Version                - Redisson 3.27.1
+25-10-16.02:40:03.286 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-16.02:40:03.443 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:40:03.465 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:40:04.005 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-10-16.02:40:07.532 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-16.02:40:07.632 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-10-16.02:40:07.718 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2e929182:0/SimpleConnection@6b8cdc4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 53076]
+25-10-16.02:40:07.851 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 8.626 seconds (JVM running for 9.726)
+25-10-16.02:40:08.366 [main            ] INFO  RaffleActivityController - 活动抽奖 userId:user003 activityId:100301
+25-10-16.02:40:08.472 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:40:08.714 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:40:08.935 [main            ] INFO  AbstractRaffleActivityPartake - 创建参与活动订单 userId:user003 activityId:100301 userRaffleOrderEntity:{"activityId":100301,"activityName":"测试活动","orderId":"214961916216","orderState":"create","orderTime":1760553154000,"strategyId":100006,"userId":"user003"}
+25-10-16.02:40:08.936 [main            ] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:user003 activityId:100301 orderId:214961916216
+25-10-16.02:40:08.956 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=user003, strategyId=100006, ruleModel=default, awardId=102
+25-10-16.02:40:08.957 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user003 100006 102 rule_default
+25-10-16.02:40:08.958 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:40:08.971 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:40:08.992 [main            ] ERROR RaffleActivityController - 活动抽奖失败 userId:user003 activityId:100301
+java.lang.NullPointerException: Cannot invoke "com.uta.infrastructure.persistent.po.RuleTree.getTreeId()" because "ruleTree" is null
+	at com.uta.infrastructure.persistent.repository.StrategyRepository.getRuleTreeVOByTreeId(StrategyRepository.java:191)
 	at com.uta.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$d3f263fc.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
@@ -808,11 +188,12 @@ java.lang.NullPointerException: Cannot invoke "String.split(String)" because "th
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
-	at com.uta.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$5e27b81b.queryAwardRuleWeight(<generated>)
-	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeight(DefaultRaffleStrategy.java:176)
-	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeightByActivityId(DefaultRaffleStrategy.java:182)
-	at com.uta.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:147)
-	at com.uta.trigger.RaffleStrategyControllerTest.test_queryRaffleStrategyRuleWeight(RaffleStrategyControllerTest.java:40)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$107650ac.getRuleTreeVOByTreeId(<generated>)
+	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:55)
+	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:46)
+	at com.uta.domain.strategy.service.raffle.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:63)
+	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:104)
+	at com.uta.trigger.RaffleActivityControllerTest.test_draw_blacklist(RaffleActivityControllerTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -882,69 +263,362 @@ java.lang.NullPointerException: Cannot invoke "String.split(String)" because "th
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-25-10-15.22:28:47.758 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-15.22:28:47.847 [main            ] INFO  RaffleStrategyControllerTest - 测试结果：{"code":"0001","info":"未知失败"}
-25-10-15.22:28:47.862 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:28:47.864 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:28:47.865 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:28:48.730 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:28:48.734 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:28:48.735 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:34:02.882 [main            ] INFO  RaffleStrategyControllerTest - Starting RaffleStrategyControllerTest using Java 17.0.12 on u_uta with PID 149272 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-10-15.22:34:02.882 [main            ] INFO  RaffleStrategyControllerTest - The following 1 profile is active: "dev"
-25-10-15.22:34:03.804 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-15.22:34:03.809 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-15.22:34:03.871 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
-25-10-15.22:34:05.677 [main            ] INFO  Version                - Redisson 3.27.1
-25-10-15.22:34:05.866 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-15.22:34:06.003 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-15.22:34:06.022 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-15.22:34:06.546 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-15.22:34:10.053 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-15.22:34:10.134 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-10-15.22:34:10.192 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3b362f1:0/SimpleConnection@2be208db [delegate=amqp://admin@127.0.0.1:5672/, localPort= 59271]
-25-10-15.22:34:10.302 [main            ] INFO  RaffleStrategyControllerTest - Started RaffleStrategyControllerTest in 7.784 seconds (JVM running for 8.878)
-25-10-15.22:34:10.821 [main            ] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:utaaa activityId：100301
-25-10-15.22:34:10.876 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-15.22:34:11.094 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-15.22:34:11.123 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-15.22:34:11.139 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-15.22:34:11.411 [main            ] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:utaaa activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":4000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":60,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":5000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":6000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"},{"awardId":108,"awardTitle":"暴走玩偶"}],"userActivityAccountTotalUseCount":6}],"info":"成功"}
-25-10-15.22:34:11.411 [main            ] INFO  RaffleStrategyControllerTest - 测试结果：{"code":"0000","data":[{"ruleWeightCount":4000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":60,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":5000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":6000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"},{"awardId":108,"awardTitle":"暴走玩偶"}],"userActivityAccountTotalUseCount":6}],"info":"成功"}
-25-10-15.22:34:11.431 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:34:11.433 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:34:11.435 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:34:12.267 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:34:12.280 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:34:12.281 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:35:39.488 [main            ] INFO  RaffleStrategyControllerTest - Starting RaffleStrategyControllerTest using Java 17.0.12 on u_uta with PID 146400 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
-25-10-15.22:35:39.489 [main            ] INFO  RaffleStrategyControllerTest - The following 1 profile is active: "dev"
-25-10-15.22:35:40.602 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-15.22:35:40.605 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-15.22:35:40.679 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 0 Redis repository interfaces.
-25-10-15.22:35:42.686 [main            ] INFO  Version                - Redisson 3.27.1
-25-10-15.22:35:42.875 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-15.22:35:43.018 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-15.22:35:43.040 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-10-15.22:35:43.505 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-15.22:35:47.152 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-15.22:35:47.251 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-10-15.22:35:47.307 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#48ae9e8b:0/SimpleConnection@690c3b1f [delegate=amqp://admin@127.0.0.1:5672/, localPort= 62982]
-25-10-15.22:35:47.406 [main            ] INFO  RaffleStrategyControllerTest - Started RaffleStrategyControllerTest in 8.334 seconds (JVM running for 9.461)
-25-10-15.22:35:47.910 [main            ] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:utaaa activityId：100301
-25-10-15.22:35:50.138 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-15.22:35:50.138 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-15.22:35:50.303 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-15.22:35:50.303 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-15.22:36:08.294 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=47s991ms190µs100ns).
-25-10-15.22:36:08.294 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=47s991ms981µs400ns).
-25-10-15.22:36:09.488 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-10-15.22:36:09.534 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-10-15.22:36:24.922 [main            ] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:utaaa activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":4000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":60,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":5000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":6000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"},{"awardId":108,"awardTitle":"暴走玩偶"}],"userActivityAccountTotalUseCount":6}],"info":"成功"}
-25-10-15.22:36:24.923 [main            ] INFO  RaffleStrategyControllerTest - 测试结果：{"code":"0000","data":[{"ruleWeightCount":4000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":60,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":5000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":6},{"ruleWeightCount":6000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"},{"awardId":108,"awardTitle":"暴走玩偶"}],"userActivityAccountTotalUseCount":6}],"info":"成功"}
-25-10-15.22:36:24.940 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:36:24.942 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:36:24.942 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-10-15.22:36:25.497 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:36:25.497 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-10-15.22:36:25.497 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:40:08.996 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"user003"}
+25-10-16.02:40:09.000 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0001","info":"未知失败"}
+25-10-16.02:40:10.015 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:40:10.035 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:41:47.295 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:41:47.296 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:41:47.297 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:41:47.587 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:41:47.616 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:41:47.617 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:41:51.255 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 153596 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-10-16.02:41:51.255 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+25-10-16.02:41:52.353 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-16.02:41:52.356 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-16.02:41:52.420 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+25-10-16.02:41:54.342 [main            ] INFO  Version                - Redisson 3.27.1
+25-10-16.02:41:54.536 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-16.02:41:54.687 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:41:54.710 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:41:55.192 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-10-16.02:41:58.846 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-16.02:41:58.925 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-10-16.02:41:58.972 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2e929182:0/SimpleConnection@6b8cdc4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 65522]
+25-10-16.02:41:59.082 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 8.246 seconds (JVM running for 9.534)
+25-10-16.02:41:59.512 [main            ] INFO  RaffleActivityController - 活动抽奖 userId:user003 activityId:100301
+25-10-16.02:41:59.594 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:41:59.842 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:41:59.977 [main            ] INFO  AbstractRaffleActivityPartake - 创建参与活动订单 userId:user003 activityId:100301 userRaffleOrderEntity:{"activityId":100301,"activityName":"测试活动","orderId":"214961916216","orderState":"create","orderTime":1760553154000,"strategyId":100006,"userId":"user003"}
+25-10-16.02:41:59.978 [main            ] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:user003 activityId:100301 orderId:214961916216
+25-10-16.02:42:02.999 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:42:50.527 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=50s580ms886µs600ns).
+25-10-16.02:42:50.554 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:42:50.557 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=user003, strategyId=100006, ruleModel=default, awardId=102
+25-10-16.02:42:50.559 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user003 100006 102 rule_default
+25-10-16.02:42:50.561 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:42:50.579 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:42:50.586 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:42:50.587 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:42:50.589 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:42:50.600 [main            ] ERROR RaffleActivityController - 活动抽奖失败 userId:user003 activityId:100301
+java.lang.NullPointerException: Cannot invoke "com.uta.infrastructure.persistent.po.RuleTree.getTreeId()" because "ruleTree" is null
+	at com.uta.infrastructure.persistent.repository.StrategyRepository.getRuleTreeVOByTreeId(StrategyRepository.java:191)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$d3f263fc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$107650ac.getRuleTreeVOByTreeId(<generated>)
+	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:55)
+	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:46)
+	at com.uta.domain.strategy.service.raffle.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:63)
+	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:104)
+	at com.uta.trigger.RaffleActivityControllerTest.test_draw_blacklist(RaffleActivityControllerTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+25-10-16.02:42:50.603 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"user003"}
+25-10-16.02:42:50.605 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0001","info":"未知失败"}
+25-10-16.02:42:51.532 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:42:51.533 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:42:51.533 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:42:54.899 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 144212 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-10-16.02:42:54.901 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+25-10-16.02:42:55.940 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-16.02:42:55.942 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-16.02:42:56.007 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+25-10-16.02:42:58.149 [main            ] INFO  Version                - Redisson 3.27.1
+25-10-16.02:42:58.365 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-16.02:42:58.549 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:42:58.572 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:42:59.161 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-10-16.02:43:03.155 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-16.02:43:03.245 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-10-16.02:43:03.289 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5423a17:0/SimpleConnection@79e28671 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54169]
+25-10-16.02:43:03.407 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 8.927 seconds (JVM running for 10.164)
+25-10-16.02:43:03.905 [main            ] INFO  RaffleActivityController - 活动抽奖 userId:user003 activityId:100301
+25-10-16.02:43:04.029 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:43:04.223 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:43:04.352 [main            ] INFO  AbstractRaffleActivityPartake - 创建参与活动订单 userId:user003 activityId:100301 userRaffleOrderEntity:{"activityId":100301,"activityName":"测试活动","orderId":"214961916216","orderState":"create","orderTime":1760553154000,"strategyId":100006,"userId":"user003"}
+25-10-16.02:43:04.352 [main            ] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:user003 activityId:100301 orderId:214961916216
+25-10-16.02:43:17.958 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:43:21.281 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:44:58.756 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m32s44ms828µs900ns).
+25-10-16.02:44:58.756 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m54s428ms750µs700ns).
+25-10-16.02:44:58.787 [main            ] INFO  DefaultLogicChain      - 【抽奖责任链】-默认处理 userId=user003, strategyId=100006, ruleModel=default, awardId=102
+25-10-16.02:44:58.790 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user003 100006 102 rule_default
+25-10-16.02:44:58.792 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:44:58.802 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:44:58.804 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:44:58.806 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:44:58.807 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:44:58.828 [main            ] ERROR RaffleActivityController - 活动抽奖失败 userId:user003 activityId:100301
+java.lang.NullPointerException: Cannot invoke "com.uta.infrastructure.persistent.po.RuleTree.getTreeId()" because "ruleTree" is null
+	at com.uta.infrastructure.persistent.repository.StrategyRepository.getRuleTreeVOByTreeId(StrategyRepository.java:191)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$d3f263fc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$32505710.getRuleTreeVOByTreeId(<generated>)
+	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:55)
+	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:46)
+	at com.uta.domain.strategy.service.raffle.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:63)
+	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:104)
+	at com.uta.trigger.RaffleActivityControllerTest.test_draw_blacklist(RaffleActivityControllerTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+25-10-16.02:44:58.831 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"user003"}
+25-10-16.02:44:58.833 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0001","info":"未知失败"}
+25-10-16.02:44:59.762 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:44:59.763 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:44:59.763 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:45:03.244 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 141132 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-10-16.02:45:03.245 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+25-10-16.02:45:04.258 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-16.02:45:04.261 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-16.02:45:04.319 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+25-10-16.02:45:06.226 [main            ] INFO  Version                - Redisson 3.27.1
+25-10-16.02:45:06.448 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-16.02:45:06.606 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:45:06.637 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:45:07.239 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-10-16.02:45:11.142 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-16.02:45:11.255 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-10-16.02:45:11.319 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2e929182:0/SimpleConnection@6b8cdc4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54475]
+25-10-16.02:45:11.442 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 8.614 seconds (JVM running for 9.73)
+25-10-16.02:45:12.009 [main            ] INFO  RaffleActivityController - 活动抽奖 userId:user003 activityId:100301
+25-10-16.02:45:12.102 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:45:12.380 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:45:12.612 [main            ] INFO  AbstractRaffleActivityPartake - 创建参与活动订单 userId:user003 activityId:100301 userRaffleOrderEntity:{"activityId":100301,"activityName":"测试活动","orderId":"214961916216","orderState":"create","orderTime":1760553154000,"strategyId":100006,"userId":"user003"}
+25-10-16.02:45:12.612 [main            ] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:user003 activityId:100301 orderId:214961916216
+25-10-16.02:45:16.332 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:45:16.336 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:45:16.346 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:45:16.368 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:45:26.624 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】开始 userId=user003, strategyId=100006, ruleModel=rule_blacklist
+25-10-16.02:45:26.712 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】接管 userId=user003, strategyId=100006, ruleModel=rule_blacklist, awardId=101
+25-10-16.02:45:26.715 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user003 100006 101 rule_blacklist
+25-10-16.02:45:26.855 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardConfig":"0.01,1","awardId":101,"awardTitle":"随机积分","orderId":"214961916216","userId":"user003"},"id":"83830668775","timestamp":1760553926725}
+25-10-16.02:45:26.865 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"user003"}
+25-10-16.02:45:26.868 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"awardId":101,"awardIndex":2,"awardTitle":"随机积分"},"info":"成功"}
+25-10-16.02:45:26.872 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardConfig":"0.01,1","awardId":101,"awardTitle":"随机积分","orderId":"214961916216","userId":"user003"},"id":"83830668775","timestamp":1760553926725}
+25-10-16.02:47:31.539 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:47:31.540 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:47:31.541 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:47:31.678 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:47:31.679 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:47:31.927 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:47:35.096 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 145164 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-10-16.02:47:35.098 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+25-10-16.02:47:36.161 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-16.02:47:36.163 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-16.02:47:36.217 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+25-10-16.02:47:38.245 [main            ] INFO  Version                - Redisson 3.27.1
+25-10-16.02:47:38.433 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-16.02:47:38.574 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:47:38.595 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:47:39.071 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-10-16.02:47:42.992 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-16.02:47:43.099 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-10-16.02:47:43.153 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5423a17:0/SimpleConnection@79e28671 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 51817]
+25-10-16.02:47:43.261 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 8.57 seconds (JVM running for 9.639)
+25-10-16.02:47:43.699 [main            ] INFO  RaffleActivityController - 活动抽奖 userId:user003 activityId:100301
+25-10-16.02:47:43.785 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:47:43.963 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:47:44.052 [main            ] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:user003 activityId:100301 orderId:258934707199
+25-10-16.02:47:50.247 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】开始 userId=user003, strategyId=100006, ruleModel=rule_blacklist
+25-10-16.02:47:50.250 [pool-3-thread-4 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:47:50.250 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:47:50.265 [pool-3-thread-4 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:47:50.268 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:47:50.270 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】接管 userId=user003, strategyId=100006, ruleModel=rule_blacklist, awardId=101
+25-10-16.02:47:50.272 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user003 100006 101 rule_blacklist
+25-10-16.02:47:50.441 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardConfig":"0.01,1","awardId":101,"awardTitle":"随机积分","orderId":"258934707199","userId":"user003"},"id":"55822565237","timestamp":1760554070277}
+25-10-16.02:47:50.452 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"user003"}
+25-10-16.02:47:50.456 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"awardId":101,"awardIndex":2,"awardTitle":"随机积分"},"info":"成功"}
+25-10-16.02:47:50.457 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardConfig":"0.01,1","awardId":101,"awardTitle":"随机积分","orderId":"258934707199","userId":"user003"},"id":"55822565237","timestamp":1760554070277}
+25-10-16.02:47:57.086 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:47:57.087 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:47:57.088 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:47:57.481 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:47:57.482 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:47:57.603 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:48:51.833 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.12 on u_uta with PID 143560 (started by 24333 in D:\_Code\java\big-market-utaaa\big-market-app)
+25-10-16.02:48:51.834 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+25-10-16.02:48:52.860 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-16.02:48:52.863 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-16.02:48:52.927 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 0 Redis repository interfaces.
+25-10-16.02:48:54.632 [main            ] INFO  Version                - Redisson 3.27.1
+25-10-16.02:48:54.767 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-16.02:48:54.894 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:48:54.914 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-10-16.02:48:55.358 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+25-10-16.02:48:58.494 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-16.02:48:58.572 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-10-16.02:48:58.614 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#67d5ac2f:0/SimpleConnection@12f12744 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55933]
+25-10-16.02:48:58.727 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 7.255 seconds (JVM running for 8.329)
+25-10-16.02:48:59.144 [main            ] INFO  RaffleActivityController - 活动抽奖 userId:user003 activityId:100301
+25-10-16.02:48:59.228 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:48:59.390 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:48:59.472 [main            ] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:user003 activityId:100301 orderId:366863662664
+25-10-16.02:48:59.483 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】开始 userId=user003, strategyId=100006, ruleModel=rule_blacklist
+25-10-16.02:48:59.484 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:48:59.516 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:48:59.518 [main            ] INFO  BlackListLogicChain    - 【抽奖责任链】-【黑名单】接管 userId=user003, strategyId=100006, ruleModel=rule_blacklist, awardId=101
+25-10-16.02:48:59.519 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 user003 100006 101 rule_blacklist
+25-10-16.02:48:59.665 [main            ] INFO  EventPublisher         - 发送MQ消息, topic:send_award, message:{"data":{"awardConfig":"0.01,1","awardId":101,"awardTitle":"随机积分","orderId":"366863662664","userId":"user003"},"id":"84072002790","timestamp":1760554139525}
+25-10-16.02:48:59.671 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardConfig":"0.01,1","awardId":101,"awardTitle":"随机积分","orderId":"366863662664","userId":"user003"},"id":"84072002790","timestamp":1760554139525}
+25-10-16.02:48:59.676 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"user003"}
+25-10-16.02:48:59.680 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"awardId":101,"awardIndex":2,"awardTitle":"随机积分"},"info":"成功"}
+25-10-16.02:49:00.007 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-10-16.02:49:00.031 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-10-16.02:49:06.537 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:49:06.538 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:49:06.539 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-10-16.02:49:06.752 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:49:06.752 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-10-16.02:49:06.764 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.

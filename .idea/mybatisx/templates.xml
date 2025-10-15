@@ -63,17 +63,13 @@
             </option>
             <option name="needsComment" value="true" />
             <option name="needsModel" value="true" />
-            <option name="relativePackage" value="pojo" />
+            <option name="relativePackage" value="po" />
             <option name="superClass" value="" />
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="DailyBehaviorRebate" />
-                  <option name="tableName" value="daily_behavior_rebate" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="UserBehaviorRebateOrder000" />
-                  <option name="tableName" value="user_behavior_rebate_order_000" />
+                  <option name="className" value="UserCreditAccount" />
+                  <option name="tableName" value="user_credit_account" />
                 </TableUIInfo>
               </list>
             </option>

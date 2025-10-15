@@ -19,6 +19,11 @@ public interface AwardMapper extends BaseMapper<Award> {
     @Select("select * from award limit 3")
     List<Award> getAwardList();
 
+    @Select("select award_config from award where award_id = #{awardId}")
+    String queryAwardConfig(Integer awardId);
+
+    @Select("select award_key from award where award_id = #{awardId}")
+    String queryAwardKey(Integer awardId);
 }
 
 

@@ -15,6 +15,7 @@ import org.apache.ibatis.annotations.Mapper;
 @DBRouterStrategy(splitTable = true)
 public interface UserAwardRecordMapper extends BaseMapper<UserAwardRecord> {
 
+    int updateAwardRecordCompletedState(UserAwardRecord userAwardRecordReq);
 }
 
 

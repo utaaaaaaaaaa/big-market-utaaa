@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
+import java.util.concurrent.CountDownLatch;
 
 @Slf4j
 @SpringBootTest
@@ -36,8 +37,21 @@ public class RaffleActivityControllerTest {
     }
 
     @Test
+    public void test_draw_blacklist() throws InterruptedException {
+        ActivityDrawDTO request = new ActivityDrawDTO();
+        request.setActivityId(100301L);
+        request.setUserId("user003");
+        Response<ActivityDrawVO> response = raffleActivityService.draw(request);
+
+        log.info("请求参数：{}", JSON.toJSONString(request));
+        log.info("测试结果：{}", JSON.toJSONString(response));
+
+        new CountDownLatch(1).await();
+    }
+
+    @Test
     public void test_calendarSign(){
-        Response<Boolean> response = raffleActivityService.calendarSignRebate("utaaa");
+        Response<Boolean> response = raffleActivityService.calendarSignRebate("user003");
         log.info("测试结果：{}", JSON.toJSONString(response));
     }
 
