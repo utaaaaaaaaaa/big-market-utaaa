@@ -3,6 +3,7 @@ package com.uta.infrastructure.persistent.dao;
 import com.uta.infrastructure.persistent.po.UserCreditAccount;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 /**
 * @author 24333
@@ -14,6 +15,8 @@ import org.apache.ibatis.annotations.Mapper;
 public interface UserCreditAccountMapper extends BaseMapper<UserCreditAccount> {
 
     int updateAddAmount(UserCreditAccount userCreditAccountReq);
+
+    UserCreditAccount queryUserCreditAccount(UserCreditAccount userCreditAccountReq);
 }
 
 

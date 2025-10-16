@@ -19,9 +19,11 @@ import com.uta.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBlockingQueue;
 import org.redisson.api.RDelayedQueue;
+import org.redisson.api.RLock;
 import org.springframework.beans.BeanUtils;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.TransactionException;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
@@ -118,81 +120,83 @@ public class ActivityRepository implements IActivityRepository {
 
     @Override
     public void doSaveOrder(CreateOrderAggregate createOrderAggregate) {
-
-        // 订单对象
-        ActivityOrderEntity activityOrderEntity = createOrderAggregate.getActivityOrderEntity();
-        RaffleActivityOrder raffleActivityOrder = new RaffleActivityOrder();
-        raffleActivityOrder.setUserId(activityOrderEntity.getUserId());
-        raffleActivityOrder.setSku(activityOrderEntity.getSku());
-        raffleActivityOrder.setActivityId(activityOrderEntity.getActivityId());
-        raffleActivityOrder.setActivityName(activityOrderEntity.getActivityName());
-        raffleActivityOrder.setStrategyId(activityOrderEntity.getStrategyId());
-        raffleActivityOrder.setOrderId(activityOrderEntity.getOrderId());
-        raffleActivityOrder.setOrderTime(activityOrderEntity.getOrderTime());
-        raffleActivityOrder.setTotalCount(activityOrderEntity.getTotalCount());
-        raffleActivityOrder.setDayCount(activityOrderEntity.getDayCount());
-        raffleActivityOrder.setMonthCount(activityOrderEntity.getMonthCount());
-        raffleActivityOrder.setTotalCount(createOrderAggregate.getTotalCount());
-        raffleActivityOrder.setDayCount(createOrderAggregate.getDayCount());
-        raffleActivityOrder.setMonthCount(createOrderAggregate.getMonthCount());
-        raffleActivityOrder.setState(activityOrderEntity.getState().getCode());
-        raffleActivityOrder.setOutBusinessNo(activityOrderEntity.getOutBusinessNo());
-
-        // 账户对象 - 总
-        RaffleActivityAccount raffleActivityAccount = new RaffleActivityAccount();
-        raffleActivityAccount.setUserId(createOrderAggregate.getUserId());
-        raffleActivityAccount.setActivityId(createOrderAggregate.getActivityId());
-        raffleActivityAccount.setTotalCount(createOrderAggregate.getTotalCount());
-        raffleActivityAccount.setTotalCountSurplus(createOrderAggregate.getTotalCount());
-        raffleActivityAccount.setDayCount(createOrderAggregate.getDayCount());
-        raffleActivityAccount.setDayCountSurplus(createOrderAggregate.getDayCount());
-        raffleActivityAccount.setMonthCount(createOrderAggregate.getMonthCount());
-        raffleActivityAccount.setMonthCountSurplus(createOrderAggregate.getMonthCount());
-
-        // 账户对象 - 月
-        RaffleActivityAccountMonth raffleActivityAccountMonth = new RaffleActivityAccountMonth();
-        raffleActivityAccountMonth.setUserId(createOrderAggregate.getUserId());
-        raffleActivityAccountMonth.setActivityId(createOrderAggregate.getActivityId());
-        raffleActivityAccountMonth.setMonth(raffleActivityAccountMonth.currentMonth());
-        raffleActivityAccountMonth.setMonthCount(createOrderAggregate.getMonthCount());
-        raffleActivityAccountMonth.setMonthCountSurplus(createOrderAggregate.getMonthCount());
-
-        // 账户对象 - 日
-        RaffleActivityAccountDay raffleActivityAccountDay = new RaffleActivityAccountDay();
-        raffleActivityAccountDay.setUserId(createOrderAggregate.getUserId());
-        raffleActivityAccountDay.setActivityId(createOrderAggregate.getActivityId());
-        raffleActivityAccountDay.setDay(raffleActivityAccountDay.currentDay());
-        raffleActivityAccountDay.setDayCount(createOrderAggregate.getDayCount());
-        raffleActivityAccountDay.setDayCountSurplus(createOrderAggregate.getDayCount());
-
+        RLock lock = redisService.getLock(Constants.RedisKey.ACTIVITY_ACCOUNT_LOCK + createOrderAggregate.getUserId() + Constants.UNDERLINE + createOrderAggregate.getActivityId());
         try {
+            lock.lock(3, TimeUnit.SECONDS);
+            // 订单对象
+            ActivityOrderEntity activityOrderEntity = createOrderAggregate.getActivityOrderEntity();
+            RaffleActivityOrder raffleActivityOrder = new RaffleActivityOrder();
+            raffleActivityOrder.setUserId(activityOrderEntity.getUserId());
+            raffleActivityOrder.setSku(activityOrderEntity.getSku());
+            raffleActivityOrder.setActivityId(activityOrderEntity.getActivityId());
+            raffleActivityOrder.setActivityName(activityOrderEntity.getActivityName());
+            raffleActivityOrder.setStrategyId(activityOrderEntity.getStrategyId());
+            raffleActivityOrder.setOrderId(activityOrderEntity.getOrderId());
+            raffleActivityOrder.setOrderTime(activityOrderEntity.getOrderTime());
+            raffleActivityOrder.setTotalCount(activityOrderEntity.getTotalCount());
+            raffleActivityOrder.setDayCount(activityOrderEntity.getDayCount());
+            raffleActivityOrder.setMonthCount(activityOrderEntity.getMonthCount());
+            raffleActivityOrder.setTotalCount(createOrderAggregate.getTotalCount());
+            raffleActivityOrder.setDayCount(createOrderAggregate.getDayCount());
+            raffleActivityOrder.setMonthCount(createOrderAggregate.getMonthCount());
+            raffleActivityOrder.setState(activityOrderEntity.getState().getCode());
+            raffleActivityOrder.setOutBusinessNo(activityOrderEntity.getOutBusinessNo());
+
+            // 账户对象 - 总
+            RaffleActivityAccount raffleActivityAccount = new RaffleActivityAccount();
+            raffleActivityAccount.setUserId(createOrderAggregate.getUserId());
+            raffleActivityAccount.setActivityId(createOrderAggregate.getActivityId());
+            raffleActivityAccount.setTotalCount(createOrderAggregate.getTotalCount());
+            raffleActivityAccount.setTotalCountSurplus(createOrderAggregate.getTotalCount());
+            raffleActivityAccount.setDayCount(createOrderAggregate.getDayCount());
+            raffleActivityAccount.setDayCountSurplus(createOrderAggregate.getDayCount());
+            raffleActivityAccount.setMonthCount(createOrderAggregate.getMonthCount());
+            raffleActivityAccount.setMonthCountSurplus(createOrderAggregate.getMonthCount());
+
+            // 账户对象 - 月
+            RaffleActivityAccountMonth raffleActivityAccountMonth = new RaffleActivityAccountMonth();
+            raffleActivityAccountMonth.setUserId(createOrderAggregate.getUserId());
+            raffleActivityAccountMonth.setActivityId(createOrderAggregate.getActivityId());
+            raffleActivityAccountMonth.setMonth(raffleActivityAccountMonth.currentMonth());
+            raffleActivityAccountMonth.setMonthCount(createOrderAggregate.getMonthCount());
+            raffleActivityAccountMonth.setMonthCountSurplus(createOrderAggregate.getMonthCount());
+
+            // 账户对象 - 日
+            RaffleActivityAccountDay raffleActivityAccountDay = new RaffleActivityAccountDay();
+            raffleActivityAccountDay.setUserId(createOrderAggregate.getUserId());
+            raffleActivityAccountDay.setActivityId(createOrderAggregate.getActivityId());
+            raffleActivityAccountDay.setDay(raffleActivityAccountDay.currentDay());
+            raffleActivityAccountDay.setDayCount(createOrderAggregate.getDayCount());
+            raffleActivityAccountDay.setDayCountSurplus(createOrderAggregate.getDayCount());
+
             // 以用户id作为切分键，通过doRouter设定路由【这样保证了后续操作都在同一连接下，也保证了事务的特性】
             dbRouter.doRouter(createOrderAggregate.getUserId());
             transactionTemplate.execute(status -> {
-               try {
-                   // 1.写入订单
-                   raffleActivityOrderMapper.insert(raffleActivityOrder);
-                   // 2.更新账户
-                   int count = raffleActivityAccountMapper.updateAccountQuota(raffleActivityAccount);
-                   // 3.创建账户 -更新条目为0，则账户不存在，插入新账户
-                   if (count <= 0) {
-                       raffleActivityAccountMapper.insert(raffleActivityAccount);
-                   }
-                   // 4. 更新账户 - 月
-                   raffleActivityAccountMonthMapper.addAccountQuota(raffleActivityAccountMonth);
-                   // 5. 更新账户 - 日
-                   raffleActivityAccountDayMapper.addAccountQuota(raffleActivityAccountDay);
-                   return 1;
-               }catch (DuplicateKeyException e){
-                   // 主键冲突异常回滚
-                   status.setRollbackOnly();
-                   log.error("写入订单记录，唯一索引异常，userId:{}, activityId:{}, sku:{}",activityOrderEntity.getUserId(),activityOrderEntity.getActivityId(),activityOrderEntity.getSku());
-                   throw new AppException(ResponseCode.INDEX_DUP.getCode(), ResponseCode.INDEX_DUP.getInfo());
-               }
+                try {
+                    // 1.写入订单
+                    raffleActivityOrderMapper.insert(raffleActivityOrder);
+                    // 2. 更新账户 - 总
+                    RaffleActivityAccount raffleActivityAccountRes = raffleActivityAccountMapper.queryActivityAccountByUserId(raffleActivityAccount);
+                    if (null == raffleActivityAccountRes) {
+                        raffleActivityAccountMapper.insert(raffleActivityAccount);
+                    } else {
+                        raffleActivityAccountMapper.updateAccountQuota(raffleActivityAccount);
+                    }
+                    // 4. 更新账户 - 月
+                    raffleActivityAccountMonthMapper.addAccountQuota(raffleActivityAccountMonth);
+                    // 5. 更新账户 - 日
+                    raffleActivityAccountDayMapper.addAccountQuota(raffleActivityAccountDay);
+                    return 1;
+                }catch (DuplicateKeyException e){
+                    // 主键冲突异常回滚
+                    status.setRollbackOnly();
+                    log.error("写入订单记录，唯一索引异常，userId:{}, activityId:{}, sku:{}",activityOrderEntity.getUserId(),activityOrderEntity.getActivityId(),activityOrderEntity.getSku());
+                    throw new AppException(ResponseCode.INDEX_DUP.getCode(), ResponseCode.INDEX_DUP.getInfo());
+                }
             });
-
-        }finally {
+        } finally {
             dbRouter.clear();
+            lock.unlock();
         }
 
     }
