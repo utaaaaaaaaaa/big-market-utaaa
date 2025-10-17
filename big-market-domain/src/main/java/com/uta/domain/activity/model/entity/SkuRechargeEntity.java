@@ -1,5 +1,6 @@
 package com.uta.domain.activity.model.entity;
 
+import com.uta.domain.activity.model.vo.OrderTradeTypeVO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,5 +18,7 @@ public class SkuRechargeEntity {
     private Long sku;
     /** 业务仿重ID - 外部透传的，确保幂等 */
     private String outBusinessNo;
+    /** sku订单交易类型 */
+    private OrderTradeTypeVO orderTradeType = OrderTradeTypeVO.rebate_no_pay_trade;
 
 }

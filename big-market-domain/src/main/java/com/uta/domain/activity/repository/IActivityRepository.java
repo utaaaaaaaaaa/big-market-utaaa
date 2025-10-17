@@ -1,6 +1,6 @@
 package com.uta.domain.activity.repository;
 
-import com.uta.domain.activity.model.aggregate.CreateOrderAggregate;
+import com.uta.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
 import com.uta.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
 import com.uta.domain.activity.model.entity.*;
 import com.uta.domain.activity.model.vo.ActivitySkuStockKeyVO;
@@ -16,7 +16,9 @@ public interface IActivityRepository {
 
     ActivityCountEntity queryRaffleActivityCountByActivityCountId(Long activityCountId);
 
-    void doSaveOrder(CreateOrderAggregate createOrderAggregate);
+    void doSaveNoPayOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate);
+
+    void doSaveCreditPayOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate);
 
     void cacheActivitySkuStockCount(String cacheKey, Integer stockCount);
 
@@ -49,5 +51,7 @@ public interface IActivityRepository {
     ActivityAccountEntity getRaffleActivityAccount(String userId, Long activityId);
 
     Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId);
+
+    void updateOrder(DeliveryOrderEntity deliveryOrderEntity);
 }
 

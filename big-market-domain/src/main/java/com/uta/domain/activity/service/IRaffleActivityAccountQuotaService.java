@@ -1,9 +1,6 @@
 package com.uta.domain.activity.service;
 
-import com.uta.domain.activity.model.entity.ActivityAccountEntity;
-import com.uta.domain.activity.model.entity.ActivityOrderEntity;
-import com.uta.domain.activity.model.entity.ActivityShopCartEntity;
-import com.uta.domain.activity.model.entity.SkuRechargeEntity;
+import com.uta.domain.activity.model.entity.*;
 
 /**
  * @description 抽奖活动用户额度订单接口
@@ -25,6 +22,12 @@ public interface IRaffleActivityAccountQuotaService {
      * @return 定单号
      */
     String createOrder(SkuRechargeEntity skuRechargeEntity);
+
+    /**
+     * 订单出货 - 积分充值
+     * @param deliveryOrderEntity 出货单实体对象
+     */
+    void updateOrder(DeliveryOrderEntity deliveryOrderEntity);
 
     /***
      * 查询用户今日参与抽奖次数

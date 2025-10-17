@@ -19,11 +19,13 @@ import java.util.List;
 @DBRouterStrategy(splitTable = true)
 public interface RaffleActivityOrderMapper extends BaseMapper<RaffleActivityOrder> {
 
-    int insert(RaffleActivityOrder raffleActivityOrder);
-
     @DBRouter
     List<RaffleActivityOrder> queryRaffleActivityOrderByUserId(@Param("userId") String userId);
 
+    @DBRouter
+    RaffleActivityOrder queryRaffleActivityOrder(RaffleActivityOrder raffleActivityOrderReq);
+
+    int updateOrderCompleted(RaffleActivityOrder raffleActivityOrderReq);
 }
 
 

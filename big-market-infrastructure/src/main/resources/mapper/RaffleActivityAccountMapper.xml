@@ -44,14 +44,6 @@
         from raffle_activity_account
         where user_id = #{userId} and activity_id = #{activityId}
     </select>
-    <select id="queryActivityAccountMonthByUserId"
-            resultType="com.uta.infrastructure.persistent.po.RaffleActivityAccountMonth">
-        select * from raffle_activity_account where
-    </select>
-    <select id="queryActivityAccountDayByUserId"
-            resultType="com.uta.infrastructure.persistent.po.RaffleActivityAccountDay">
-
-    </select>
 
     <update id="updateActivityAccountSubtractionQuota" parameterType="com.uta.infrastructure.persistent.po.RaffleActivityAccount">
         update raffle_activity_account

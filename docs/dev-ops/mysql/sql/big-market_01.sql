@@ -45,13 +45,12 @@ CREATE TABLE `raffle_activity_account` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动账户表';
 
 
-
-# 转储表 raffle_activity_order
+# 转储表 raffle_activity_order_000
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `raffle_activity_order`;
+DROP TABLE IF EXISTS `raffle_activity_order_000`;
 
-CREATE TABLE `raffle_activity_order` (
+CREATE TABLE `raffle_activity_order_000` (
                                              `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
                                              `user_id` varchar(32) NOT NULL COMMENT '用户ID',
                                              `sku` bigint(12) NOT NULL COMMENT '商品sku',
@@ -63,26 +62,17 @@ CREATE TABLE `raffle_activity_order` (
                                              `total_count` int(8) NOT NULL COMMENT '总次数',
                                              `day_count` int(8) NOT NULL COMMENT '日次数',
                                              `month_count` int(8) NOT NULL COMMENT '月次数',
-                                             `state` varchar(8) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `pay_amount` decimal(10,2) DEFAULT NULL COMMENT '支付金额【积分】',
+                                             `state` varchar(16) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
                                              `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
                                              `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                              `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
                                              PRIMARY KEY (`id`),
                                              UNIQUE KEY `uq_order_id` (`order_id`),
-                                             UNIQUE KEY `out_business_no` (`out_business_no`),
+                                             UNIQUE KEY `uq_out_business_no` (`out_business_no`),
                                              KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
 
-LOCK TABLES `raffle_activity_order` WRITE;
-/*!40000 ALTER TABLE `raffle_activity_order` DISABLE KEYS */;
-
-INSERT INTO `raffle_activity_order` (`id`, `user_id`, `sku`, `activity_id`, `activity_name`, `strategy_id`, `order_id`, `order_time`, `total_count`, `day_count`, `month_count`, `state`, `out_business_no`, `create_time`, `update_time`)
-VALUES
-    (1,'ODRhfGEfX',0,100301,'测试活动',100006,'826130522615','2024-03-09 06:26:20',0,0,0,'not_used','700091009111','2024-03-09 14:26:19','2024-03-09 14:26:19'),
-    (2,'IoTtOmcBeivNUYv',0,100301,'测试活动',100006,'469450480489','2024-03-09 06:26:20',0,0,0,'not_used','700091002121','2024-03-09 14:26:20','2024-03-09 14:26:20');
-
-/*!40000 ALTER TABLE `raffle_activity_order` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 # 转储表 raffle_activity_order_001
@@ -102,16 +92,48 @@ CREATE TABLE `raffle_activity_order_001` (
                                              `total_count` int(8) NOT NULL COMMENT '总次数',
                                              `day_count` int(8) NOT NULL COMMENT '日次数',
                                              `month_count` int(8) NOT NULL COMMENT '月次数',
-                                             `state` varchar(8) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `pay_amount` decimal(10,2) DEFAULT NULL COMMENT '支付金额【积分】',
+                                             `state` varchar(16) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
                                              `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
                                              `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                              `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
                                              PRIMARY KEY (`id`),
                                              UNIQUE KEY `uq_order_id` (`order_id`),
-                                             UNIQUE KEY `out_business_no` (`out_business_no`),
+                                             UNIQUE KEY `uq_out_business_no` (`out_business_no`),
                                              KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
 
+LOCK TABLES `raffle_activity_order_001` WRITE;
+/*!40000 ALTER TABLE `raffle_activity_order_001` DISABLE KEYS */;
+
+INSERT INTO `raffle_activity_order_001` (`id`, `user_id`, `sku`, `activity_id`, `activity_name`, `strategy_id`, `order_id`, `order_time`, `total_count`, `day_count`, `month_count`, `pay_amount`, `state`, `out_business_no`, `create_time`, `update_time`)
+VALUES
+    (71,'xiaofuge',9011,100301,'测试活动',100006,'761345538871','2024-04-21 10:40:25',1,1,1,NULL,'completed','073735003829','2024-04-21 18:40:25','2024-04-21 18:40:25'),
+    (72,'xiaofuge',9011,100301,'测试活动',100006,'837744050164','2024-04-21 10:40:25',1,1,1,NULL,'completed','613036507854','2024-04-21 18:40:25','2024-04-21 18:40:25'),
+    (73,'xiaofuge',9011,100301,'测试活动',100006,'766742523760','2024-04-21 10:40:25',1,1,1,NULL,'completed','649099837249','2024-04-21 18:40:25','2024-04-21 18:40:25'),
+    (74,'xiaofuge',9011,100301,'测试活动',100006,'856474163547','2024-04-21 10:40:25',1,1,1,NULL,'completed','652903372986','2024-04-21 18:40:25','2024-04-21 18:40:25'),
+    (75,'xiaofuge',9011,100301,'测试活动',100006,'668775949799','2024-04-21 10:40:25',1,1,1,NULL,'completed','097066347980','2024-04-21 18:40:25','2024-04-21 18:40:25'),
+    (76,'xiaofuge',9011,100301,'测试活动',100006,'164452591012','2024-05-01 06:44:26',10,10,10,NULL,'completed','xiaofuge_sku_2024042903','2024-05-01 14:44:26','2024-05-01 14:44:26'),
+    (77,'xiaofuge',9011,100301,'测试活动',100006,'492597085813','2024-05-01 06:51:45',10,10,10,NULL,'completed','xiaofuge_sku_2024042904','2024-05-01 14:51:45','2024-05-01 14:51:45'),
+    (78,'xiaofuge',9011,100301,'测试活动',100006,'031706643902','2024-05-01 06:54:36',10,10,10,NULL,'completed','xiaofuge_sku_2024042905','2024-05-01 14:54:36','2024-05-01 14:54:36'),
+    (79,'xiaofuge',9011,100301,'测试活动',100006,'460855930969','2024-05-01 07:00:12',10,10,10,NULL,'completed','xiaofuge_sku_2024042906','2024-05-01 15:00:12','2024-05-01 15:00:12'),
+    (1096,'xiaofuge',9011,100301,'测试活动',100006,'364757830401','2024-05-01 09:14:43',10,10,10,NULL,'completed','xiaofuge_sku_20240501','2024-05-01 17:14:43','2024-05-01 17:14:43'),
+    (1097,'xiaofuge',9011,100301,'测试活动',100006,'157026402583','2024-05-01 09:39:40',10,10,10,NULL,'completed','xiaofuge_sku_20240420','2024-05-01 17:39:40','2024-05-01 17:39:40'),
+    (1098,'xiaofuge',9011,100301,'测试活动',100006,'481116019750','2024-05-01 09:41:53',10,10,10,NULL,'completed','xiaofuge_sku_20240401','2024-05-01 17:41:53','2024-05-01 17:41:53'),
+    (1099,'xiaofuge',9011,100301,'测试活动',100006,'639151059221','2024-05-01 09:45:10',10,10,10,NULL,'completed','xiaofuge_sku_20240402','2024-05-01 17:45:10','2024-05-01 17:45:10'),
+    (4234,'xiaofuge',9011,100301,'测试活动',100006,'129360973197','2024-05-03 05:28:43',10,10,10,NULL,'completed','xiaofuge_sku_20240503','2024-05-03 13:28:42','2024-05-03 13:28:42'),
+    (4247,'liergou',9011,100301,'测试活动',100006,'151494600661','2024-05-04 07:32:26',10,10,10,NULL,'completed','liergou_sku_20240504','2024-05-04 15:32:25','2024-05-04 15:32:25'),
+    (4248,'xiaofuge',9011,100301,'测试活动',100006,'398083697802','2024-06-08 10:38:59',100,100,100,1.68,'wait_pay','70009240608001','2024-06-08 18:38:59','2024-06-08 18:38:59'),
+    (4249,'xiaofuge',9011,100301,'测试活动',100006,'356030049461','2024-06-08 10:54:33',100,100,100,1.68,'wait_pay','70009240608002','2024-06-08 18:54:32','2024-06-08 18:54:32'),
+    (4250,'xiaofuge',9011,100301,'测试活动',100006,'605318523315','2024-06-08 10:55:50',100,100,100,1.68,'completed','70009240608003','2024-06-08 18:55:49','2024-06-08 20:29:30'),
+    (4251,'xiaofuge',9011,100301,'测试活动',100006,'127654026777','2024-06-08 10:56:28',100,100,100,0.00,'completed','70009240608004','2024-06-08 18:56:27','2024-06-08 18:56:27'),
+    (4252,'xiaofuge',9011,100301,'测试活动',100006,'932526349433','2024-06-08 12:33:09',100,100,100,1.68,'completed','70009240608007','2024-06-08 20:33:09','2024-06-08 20:34:13'),
+    (4253,'xiaofuge',9011,100301,'测试活动',100006,'073017788455','2024-06-09 01:07:48',100,100,100,1.68,'completed','70009240609001','2024-06-09 09:07:47','2024-06-09 09:11:24'),
+    (4254,'xiaofuge',9011,100301,'测试活动',100006,'590031092982','2024-06-09 02:33:49',100,100,100,NULL,'wait_pay','70009240610001','2024-06-09 10:33:48','2024-06-09 10:33:48'),
+    (4255,'xiaofuge',9011,100301,'测试活动',100006,'732573213062','2024-06-09 02:43:18',100,100,100,1.68,'completed','70009240610002','2024-06-09 10:43:18','2024-06-09 10:45:11');
+
+/*!40000 ALTER TABLE `raffle_activity_order_001` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # 转储表 raffle_activity_order_002
@@ -131,16 +153,27 @@ CREATE TABLE `raffle_activity_order_002` (
                                              `total_count` int(8) NOT NULL COMMENT '总次数',
                                              `day_count` int(8) NOT NULL COMMENT '日次数',
                                              `month_count` int(8) NOT NULL COMMENT '月次数',
-                                             `state` varchar(8) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `pay_amount` decimal(10,2) DEFAULT NULL COMMENT '支付金额【积分】',
+                                             `state` varchar(16) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
                                              `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
                                              `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                              `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
                                              PRIMARY KEY (`id`),
                                              UNIQUE KEY `uq_order_id` (`order_id`),
-                                             UNIQUE KEY `out_business_no` (`out_business_no`),
+                                             UNIQUE KEY `uq_out_business_no` (`out_business_no`),
                                              KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
 
+LOCK TABLES `raffle_activity_order_002` WRITE;
+/*!40000 ALTER TABLE `raffle_activity_order_002` DISABLE KEYS */;
+
+INSERT INTO `raffle_activity_order_002` (`id`, `user_id`, `sku`, `activity_id`, `activity_name`, `strategy_id`, `order_id`, `order_time`, `total_count`, `day_count`, `month_count`, `pay_amount`, `state`, `out_business_no`, `create_time`, `update_time`)
+VALUES
+    (1,'liergou2',9011,100301,'测试活动',100006,'987026967898','2024-05-04 07:35:53',100,100,100,NULL,'completed','liergou2_sku_20240504','2024-05-04 15:35:52','2024-05-04 15:35:52'),
+    (2,'user003',9011,100301,'测试活动',100006,'700446814309','2024-05-25 02:52:20',100,100,100,NULL,'completed','user003_sku_20240525','2024-05-25 10:52:19','2024-05-25 10:52:19');
+
+/*!40000 ALTER TABLE `raffle_activity_order_002` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # 转储表 raffle_activity_order_003
@@ -160,15 +193,17 @@ CREATE TABLE `raffle_activity_order_003` (
                                              `total_count` int(8) NOT NULL COMMENT '总次数',
                                              `day_count` int(8) NOT NULL COMMENT '日次数',
                                              `month_count` int(8) NOT NULL COMMENT '月次数',
-                                             `state` varchar(8) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `pay_amount` decimal(10,2) DEFAULT NULL COMMENT '支付金额【积分】',
+                                             `state` varchar(16) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
                                              `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
                                              `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
                                              `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
                                              PRIMARY KEY (`id`),
                                              UNIQUE KEY `uq_order_id` (`order_id`),
-                                             UNIQUE KEY `out_business_no` (`out_business_no`),
+                                             UNIQUE KEY `uq_out_business_no` (`out_business_no`),
                                              KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
+
 
 
 # 转储表 task

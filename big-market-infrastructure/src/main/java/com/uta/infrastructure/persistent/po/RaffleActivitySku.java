@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 import lombok.Data;
 
@@ -45,6 +46,11 @@ public class RaffleActivitySku implements Serializable {
      * 剩余库存
      */
     private Integer stockCountSurplus;
+
+    /**
+     * 商品金额 【积分】
+     */
+    private BigDecimal productAmount;
 
     /**
      * 创建时间

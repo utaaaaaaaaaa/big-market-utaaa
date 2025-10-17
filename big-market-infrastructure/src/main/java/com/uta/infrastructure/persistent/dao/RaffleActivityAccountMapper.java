@@ -27,9 +27,6 @@ public interface RaffleActivityAccountMapper extends BaseMapper<RaffleActivityAc
 
     void updateActivityAccountDaySurplusImageQuota(RaffleActivityAccount raffleActivityAccount);
 
-    RaffleActivityAccountMonth queryActivityAccountMonthByUserId(RaffleActivityAccountMonth raffleActivityAccountMonthReq);
-
-    RaffleActivityAccountDay queryActivityAccountDayByUserId(RaffleActivityAccountDay raffleActivityAccountDayReq);
 }
 
 
