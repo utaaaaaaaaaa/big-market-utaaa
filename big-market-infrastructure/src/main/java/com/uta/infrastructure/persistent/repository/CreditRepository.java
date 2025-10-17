@@ -18,6 +18,7 @@ import com.uta.infrastructure.persistent.po.UserCreditAccount;
 import com.uta.infrastructure.persistent.po.UserCreditOrder;
 import com.uta.infrastructure.persistent.redis.IRedisService;
 import com.uta.types.common.Constants;
+import com.uta.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
 import org.springframework.dao.DuplicateKeyException;
@@ -122,5 +123,25 @@ public class CreditRepository implements ICreditRepository {
             taskMapper.updateTaskMessageFail(task);
         }
 
+    }
+
+    @Override
+    public CreditAccountEntity queryUserCreditAccount(String userId) {
+        UserCreditAccount userCreditAccount = new UserCreditAccount();
+        userCreditAccount.setUserId(userId);
+        UserCreditAccount creditAccount;
+        try {
+            dbRouter.doRouter(userId);
+            creditAccount = userCreditAccountMapper.queryUserCreditAccount(userCreditAccount);
+            if (null == creditAccount) {
+                throw new AppException("用户积分查询失败，该用户或者用户对应积分不存在");
+            }
+            return CreditAccountEntity.builder()
+                    .userId(userId)
+                    .adjustAmount(creditAccount.getAvailableAmount())
+                    .build();
+        } finally {
+            dbRouter.clear();
+        }
     }
 }

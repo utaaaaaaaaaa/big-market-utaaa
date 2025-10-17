@@ -1,5 +1,6 @@
 package com.uta.domain.credit.service;
 
+import com.uta.domain.credit.model.entity.CreditAccountEntity;
 import com.uta.domain.credit.model.entity.TradeEntity;
 
 public interface ICreditAdjustService {
@@ -11,4 +12,5 @@ public interface ICreditAdjustService {
      */
     String createOrder(TradeEntity tradeEntity);
 
+    CreditAccountEntity queryUserCreditAccount(String userId);
 }

@@ -37,7 +37,7 @@ public class RaffleOrderTest {
         skuRechargeEntity.setOrderTradeType(OrderTradeTypeVO.rebate_no_pay_trade);
         skuRechargeEntity.setOutBusinessNo("400028219012");
 
-        String orderId = raffleActivityAccountQuotaService.createOrder(skuRechargeEntity);
+        String orderId = raffleActivityAccountQuotaService.createOrder(skuRechargeEntity).getOrderId();
         log.info("测试结果：{}", orderId);
     }
 
@@ -51,7 +51,7 @@ public class RaffleOrderTest {
                 skuRechargeEntity.setOutBusinessNo(RandomStringUtils.randomNumeric(12));
                 skuRechargeEntity.setOrderTradeType(OrderTradeTypeVO.rebate_no_pay_trade);
 
-                String orderId = raffleActivityAccountQuotaService.createOrder(skuRechargeEntity);
+                String orderId = raffleActivityAccountQuotaService.createOrder(skuRechargeEntity).getOrderId();
                 log.info("测试结果：{}", orderId);
             }catch (AppException e){
                 log.warn(e.getInfo());
@@ -69,7 +69,7 @@ public class RaffleOrderTest {
         // outBusinessNo 作为幂等仿重使用，同一个业务单号2次使用会抛出索引冲突 Duplicate entry '700091009111' for key 'uq_out_business_no' 确保唯一性。
         skuRechargeEntity.setOutBusinessNo("70009240608007");
         skuRechargeEntity.setOrderTradeType(OrderTradeTypeVO.credit_pay_trade);
-        String orderId = raffleActivityAccountQuotaService.createOrder(skuRechargeEntity);
+        String orderId = raffleActivityAccountQuotaService.createOrder(skuRechargeEntity).getOrderId();
         log.info("测试结果：{}", orderId);
     }
 

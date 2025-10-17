@@ -44,13 +44,18 @@ public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityA
     }
 
     @Override
-    public String createOrder(SkuRechargeEntity skuRechargeEntity) {
+    public UnpaidActivityOrderEntity createOrder(SkuRechargeEntity skuRechargeEntity) {
         // 1. 参数校验
         String userId = skuRechargeEntity.getUserId();
         Long sku = skuRechargeEntity.getSku();
         String outBusinessNo = skuRechargeEntity.getOutBusinessNo();
         if (null == sku || StringUtils.isBlank(userId) || StringUtils.isBlank(outBusinessNo)) {
             throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
+        }
+
+        UnpaidActivityOrderEntity unpaidActivityOrder = activityRepository.queryUnpaidActivityOrder(skuRechargeEntity);
+        if (unpaidActivityOrder != null) {
+            return unpaidActivityOrder;
         }
 
         // 2. 查询基础信息
@@ -72,8 +77,14 @@ public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityA
         ITradePolicy policy = tradePolicyMap.get(skuRechargeEntity.getOrderTradeType().getCode());
         policy.trade(createQuotaOrderAggregate);
 
-        // 6. 返回单号
-        return createQuotaOrderAggregate.getActivityOrderEntity().getOrderId();
+        // 7. 返回订单信息
+        ActivityOrderEntity activityOrderEntity = createQuotaOrderAggregate.getActivityOrderEntity();
+        return UnpaidActivityOrderEntity.builder()
+                .userId(userId)
+                .orderId(activityOrderEntity.getOrderId())
+                .outBusinessNo(activityOrderEntity.getOutBusinessNo())
+                .payAmount(activityOrderEntity.getPayAmount())
+                .build();
     }
 
 

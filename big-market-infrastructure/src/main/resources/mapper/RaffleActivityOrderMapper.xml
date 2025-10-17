@@ -49,5 +49,11 @@
         from raffle_activity_order
         where user_id = #{userId} and out_business_no = #{outBusinessNo}
     </select>
+    <select id="queryUnpaidActivityOrder"
+            resultType="com.uta.infrastructure.persistent.po.RaffleActivityOrder">
+        select user_id, sku, activity_id, activity_name, strategy_id, order_id, order_time,total_count, day_count, month_count,pay_amount, state, out_business_no
+        from raffle_activity_order
+        where user_id = #{userId} and sku = #{sku} and state = 'wait_pay'
+    </select>
 
 </mapper>

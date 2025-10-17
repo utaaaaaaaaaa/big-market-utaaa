@@ -21,7 +21,7 @@ public interface IRaffleActivityAccountQuotaService {
      * @param skuRechargeEntity 活动sku充值对象实体
      * @return 定单号
      */
-    String createOrder(SkuRechargeEntity skuRechargeEntity);
+    UnpaidActivityOrderEntity createOrder(SkuRechargeEntity skuRechargeEntity);
 
     /**
      * 订单出货 - 积分充值

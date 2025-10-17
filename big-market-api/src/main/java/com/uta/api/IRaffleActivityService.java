@@ -1,10 +1,15 @@
 package com.uta.api;
 
 import com.uta.api.entity.dto.ActivityDrawDTO;
+import com.uta.api.entity.dto.CreditPayExchangeSkuDTO;
 import com.uta.api.entity.dto.GetUserActivityAccountValuesDTO;
 import com.uta.api.entity.vo.ActivityDrawVO;
 import com.uta.api.entity.vo.GetUserActivityAccountValuesVO;
+import com.uta.api.entity.vo.SkuProductListVO;
 import com.uta.types.model.Response;
+
+import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * 抽奖活动服务
@@ -47,5 +52,29 @@ public interface IRaffleActivityService {
      * @return 用户活动抽奖剩余次数
      */
     Response<GetUserActivityAccountValuesVO> GetUserActivityAccountValues(GetUserActivityAccountValuesDTO getUserActivityAccountValuesDTO);
+
+    /**
+     * 查询sku商品集合
+     *
+     * @param activityId 活动ID
+     * @return 商品集合
+     */
+    Response<List<SkuProductListVO>> querySkuProductListByActivityId(Long activityId);
+
+    /**
+     * 查询用户积分值
+     *
+     * @param userId 用户ID
+     * @return 可用积分
+     */
+    Response<BigDecimal> queryUserCreditAccount(String userId);
+
+    /**
+     * 积分支付兑换商品
+     *
+     * @param request 请求对象「用户ID、商品ID」
+     * @return 兑换结果
+     */
+    Response<Boolean> creditPayExchangeSku(CreditPayExchangeSkuDTO request);
 
 }

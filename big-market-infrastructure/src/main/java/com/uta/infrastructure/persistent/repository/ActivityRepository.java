@@ -7,6 +7,7 @@ import com.uta.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
 import com.uta.domain.activity.model.entity.*;
 import com.uta.domain.activity.model.vo.ActivitySkuStockKeyVO;
 import com.uta.domain.activity.model.vo.ActivityStateVO;
+import com.uta.domain.activity.model.vo.OrderTradeTypeVO;
 import com.uta.domain.activity.model.vo.UserRaffleOrderStateVO;
 import com.uta.domain.activity.repository.IActivityRepository;
 import com.uta.infrastructure.event.EventPublisher;
@@ -607,6 +608,48 @@ public class ActivityRepository implements IActivityRepository {
             dbRouter.clear();
             lock.unlock();
         }
+    }
+
+    @Override
+    public UnpaidActivityOrderEntity queryUnpaidActivityOrder(SkuRechargeEntity skuRechargeEntity) {
+        String userId = skuRechargeEntity.getUserId();
+        Long sku = skuRechargeEntity.getSku();
+        RaffleActivityOrder raffleActivityOrder = new RaffleActivityOrder();
+        raffleActivityOrder.setUserId(userId);
+        raffleActivityOrder.setSku(sku);
+        RaffleActivityOrder unpaidOrder = raffleActivityOrderMapper.queryUnpaidActivityOrder(raffleActivityOrder);
+        if (unpaidOrder == null)return null;
+
+        return UnpaidActivityOrderEntity.builder()
+                .userId(unpaidOrder.getUserId())
+                .orderId(unpaidOrder.getOrderId())
+                .outBusinessNo(unpaidOrder.getOutBusinessNo())
+                .payAmount(unpaidOrder.getPayAmount())
+                .build();
+    }
+
+    @Override
+    public List<SkuProductEntity> querySkuProductEntityListByActivityId(Long activityId) {
+        List<RaffleActivitySku> raffleActivitySkus = raffleActivitySkuMapper.queryActivitySkuListByActivityId(activityId);
+        List<SkuProductEntity> skuProductEntityList = new ArrayList<>();
+        for (RaffleActivitySku raffleActivitySku : raffleActivitySkus) {
+            RaffleActivityCount raffleActivityCount = raffleActivityCountMapper.queryRaffleActivityCountByActivityCountId(raffleActivitySku.getActivityCountId());
+            SkuProductEntity skuProductEntity = new SkuProductEntity();
+            skuProductEntity.setSku(raffleActivitySku.getSku());
+            skuProductEntity.setActivityId(raffleActivitySku.getActivityId());
+            skuProductEntity.setActivityCountId(raffleActivitySku.getActivityCountId());
+            skuProductEntity.setStockCount(raffleActivitySku.getStockCount());
+            skuProductEntity.setStockCountSurplus(raffleActivitySku.getStockCountSurplus());
+            skuProductEntity.setProductAmount(raffleActivitySku.getProductAmount());
+            skuProductEntity.setActivityCount(SkuProductEntity.ActivityCount.builder()
+                            .dayCount(raffleActivityCount.getDayCount())
+                            .monthCount(raffleActivityCount.getMonthCount())
+                            .totalCount(raffleActivityCount.getTotalCount())
+                    .build());
+
+            skuProductEntityList.add(skuProductEntity);
+        }
+        return skuProductEntityList;
     }
 
 
