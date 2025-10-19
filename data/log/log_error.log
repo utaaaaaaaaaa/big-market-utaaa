@@ -1,11 +1,14 @@
-25-10-01.14:34:05.748 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-01.14:34:06.259 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-01.14:38:05.194 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-01.14:38:05.629 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-01.14:40:38.436 [http-nio-8091-exec-9] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'activityId' for method parameter type Long is not present]
-25-10-01.14:40:48.835 [http-nio-8091-exec-6] ERROR RaffleActivityController - 活动抽奖失败 userId:utaaa activityId:null
-com.uta.types.exception.AppException: null
-	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:79)
+25-10-19.14:31:49.267 [main            ] WARN  ServiceAnnotationPostProcessor -  [DUBBO] No class annotated by Dubbo @Service was found under package [com.uta.trigger.api], ignore re-scanned classes: 0, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-28. This may be caused by No annotations were found on the class, go to https://dubbo.apache.org/faq/5/28 to find instructions. 
+25-10-19.14:31:50.012 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+25-10-19.14:31:51.652 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.2.0, current host: 10.241.59.48, error code: 0-12. This may be caused by , go to https://dubbo.apache.org/faq/0/12 to find instructions. 
+25-10-19.14:31:51.652 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.2.0, current host: 10.241.59.48, error code: 0-12. This may be caused by , go to https://dubbo.apache.org/faq/0/12 to find instructions. 
+25-10-19.14:31:52.218 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-19.14:31:53.869 [main            ] WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+25-10-19.14:31:54.755 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-8. This may be caused by , go to https://dubbo.apache.org/faq/5/8 to find instructions. 
+25-10-19.14:31:55.317 [main            ] WARN  NacosRegistry          -  [DUBBO] Received empty url address list and empty protection is disabled, will clear current available addresses, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 1-37. This may be caused by , go to https://dubbo.apache.org/faq/1/37 to find instructions. 
+25-10-19.14:34:18.816 [http-nio-8091-exec-2] ERROR RaffleActivityController - 活动抽奖失败 userId:utaaa activityId:100301
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "this.degradeSwitch" is null
+	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:117)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,9 +63,21 @@ com.uta.types.exception.AppException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-25-10-01.14:41:35.350 [http-nio-8091-exec-4] ERROR RaffleActivityController - 活动抽奖失败 userId:utaaa activityId:null
-com.uta.types.exception.AppException: null
-	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:79)
+25-10-19.14:36:08.324 [Thread-12       ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+25-10-19.14:36:08.324 [Thread-7        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+25-10-19.14:36:08.324 [Thread-12       ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+25-10-19.14:36:08.325 [Thread-7        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Destruction of the end
+25-10-19.14:36:15.796 [main            ] WARN  ServiceAnnotationPostProcessor -  [DUBBO] No class annotated by Dubbo @Service was found under package [com.uta.trigger.api], ignore re-scanned classes: 0, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-28. This may be caused by No annotations were found on the class, go to https://dubbo.apache.org/faq/5/28 to find instructions. 
+25-10-19.14:36:16.641 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+25-10-19.14:36:18.355 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.2.0, current host: 10.241.59.48, error code: 0-12. This may be caused by , go to https://dubbo.apache.org/faq/0/12 to find instructions. 
+25-10-19.14:36:18.355 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.2.0, current host: 10.241.59.48, error code: 0-12. This may be caused by , go to https://dubbo.apache.org/faq/0/12 to find instructions. 
+25-10-19.14:36:18.946 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-19.14:36:20.734 [main            ] WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+25-10-19.14:36:21.657 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-8. This may be caused by , go to https://dubbo.apache.org/faq/5/8 to find instructions. 
+25-10-19.14:36:22.302 [main            ] WARN  NacosRegistry          -  [DUBBO] Received empty url address list and empty protection is disabled, will clear current available addresses, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 1-37. This may be caused by , go to https://dubbo.apache.org/faq/1/37 to find instructions. 
+25-10-19.14:36:30.920 [http-nio-8091-exec-3] ERROR RaffleActivityController - 活动抽奖失败 userId:utaaa activityId:100301
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "this.degradeSwitch" is null
+	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:117)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,13 +132,35 @@ com.uta.types.exception.AppException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-25-10-01.14:43:46.068 [http-nio-8091-exec-10] WARN  ActivityRepository     - 用户月账户额度不够，userId:utaaa, activityId:100301, Day:2025-10-01
-25-10-01.14:43:46.072 [http-nio-8091-exec-10] ERROR RaffleActivityController - 活动抽奖失败 userId:utaaa activityId:100301
+25-10-19.14:37:31.116 [Thread-7        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+25-10-19.14:37:31.116 [Thread-12       ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+25-10-19.14:37:31.116 [Thread-12       ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+25-10-19.14:37:31.117 [Thread-7        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Destruction of the end
+25-10-19.14:37:40.757 [main            ] WARN  ServiceAnnotationPostProcessor -  [DUBBO] No class annotated by Dubbo @Service was found under package [com.uta.trigger.api], ignore re-scanned classes: 0, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-28. This may be caused by No annotations were found on the class, go to https://dubbo.apache.org/faq/5/28 to find instructions. 
+25-10-19.14:37:41.512 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+25-10-19.14:37:43.198 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.2.0, current host: 10.241.59.48, error code: 0-12. This may be caused by , go to https://dubbo.apache.org/faq/0/12 to find instructions. 
+25-10-19.14:37:43.199 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.2.0, current host: 10.241.59.48, error code: 0-12. This may be caused by , go to https://dubbo.apache.org/faq/0/12 to find instructions. 
+25-10-19.14:37:43.769 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-19.14:37:45.436 [main            ] WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+25-10-19.14:37:46.294 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-8. This may be caused by , go to https://dubbo.apache.org/faq/5/8 to find instructions. 
+25-10-19.14:37:46.896 [main            ] WARN  NacosRegistry          -  [DUBBO] Received empty url address list and empty protection is disabled, will clear current available addresses, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 1-37. This may be caused by , go to https://dubbo.apache.org/faq/1/37 to find instructions. 
+25-10-19.14:39:58.481 [Thread-12       ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+25-10-19.14:39:58.482 [Thread-12       ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+25-10-19.14:39:58.482 [Thread-7        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+25-10-19.14:39:58.482 [Thread-7        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Destruction of the end
+25-10-19.14:40:06.772 [main            ] WARN  ServiceAnnotationPostProcessor -  [DUBBO] No class annotated by Dubbo @Service was found under package [com.uta.trigger.api], ignore re-scanned classes: 0, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-28. This may be caused by No annotations were found on the class, go to https://dubbo.apache.org/faq/5/28 to find instructions. 
+25-10-19.14:40:07.478 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+25-10-19.14:40:09.143 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.2.0, current host: 10.241.59.48, error code: 0-12. This may be caused by , go to https://dubbo.apache.org/faq/0/12 to find instructions. 
+25-10-19.14:40:09.143 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.2.0, current host: 10.241.59.48, error code: 0-12. This may be caused by , go to https://dubbo.apache.org/faq/0/12 to find instructions. 
+25-10-19.14:40:09.719 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-19.14:40:11.354 [main            ] WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+25-10-19.14:40:12.227 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-8. This may be caused by , go to https://dubbo.apache.org/faq/5/8 to find instructions. 
+25-10-19.14:40:12.816 [main            ] WARN  NacosRegistry          -  [DUBBO] Received empty url address list and empty protection is disabled, will clear current available addresses, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 1-37. This may be caused by , go to https://dubbo.apache.org/faq/1/37 to find instructions. 
+25-10-19.14:40:20.871 [http-nio-8091-exec-2] ERROR RaffleActivityController - 活动抽奖失败 userId:utaaa activityId:100301
 com.uta.types.exception.AppException: null
-	at com.uta.infrastructure.persistent.repository.ActivityRepository.lambda$saveCreatePartakeOrderAggregate$1(ActivityRepository.java:304)
-	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
-	at com.uta.infrastructure.persistent.repository.ActivityRepository.saveCreatePartakeOrderAggregate(ActivityRepository.java:248)
-	at com.uta.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$1a34e098.invoke(<generated>)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository.getRateRange(StrategyRepository.java:98)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository.getRateRange(StrategyRepository.java:91)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$d3f263fc.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -132,10 +169,14 @@ com.uta.types.exception.AppException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
-	at com.uta.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$ff69f3ea.saveCreatePartakeOrderAggregate(<generated>)
-	at com.uta.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:73)
-	at com.uta.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:31)
-	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:82)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$a1175613.getRateRange(<generated>)
+	at com.uta.domain.strategy.service.armory.StrategyArmoryDispatch.getRandomAwardId(StrategyArmoryDispatch.java:126)
+	at com.uta.domain.strategy.service.rule.chain.impl.DefaultLogicChain.logic(DefaultLogicChain.java:23)
+	at com.uta.domain.strategy.service.rule.chain.impl.RuleWeightLogicChain.logic(RuleWeightLogicChain.java:67)
+	at com.uta.domain.strategy.service.rule.chain.impl.BlackListLogicChain.logic(BlackListLogicChain.java:45)
+	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicChain(DefaultRaffleStrategy.java:41)
+	at com.uta.domain.strategy.service.raffle.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:55)
+	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:133)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -190,16 +231,306 @@ com.uta.types.exception.AppException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-25-10-01.14:46:11.294 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m3s841ms784µs100ns).
-25-10-01.14:46:11.294 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=57s751ms816µs300ns).
-25-10-01.14:46:11.297 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m3s812ms11µs701ns).
-25-10-01.14:46:11.298 [http-nio-8091-exec-15] WARN  ActivityRepository     - 用户月账户额度不够，userId:utaaa, activityId:100301, Day:2025-10-01
-25-10-01.14:46:11.302 [http-nio-8091-exec-15] ERROR RaffleActivityController - 活动抽奖失败 userId:utaaa activityId:100301
+25-10-19.14:41:44.956 [http-nio-8091-exec-11] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoSuchMethodError: 'void com.alibaba.fastjson2.writer.ObjectWriterProvider.setCompatibleWithFieldName(boolean)'] with root cause
+java.lang.NoSuchMethodError: 'void com.alibaba.fastjson2.writer.ObjectWriterProvider.setCompatibleWithFieldName(boolean)'
+	at com.alibaba.fastjson.JSON.createWriteContext(JSON.java:1073)
+	at com.alibaba.fastjson.JSON.toJSONString(JSON.java:1477)
+	at com.uta.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:59)
+	at com.uta.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:31)
+	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:130)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-10-19.14:42:07.358 [http-nio-8091-exec-8] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoSuchMethodError: 'void com.alibaba.fastjson2.writer.ObjectWriterProvider.setCompatibleWithFieldName(boolean)'] with root cause
+java.lang.NoSuchMethodError: 'void com.alibaba.fastjson2.writer.ObjectWriterProvider.setCompatibleWithFieldName(boolean)'
+	at com.alibaba.fastjson.JSON.createWriteContext(JSON.java:1073)
+	at com.alibaba.fastjson.JSON.toJSONString(JSON.java:1477)
+	at com.uta.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:59)
+	at com.uta.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:31)
+	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:130)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-10-19.14:46:45.488 [Thread-7        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+25-10-19.14:46:45.488 [Thread-12       ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+25-10-19.14:46:45.488 [Thread-12       ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+25-10-19.14:46:45.488 [Thread-7        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Destruction of the end
+25-10-19.14:46:56.439 [main            ] WARN  ServiceAnnotationPostProcessor -  [DUBBO] No class annotated by Dubbo @Service was found under package [com.uta.trigger.api], ignore re-scanned classes: 0, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-28. This may be caused by No annotations were found on the class, go to https://dubbo.apache.org/faq/5/28 to find instructions. 
+25-10-19.14:46:57.188 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+25-10-19.14:46:57.870 [main            ] WARN  ServiceAnnotationPostProcessor -  [DUBBO] No class annotated by Dubbo @Service was found under package [com.uta.trigger.api], ignore re-scanned classes: 0, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-28. This may be caused by No annotations were found on the class, go to https://dubbo.apache.org/faq/5/28 to find instructions. 
+25-10-19.14:46:57.901 [main            ] WARN  DubboShutdownHook      -  [DUBBO] register shutdown hook failed: Shutdown in progress, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-2. This may be caused by , go to https://dubbo.apache.org/faq/5/2 to find instructions. 
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.base/java.lang.Runtime.addShutdownHook(Runtime.java:216)
+	at org.apache.dubbo.config.DubboShutdownHook.register(DubboShutdownHook.java:133)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.registerShutdownHook(DefaultApplicationDeployer.java:232)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.initialize(DefaultApplicationDeployer.java:207)
+	at org.apache.dubbo.config.deploy.DefaultModuleDeployer.prepare(DefaultModuleDeployer.java:488)
+	at org.apache.dubbo.config.spring.context.DubboConfigApplicationListener.initDubboConfigBeans(DubboConfigApplicationListener.java:73)
+	at org.apache.dubbo.config.spring.context.DubboConfigApplicationListener.onApplicationEvent(DubboConfigApplicationListener.java:59)
+	at org.apache.dubbo.config.spring.context.DubboConfigApplicationListener.onApplicationEvent(DubboConfigApplicationListener.java:37)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:133)
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:892)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.uta.Application.main(Application.java:13)
+25-10-19.14:46:57.977 [main            ] ERROR NacosDynamicConfiguration -  [DUBBO] Shutdown in progress, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-34. This may be caused by , go to https://dubbo.apache.org/faq/5/34 to find instructions. 
+com.alibaba.nacos.api.exception.NacosException: java.lang.reflect.InvocationTargetException
+	at com.alibaba.nacos.api.config.ConfigFactory.createConfigService(ConfigFactory.java:46)
+	at com.alibaba.nacos.api.NacosFactory.createConfigService(NacosFactory.java:44)
+	at org.apache.dubbo.configcenter.support.nacos.NacosDynamicConfiguration.buildConfigService(NacosDynamicConfiguration.java:108)
+	at org.apache.dubbo.configcenter.support.nacos.NacosDynamicConfiguration.<init>(NacosDynamicConfiguration.java:96)
+	at org.apache.dubbo.configcenter.support.nacos.NacosDynamicConfigurationFactory.createDynamicConfiguration(NacosDynamicConfigurationFactory.java:46)
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.lambda$getDynamicConfiguration$0(AbstractDynamicConfigurationFactory.java:39)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.apache.dubbo.common.utils.ConcurrentHashMapUtils.computeIfAbsent(ConcurrentHashMapUtils.java:42)
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.getDynamicConfiguration(AbstractDynamicConfigurationFactory.java:39)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.getDynamicConfiguration(DefaultApplicationDeployer.java:848)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.prepareEnvironment(DefaultApplicationDeployer.java:791)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.startConfigCenter(DefaultApplicationDeployer.java:289)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.initialize(DefaultApplicationDeployer.java:209)
+	at org.apache.dubbo.config.deploy.DefaultModuleDeployer.prepare(DefaultModuleDeployer.java:488)
+	at org.apache.dubbo.config.spring.context.DubboConfigApplicationListener.initDubboConfigBeans(DubboConfigApplicationListener.java:73)
+	at org.apache.dubbo.config.spring.context.DubboConfigApplicationListener.onApplicationEvent(DubboConfigApplicationListener.java:59)
+	at org.apache.dubbo.config.spring.context.DubboConfigApplicationListener.onApplicationEvent(DubboConfigApplicationListener.java:37)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:133)
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:892)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.uta.Application.main(Application.java:13)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.alibaba.nacos.api.config.ConfigFactory.createConfigService(ConfigFactory.java:43)
+	... 29 common frames omitted
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.alibaba.nacos.client.config.impl.ConfigHttpClientManager.<clinit>(ConfigHttpClientManager.java:63)
+	at com.alibaba.nacos.client.config.impl.ServerListManager.<init>(ServerListManager.java:64)
+	at com.alibaba.nacos.client.config.NacosConfigService.<init>(NacosConfigService.java:80)
+	... 35 common frames omitted
+Caused by: java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.base/java.lang.Runtime.addShutdownHook(Runtime.java:216)
+	at com.alibaba.nacos.common.utils.ThreadUtils.addShutdownHook(ThreadUtils.java:153)
+	at com.alibaba.nacos.common.http.HttpClientBeanHolder.<clinit>(HttpClientBeanHolder.java:46)
+	... 38 common frames omitted
+25-10-19.14:46:58.078 [SpringApplicationShutdownHook] WARN  DubboShutdownHook      -  [DUBBO] unregister shutdown hook failed: Shutdown in progress, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-2. This may be caused by , go to https://dubbo.apache.org/faq/5/2 to find instructions. 
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.apache.dubbo.config.DubboShutdownHook.unregister(DubboShutdownHook.java:152)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.unRegisterShutdownHook(DefaultApplicationDeployer.java:171)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.preDestroy(DefaultApplicationDeployer.java:939)
+	at org.apache.dubbo.rpc.model.ApplicationModel.onDestroy(ApplicationModel.java:152)
+	at org.apache.dubbo.rpc.model.ScopeModel.destroy(ScopeModel.java:121)
+	at org.apache.dubbo.rpc.model.ApplicationModel.tryDestroy(ApplicationModel.java:272)
+	at org.apache.dubbo.rpc.model.ModuleModel.onDestroy(ModuleModel.java:132)
+	at org.apache.dubbo.rpc.model.ScopeModel.destroy(ScopeModel.java:121)
+	at org.apache.dubbo.config.spring.context.DubboDeployApplicationListener.onContextClosedEvent(DubboDeployApplicationListener.java:132)
+	at org.apache.dubbo.config.spring.context.DubboDeployApplicationListener.onApplicationEvent(DubboDeployApplicationListener.java:104)
+	at org.apache.dubbo.config.spring.context.DubboDeployApplicationListener.onApplicationEvent(DubboDeployApplicationListener.java:47)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:386)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1069)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1032)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-10-19.14:46:58.099 [main            ] ERROR SpringApplication      - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: ErrCode:-400, ErrMsg:Shutdown in progress
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.prepareEnvironment(DefaultApplicationDeployer.java:798)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.startConfigCenter(DefaultApplicationDeployer.java:289)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.initialize(DefaultApplicationDeployer.java:209)
+	at org.apache.dubbo.config.deploy.DefaultModuleDeployer.prepare(DefaultModuleDeployer.java:488)
+	at org.apache.dubbo.config.spring.context.DubboConfigApplicationListener.initDubboConfigBeans(DubboConfigApplicationListener.java:73)
+	at org.apache.dubbo.config.spring.context.DubboConfigApplicationListener.onApplicationEvent(DubboConfigApplicationListener.java:59)
+	at org.apache.dubbo.config.spring.context.DubboConfigApplicationListener.onApplicationEvent(DubboConfigApplicationListener.java:37)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:133)
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:892)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.uta.Application.main(Application.java:13)
+Caused by: java.lang.IllegalStateException: ErrCode:-400, ErrMsg:Shutdown in progress
+	at org.apache.dubbo.configcenter.support.nacos.NacosDynamicConfiguration.buildConfigService(NacosDynamicConfiguration.java:123)
+	at org.apache.dubbo.configcenter.support.nacos.NacosDynamicConfiguration.<init>(NacosDynamicConfiguration.java:96)
+	at org.apache.dubbo.configcenter.support.nacos.NacosDynamicConfigurationFactory.createDynamicConfiguration(NacosDynamicConfigurationFactory.java:46)
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.lambda$getDynamicConfiguration$0(AbstractDynamicConfigurationFactory.java:39)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.apache.dubbo.common.utils.ConcurrentHashMapUtils.computeIfAbsent(ConcurrentHashMapUtils.java:42)
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.getDynamicConfiguration(AbstractDynamicConfigurationFactory.java:39)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.getDynamicConfiguration(DefaultApplicationDeployer.java:848)
+	at org.apache.dubbo.config.deploy.DefaultApplicationDeployer.prepareEnvironment(DefaultApplicationDeployer.java:791)
+	... 19 common frames omitted
+Caused by: com.alibaba.nacos.api.exception.NacosException: java.lang.reflect.InvocationTargetException
+	at com.alibaba.nacos.api.config.ConfigFactory.createConfigService(ConfigFactory.java:46)
+	at com.alibaba.nacos.api.NacosFactory.createConfigService(NacosFactory.java:44)
+	at org.apache.dubbo.configcenter.support.nacos.NacosDynamicConfiguration.buildConfigService(NacosDynamicConfiguration.java:108)
+	... 27 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.alibaba.nacos.api.config.ConfigFactory.createConfigService(ConfigFactory.java:43)
+	... 29 common frames omitted
+Caused by: java.lang.ExceptionInInitializerError: null
+	at com.alibaba.nacos.client.config.impl.ConfigHttpClientManager.<clinit>(ConfigHttpClientManager.java:63)
+	at com.alibaba.nacos.client.config.impl.ServerListManager.<init>(ServerListManager.java:64)
+	at com.alibaba.nacos.client.config.NacosConfigService.<init>(NacosConfigService.java:80)
+	... 35 common frames omitted
+Caused by: java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.base/java.lang.Runtime.addShutdownHook(Runtime.java:216)
+	at com.alibaba.nacos.common.utils.ThreadUtils.addShutdownHook(ThreadUtils.java:153)
+	at com.alibaba.nacos.common.http.HttpClientBeanHolder.<clinit>(HttpClientBeanHolder.java:46)
+	... 38 common frames omitted
+25-10-19.14:46:58.599 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+25-10-19.14:47:00.289 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.2.0, current host: 10.241.59.48, error code: 0-12. This may be caused by , go to https://dubbo.apache.org/faq/0/12 to find instructions. 
+25-10-19.14:47:00.289 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.2.0, current host: 10.241.59.48, error code: 0-12. This may be caused by , go to https://dubbo.apache.org/faq/0/12 to find instructions. 
+25-10-19.14:47:00.825 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-10-19.14:47:02.408 [main            ] WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+25-10-19.14:47:03.249 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 5-8. This may be caused by , go to https://dubbo.apache.org/faq/5/8 to find instructions. 
+25-10-19.14:47:03.866 [main            ] WARN  NacosRegistry          -  [DUBBO] Received empty url address list and empty protection is disabled, will clear current available addresses, dubbo version: 3.2.0, current host: 10.241.59.48, error code: 1-37. This may be caused by , go to https://dubbo.apache.org/faq/1/37 to find instructions. 
+25-10-19.14:47:12.222 [http-nio-8091-exec-5] ERROR RaffleActivityController - 活动抽奖失败 userId:utaaa activityId:100301
 com.uta.types.exception.AppException: null
-	at com.uta.infrastructure.persistent.repository.ActivityRepository.lambda$saveCreatePartakeOrderAggregate$1(ActivityRepository.java:304)
-	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
-	at com.uta.infrastructure.persistent.repository.ActivityRepository.saveCreatePartakeOrderAggregate(ActivityRepository.java:248)
-	at com.uta.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$1a34e098.invoke(<generated>)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository.getRateRange(StrategyRepository.java:98)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository.getRateRange(StrategyRepository.java:91)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$d3f263fc.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -208,10 +539,14 @@ com.uta.types.exception.AppException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
-	at com.uta.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$ff69f3ea.saveCreatePartakeOrderAggregate(<generated>)
-	at com.uta.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:73)
-	at com.uta.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:31)
-	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:82)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$347759e4.getRateRange(<generated>)
+	at com.uta.domain.strategy.service.armory.StrategyArmoryDispatch.getRandomAwardId(StrategyArmoryDispatch.java:126)
+	at com.uta.domain.strategy.service.rule.chain.impl.DefaultLogicChain.logic(DefaultLogicChain.java:23)
+	at com.uta.domain.strategy.service.rule.chain.impl.RuleWeightLogicChain.logic(RuleWeightLogicChain.java:67)
+	at com.uta.domain.strategy.service.rule.chain.impl.BlackListLogicChain.logic(BlackListLogicChain.java:45)
+	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicChain(DefaultRaffleStrategy.java:41)
+	at com.uta.domain.strategy.service.raffle.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:55)
+	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:133)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -266,6 +601,82 @@ com.uta.types.exception.AppException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-25-10-01.14:46:19.818 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
-25-10-01.14:46:20.281 [main            ] WARN  AbstractMethod         - [com.uta.infrastructure.persistent.dao.RaffleActivityOrderMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-25-10-01.14:46:52.258 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=51s650ms547µs100ns).
+25-10-19.14:47:32.309 [http-nio-8091-exec-3] ERROR RaffleActivityController - 活动抽奖失败 userId:utaaa activityId:100301
+com.uta.types.exception.AppException: null
+	at com.uta.infrastructure.persistent.repository.StrategyRepository.getRateRange(StrategyRepository.java:98)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository.getRateRange(StrategyRepository.java:91)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$d3f263fc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.uta.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$347759e4.getRateRange(<generated>)
+	at com.uta.domain.strategy.service.armory.StrategyArmoryDispatch.getRandomAwardId(StrategyArmoryDispatch.java:126)
+	at com.uta.domain.strategy.service.rule.chain.impl.DefaultLogicChain.logic(DefaultLogicChain.java:23)
+	at com.uta.domain.strategy.service.rule.chain.impl.RuleWeightLogicChain.logic(RuleWeightLogicChain.java:67)
+	at com.uta.domain.strategy.service.rule.chain.impl.BlackListLogicChain.logic(BlackListLogicChain.java:45)
+	at com.uta.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicChain(DefaultRaffleStrategy.java:41)
+	at com.uta.domain.strategy.service.raffle.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:55)
+	at com.uta.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-10-19.14:47:55.050 [Thread-12       ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+25-10-19.14:47:55.050 [Thread-12       ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+25-10-19.14:47:55.050 [Thread-7        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+25-10-19.14:47:55.051 [Thread-7        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Destruction of the end

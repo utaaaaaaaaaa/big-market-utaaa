@@ -31,6 +31,7 @@ import com.uta.domain.strategy.model.entity.RaffleAwardEntity;
 import com.uta.domain.strategy.model.entity.RaffleFactorEntity;
 import com.uta.domain.strategy.service.IRaffleStrategy;
 import com.uta.domain.strategy.service.armory.IStrategyArmory;
+import com.uta.types.annotations.DCCValue;
 import com.uta.types.enums.ResponseCode;
 import com.uta.types.exception.AppException;
 import com.uta.types.model.Response;
@@ -80,6 +81,9 @@ public class RaffleActivityController implements IRaffleActivityService {
     @Resource
     private IRaffleActivityAccountQuotaService raffleActivityAccountQuotaService;
 
+    @DCCValue("degradeSwitch:open")
+    private String degradeSwitch;
+
     @PostMapping("/armory")
     @Override
     public Response<Boolean> armory(@RequestParam Long activityId) {
@@ -110,10 +114,18 @@ public class RaffleActivityController implements IRaffleActivityService {
     public Response<ActivityDrawVO> draw(@RequestBody ActivityDrawDTO request) {
         try {
             log.info("活动抽奖 userId:{} activityId:{}", request.getUserId(), request.getActivityId());
+            if (!degradeSwitch.equals("open")){
+                return Response.<ActivityDrawVO>builder()
+                        .code(ResponseCode.DEGRADE_SWITCH.getCode())
+                        .info(ResponseCode.DEGRADE_SWITCH.getInfo())
+                        .build();
+            }
+
             // 1. 参数校验
             if (StringUtils.isBlank(request.getUserId()) || null == request.getActivityId()) {
                 throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
             }
+
             // 2. 参与活动 - 创建参与记录订单
             UserRaffleOrderEntity orderEntity = raffleActivityPartakeService.createOrder(request.getUserId(), request.getActivityId());
             log.info("活动抽奖，创建订单 userId:{} activityId:{} orderId:{}", request.getUserId(), request.getActivityId(), orderEntity.getOrderId());

@@ -14,6 +14,9 @@ app:
 
 # Spring 配置；rabbitmq
 spring:
+  cloud:
+    compatibility-verifier:
+      enabled: false #暂时禁用springcloud版本兼容检查
   rabbitmq:
     addresses: 127.0.0.1
     port: 5672
@@ -130,6 +133,28 @@ redis:
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
 #  config-location:  classpath:/mybatis/config/mybatis-config.xml
+
+dubbo:
+  application:
+    name: big-market
+    version: 1.0
+  registry:
+    id: nacos-registry
+    address: nacos://localhost:8848
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: com.uta.trigger.api
+
+zookeeper:
+  config:
+    connect-string: localhost:2181
+    base-sleep-time-ms: 1000
+    max-retries: 3
+    session-timeout-ms: 18000
+    connection-timeout-ms: 30000
+
 
 # 日志
 logging:

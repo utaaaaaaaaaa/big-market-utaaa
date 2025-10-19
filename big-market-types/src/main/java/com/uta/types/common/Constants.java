@@ -7,6 +7,9 @@ public class Constants {
     public final static String COLON = ":";
     public final static String UNDERLINE = "_";
 
+    public static final String BASE_CONFIG_PATH = "/big-market-dcc";
+    public static final String BASE_CONFIG_PATH_CONFIG = BASE_CONFIG_PATH + "/config";
+
     public static class RedisKey {
         public static String ACTIVITY_KEY = "big_market_activity_key_";
         public static String ACTIVITY_SKU_KEY = "big_market_activity_sku_key_";
