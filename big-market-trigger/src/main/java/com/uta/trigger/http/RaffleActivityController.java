@@ -2,6 +2,8 @@ package com.uta.trigger.http;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.uta.api.IRaffleActivityService;
 import com.uta.api.entity.dto.ActivityDrawDTO;
 import com.uta.api.entity.dto.CreditPayExchangeSkuDTO;
@@ -32,11 +34,13 @@ import com.uta.domain.strategy.model.entity.RaffleFactorEntity;
 import com.uta.domain.strategy.service.IRaffleStrategy;
 import com.uta.domain.strategy.service.armory.IStrategyArmory;
 import com.uta.types.annotations.DCCValue;
+import com.uta.types.annotations.RateLimiterAccessInterceptor;
 import com.uta.types.enums.ResponseCode;
 import com.uta.types.exception.AppException;
 import com.uta.types.model.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -50,6 +54,7 @@ import java.util.List;
 @RestController
 @CrossOrigin("${app.config.cross-origin}")
 @RequestMapping("/api/${app.config.api-version}/raffle/activity")
+@DubboService(version = "1.0")
 public class RaffleActivityController implements IRaffleActivityService {
 
     private final SimpleDateFormat dateFormatDay = new SimpleDateFormat("yyyyMMdd");
@@ -109,12 +114,17 @@ public class RaffleActivityController implements IRaffleActivityService {
         }
     }
 
+    @RateLimiterAccessInterceptor(key = "userId", permitsPerSecond = 1, blacklistCount = 1, fallbackMethod = "drawRateLimiterError")
+    @HystrixCommand(commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "150")
+    }, fallbackMethod = "drawHystrixError")
     @PostMapping("/draw")
     @Override
     public Response<ActivityDrawVO> draw(@RequestBody ActivityDrawDTO request) {
         try {
             log.info("活动抽奖 userId:{} activityId:{}", request.getUserId(), request.getActivityId());
-            if (!degradeSwitch.equals("open")){
+            Thread.sleep(200);
+            if (degradeSwitch.equals("open")){
                 return Response.<ActivityDrawVO>builder()
                         .code(ResponseCode.DEGRADE_SWITCH.getCode())
                         .info(ResponseCode.DEGRADE_SWITCH.getInfo())
@@ -172,6 +182,23 @@ public class RaffleActivityController implements IRaffleActivityService {
                     .build();
         }
     }
+
+    public Response<ActivityDrawVO> drawRateLimiterError(@RequestBody ActivityDrawDTO request) {
+        log.info("活动抽奖限流 userId:{} activityId:{}", request.getUserId(), request.getActivityId());
+        return Response.<ActivityDrawVO>builder()
+                .code(ResponseCode.RATE_LIMITER.getCode())
+                .info(ResponseCode.RATE_LIMITER.getInfo())
+                .build();
+    }
+
+    public Response<ActivityDrawVO> drawHystrixError(@RequestBody ActivityDrawDTO request) {
+        log.info("活动抽奖熔断 userId:{} activityId:{}", request.getUserId(), request.getActivityId());
+        return Response.<ActivityDrawVO>builder()
+                .code(ResponseCode.HYSTRIX.getCode())
+                .info(ResponseCode.HYSTRIX.getInfo())
+                .build();
+    }
+
 
     @PostMapping("/calendar_sign")
     @Override

@@ -5,11 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetRaffleAwardListVO {
+public class GetRaffleAwardListVO implements Serializable {
 
     private Integer awardId;
     private String awardTitle;

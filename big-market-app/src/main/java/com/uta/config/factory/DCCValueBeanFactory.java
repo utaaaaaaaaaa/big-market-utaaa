@@ -6,6 +6,8 @@ import com.uta.types.common.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.cache.CuratorCache;
+import org.springframework.aop.framework.AopProxyUtils;
+import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Configuration;
@@ -41,7 +43,12 @@ public class DCCValueBeanFactory implements BeanPostProcessor {
                     Object o = dccObjMap.get(path);
                     if (null == o){return ;}
                     try {
-                        Field declaredField = o.getClass().getDeclaredField(path.substring(path.lastIndexOf("/") + 1));
+                        Class<?> targetClazz = o.getClass();
+                        if (AopUtils.isAopProxy(o)) {
+                            targetClazz = AopUtils.getTargetClass(o);
+                        }
+
+                        Field declaredField = targetClazz.getDeclaredField(path.substring(path.lastIndexOf("/") + 1));
                         declaredField.setAccessible(true);
                         declaredField.set(o, new String(data.getData(), StandardCharsets.UTF_8));
                         declaredField.setAccessible(false);
@@ -58,6 +65,13 @@ public class DCCValueBeanFactory implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         Class<?> beanClass = bean.getClass();
+        Object beanObj = bean;
+        // 对象被aop代理的情况下拿到原对象实例
+        if (AopUtils.isAopProxy(bean)) {
+            beanClass = AopUtils.getTargetClass(bean);
+            beanObj = AopProxyUtils.getSingletonTarget(bean);
+        }
+
         Field[] fields = beanClass.getDeclaredFields();
         for (Field field : fields) {
             if (!field.isAnnotationPresent(DCCValue.class)) continue;
@@ -76,14 +90,14 @@ public class DCCValueBeanFactory implements BeanPostProcessor {
                     client.create().creatingParentsIfNeeded().forPath(keyPath);
                     if (StringUtils.isNotBlank(defaultValue)){
                         field.setAccessible(true);
-                        field.set(bean, defaultValue);
+                        field.set(beanObj, defaultValue);
                         field.setAccessible(false);
                     }
                 }else {
                     String configValue = new String(client.getData().forPath(keyPath), StandardCharsets.UTF_8);
                     if (StringUtils.isNotBlank(configValue)){
                         field.setAccessible(true);
-                        field.set(bean, configValue);
+                        field.set(beanObj, configValue);
                         field.setAccessible(false);
                     }
                 }
@@ -91,7 +105,7 @@ public class DCCValueBeanFactory implements BeanPostProcessor {
                 throw new RuntimeException(e);
             }
 
-            dccObjMap.put(keyPath, bean);
+            dccObjMap.put(keyPath, beanObj);
         }
 
 

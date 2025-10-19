@@ -5,13 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class RaffleStrategyRuleWeightVO {
+public class RaffleStrategyRuleWeightVO implements Serializable {
 
     // 权重规则配置的抽奖次数
     private Integer ruleWeightCount;

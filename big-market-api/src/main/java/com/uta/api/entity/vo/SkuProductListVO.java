@@ -2,10 +2,11 @@ package com.uta.api.entity.vo;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 @Data
-public class SkuProductListVO {
+public class SkuProductListVO implements Serializable {
 
     /**
      * 商品sku

@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * 活动抽奖返回
  */
@@ -12,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ActivityDrawVO {
+public class ActivityDrawVO implements Serializable {
 
     // 奖品ID
     private Integer awardId;

@@ -23,6 +23,7 @@ import com.uta.types.enums.ResponseCode;
 import com.uta.types.exception.AppException;
 import com.uta.types.model.Response;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -36,6 +37,7 @@ import java.util.stream.Collectors;
 @RestController
 @CrossOrigin("${app.config.cross-origin}")
 @RequestMapping("/api/${app.config.api-version}/raffle/strategy")
+@DubboService(version = "1.0")
 public class RaffleStrategyController implements IRaffleStrategyService {
 
     @Autowired

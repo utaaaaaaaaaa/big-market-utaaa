@@ -7,6 +7,7 @@ import com.uta.types.model.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.coyote.http11.filters.SavedRequestInputFilter;
 import org.apache.curator.framework.CuratorFramework;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.apache.zookeeper.data.Stat;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,6 +18,7 @@ import java.nio.charset.StandardCharsets;
 @RestController
 @CrossOrigin("${app.config.cross-origin}")
 @RequestMapping("/api/${app.config.api-version}/raffle/dcc")
+@DubboService(version = "1.0")
 public class IDCCController implements IDCCService {
 
     @Resource
